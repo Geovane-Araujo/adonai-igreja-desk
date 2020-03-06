@@ -6,30 +6,33 @@ import java.sql.Date;
 
 public class VarDespesas {
    
-    private static  int ID;
+    private   int ID;
     
-    private static  String Descricao;
+    private   String Descricao;
     
-    private static  Date DataC;
+    private   Date DataC;
     
-    private static  Date DataV;
+    private   Date DataV;
     
-    private static  Date DataP;
+    private   Date DataP;
     
-    private static  String QuemPagou;
+    private   String QuemPagou;
     
-    private static  int IDCaixa;   
+    private   int IDCaixa;   
     
-    private static  String Status;
+    private   String Status;
     
-    private static  double Valor;
+    private   double Valor;
     
-    private static  String Observacoes;
+    private   String Observacoes;
     
-    private static  int IDTipo;
-    
-    
+    private int IDTipo;
 
+    public VarDespesas() {
+        
+        
+    }
+    
     public int getID() {
         return ID;
     }
