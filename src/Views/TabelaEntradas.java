@@ -692,7 +692,7 @@ public class TabelaEntradas extends javax.swing.JPanel {
     }
 
     public void Povoar() {
-        String sql = "Select Max(id),min(id) from duplicatas";
+        String sql = "Select Max(id),min(id) from duplicatas WHERE tipo = 0";
         Connection con = conectar.Conectar();
         PreparedStatement stmt = null;
         ResultSet rs = null;
