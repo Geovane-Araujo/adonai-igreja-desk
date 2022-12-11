@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AdonaiSoft_Igreja">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/AdonaiSoft_Igreja.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

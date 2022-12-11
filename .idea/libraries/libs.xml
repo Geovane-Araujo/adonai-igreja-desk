@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/smtp-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.apache.commons.commons-collections4_4.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/sqlite-jdbc-3.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jasperreports-6.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/barbecue-1.5-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mail-1.4.7-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/AbsoluteLayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/Conversor.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-digester-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/itextpdf-5.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/groovy-all-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/postgresql-42.2.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-email-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/barcode4j-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mailapi-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-javaflow-1209105.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

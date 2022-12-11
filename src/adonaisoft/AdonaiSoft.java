@@ -7,12 +7,12 @@
  */
 package adonaisoft;
 
-import BancoDados.ConexaoBanco;
+import database.ConexaoBanco;
 
-import Model.ClasseConfiguracoes;
-import Views.CadastroIgreja;
-import Views.Login;
-import Views.Principal;
+import model.ClasseConfiguracoes;
+import view.CadastroIgreja;
+import view.Login;
+import view.Principal;
 import java.sql.SQLException;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
