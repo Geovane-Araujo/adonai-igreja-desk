@@ -185,7 +185,7 @@ public class RelatorioMembro extends javax.swing.JDialog {
             }
                  
                  
-                 this.dispose();
+            this.dispose();
         }
         else{
             membros.setId(Integer.parseInt(CampoCodigo.getText()));
