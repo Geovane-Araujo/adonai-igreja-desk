@@ -72,13 +72,13 @@ public class MenuEscola extends javax.swing.JPanel {
     private void BotaoClassesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoClassesActionPerformed
       TabelaClasse chamar = new TabelaClasse();
 
-        l = Principal.PainelMenus.getWidth();
-        a = Principal.PainelMenus.getHeight();
+        l = Principal.painel.getWidth();
+        a = Principal.painel.getHeight();
         
-        Principal.PainelMenus.removeAll();
-        Principal.PainelMenus.add(chamar);
-        Principal.PainelMenus.revalidate();
-        Principal.PainelMenus.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
         String sql = rota.getTabelaClasses();
         
         chamar.PovoarHistorico();

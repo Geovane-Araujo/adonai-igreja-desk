@@ -485,7 +485,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         btnregistrarhis.setBackground(new java.awt.Color(1, 1, 34));
         btnregistrarhis.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btnregistrarhis.setForeground(new java.awt.Color(255, 255, 255));
-        btnregistrarhis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        btnregistrarhis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         btnregistrarhis.setText("Registrar");
         btnregistrarhis.setBorder(null);
         btnregistrarhis.setBorderPainted(false);
@@ -525,7 +525,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         AtualizarHistorico.setBackground(new java.awt.Color(1, 1, 34));
         AtualizarHistorico.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         AtualizarHistorico.setForeground(new java.awt.Color(255, 255, 255));
-        AtualizarHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        AtualizarHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         AtualizarHistorico.setText("Atualizar");
         AtualizarHistorico.setBorder(null);
         AtualizarHistorico.setBorderPainted(false);
@@ -547,7 +547,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         Frente1.setBackground(new java.awt.Color(1, 1, 34));
         Frente1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Frente1.setForeground(new java.awt.Color(255, 255, 255));
-        Frente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
+        Frente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
         Frente1.setBorder(null);
         Frente1.setBorderPainted(false);
         Frente1.setFocusPainted(false);
@@ -568,7 +568,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         Atras1.setBackground(new java.awt.Color(1, 1, 34));
         Atras1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Atras1.setForeground(new java.awt.Color(255, 255, 255));
-        Atras1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Back_15px.png"))); // NOI18N
+        Atras1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
         Atras1.setBorder(null);
         Atras1.setBorderPainted(false);
         Atras1.setFocusPainted(false);

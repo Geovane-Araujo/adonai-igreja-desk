@@ -569,7 +569,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Imagens/Atualizar.png"/>
+                      <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Atualizar"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">

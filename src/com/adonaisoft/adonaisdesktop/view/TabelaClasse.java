@@ -443,7 +443,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         BotaoBuscarHistorico.setBackground(new java.awt.Color(1, 1, 34));
         BotaoBuscarHistorico.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BotaoBuscarHistorico.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        BotaoBuscarHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         BotaoBuscarHistorico.setText("Atualizar");
         BotaoBuscarHistorico.setBorder(null);
         BotaoBuscarHistorico.setBorderPainted(false);

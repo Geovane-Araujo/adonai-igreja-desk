@@ -156,13 +156,13 @@ public class MenuFinanceiro extends javax.swing.JPanel {
 
        TabelaEntradas chamar = new TabelaEntradas();
 
-        l = Principal.PainelMenus.getWidth();
-        a = Principal.PainelMenus.getHeight();
+        l = Principal.painel.getWidth();
+        a = Principal.painel.getHeight();
         
-        Principal.PainelMenus.removeAll();
-        Principal.PainelMenus.add(chamar);
-        Principal.PainelMenus.revalidate();
-        Principal.PainelMenus.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
         String sql = rota.getRTTabEntradas();
         chamar.Povoar(sql);
         
@@ -175,13 +175,13 @@ public class MenuFinanceiro extends javax.swing.JPanel {
        TabelaCaixas chamar = new TabelaCaixas();
         //chamar.setLocation(5, 5);
         
-         l = Principal.PainelMenus.getWidth();
-         a = Principal.PainelMenus.getHeight();
+         l = Principal.painel.getWidth();
+         a = Principal.painel.getHeight();
         
-        Principal.PainelMenus.removeAll();
-        Principal.PainelMenus.add(chamar);
-        Principal.PainelMenus.revalidate();
-        Principal.PainelMenus.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
         String sql = rota.getRTCaixa();
         String sq = rota.getRTCXHistorico();
         chamar.povoarTabela(sql);
@@ -202,13 +202,13 @@ public class MenuFinanceiro extends javax.swing.JPanel {
         TelaDespesas chamar = new TelaDespesas();
         
         
-        int l = Principal.PainelMenus.getWidth();
-        int a = Principal.PainelMenus.getHeight();
+        int l = Principal.painel.getWidth();
+        int a = Principal.painel.getHeight();
         
-        Principal.PainelMenus.removeAll();
-        Principal.PainelMenus.add(chamar);
-        Principal.PainelMenus.revalidate();
-        Principal.PainelMenus.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
 
         chamar.TabelaTodas(rota.getRTDespesasTodas());
         chamar.TabelaPendentes(rota.getRTDespesasPendentes());

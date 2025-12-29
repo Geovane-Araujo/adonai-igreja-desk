@@ -598,7 +598,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Imagens/Salvar.png"/>
+                      <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Registrar"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -652,7 +652,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Imagens/Atualizar.png"/>
+                      <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Atualizar"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -679,7 +679,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Imagens/icons8_Chevron_Right_15px.png"/>
+                      <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -705,7 +705,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Imagens/icons8_Back_15px.png"/>
+                      <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>

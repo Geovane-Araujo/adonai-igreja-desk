@@ -624,7 +624,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoPagar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoPagar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoPagar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Donate_26px.png"))); // NOI18N
+        BotaoPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Donate_26px.png"))); // NOI18N
         BotaoPagar.setText("Pagar");
         BotaoPagar.setBorder(null);
         BotaoPagar.setBorderPainted(false);
@@ -646,7 +646,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoEditarPendentes.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEditarPendentes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoEditarPendentes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditarPendentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
+        BotaoEditarPendentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
         BotaoEditarPendentes.setText("Editar");
         BotaoEditarPendentes.setBorder(null);
         BotaoEditarPendentes.setBorderPainted(false);
@@ -668,7 +668,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoExcluirDespesasPendentes.setBackground(new java.awt.Color(1, 1, 34));
         BotaoExcluirDespesasPendentes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoExcluirDespesasPendentes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoExcluirDespesasPendentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
+        BotaoExcluirDespesasPendentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
         BotaoExcluirDespesasPendentes.setText("Excluir");
         BotaoExcluirDespesasPendentes.setBorder(null);
         BotaoExcluirDespesasPendentes.setBorderPainted(false);
@@ -710,7 +710,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoAtualizar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAtualizar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoAtualizar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        BotaoAtualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         BotaoAtualizar.setText("Atualizar");
         BotaoAtualizar.setBorder(null);
         BotaoAtualizar.setBorderPainted(false);
@@ -736,7 +736,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         Frente1.setBackground(new java.awt.Color(1, 1, 34));
         Frente1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Frente1.setForeground(new java.awt.Color(255, 255, 255));
-        Frente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
+        Frente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
         Frente1.setBorder(null);
         Frente1.setBorderPainted(false);
         Frente1.setFocusPainted(false);
@@ -757,7 +757,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         Atras1.setBackground(new java.awt.Color(1, 1, 34));
         Atras1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Atras1.setForeground(new java.awt.Color(255, 255, 255));
-        Atras1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Back_15px.png"))); // NOI18N
+        Atras1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
         Atras1.setBorder(null);
         Atras1.setBorderPainted(false);
         Atras1.setFocusPainted(false);
@@ -947,7 +947,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoAtualizarPagas.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAtualizarPagas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoAtualizarPagas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizarPagas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        BotaoAtualizarPagas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         BotaoAtualizarPagas.setText("Atualizar");
         BotaoAtualizarPagas.setBorder(null);
         BotaoAtualizarPagas.setBorderPainted(false);
@@ -973,7 +973,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         Frente2.setBackground(new java.awt.Color(1, 1, 34));
         Frente2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Frente2.setForeground(new java.awt.Color(255, 255, 255));
-        Frente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
+        Frente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
         Frente2.setBorder(null);
         Frente2.setBorderPainted(false);
         Frente2.setFocusPainted(false);
@@ -994,7 +994,7 @@ public class TelaDespesas extends javax.swing.JPanel {
         Atras2.setBackground(new java.awt.Color(1, 1, 34));
         Atras2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Atras2.setForeground(new java.awt.Color(255, 255, 255));
-        Atras2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Back_15px.png"))); // NOI18N
+        Atras2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
         Atras2.setBorder(null);
         Atras2.setBorderPainted(false);
         Atras2.setFocusPainted(false);

@@ -632,7 +632,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
         BotaoAtualizar1.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAtualizar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoAtualizar1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        BotaoAtualizar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         BotaoAtualizar1.setText("Atualizar");
         BotaoAtualizar1.setBorder(null);
         BotaoAtualizar1.setBorderPainted(false);
