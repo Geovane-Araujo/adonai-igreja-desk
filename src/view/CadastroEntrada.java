@@ -113,10 +113,10 @@ public class CadastroEntrada extends javax.swing.JDialog {
         jLabel11 = new javax.swing.JLabel();
         BotaoSalvar = new javax.swing.JButton();
         BuscarCaixas = new javax.swing.JButton();
-        CampoData = new com.toedter.calendar.JDateChooser();
         CampoTipo = new javax.swing.JTextField();
         BotaoBuscarCargo = new javax.swing.JButton();
         BotaoAdicionarCargo = new javax.swing.JButton();
+        CampoData = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Entradas");
@@ -158,30 +158,21 @@ public class CadastroEntrada extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Descrição:");
 
-        CampoDescricao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDescricao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDescricao.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Valor:");
 
-        CampoValor.setBackground(new java.awt.Color(255, 255, 255));
         CampoValor.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoValor.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Caixa:");
 
-        CampoCaixaEntrada.setBackground(new java.awt.Color(255, 255, 255));
         CampoCaixaEntrada.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCaixaEntrada.setForeground(new java.awt.Color(0, 0, 0));
         CampoCaixaEntrada.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoCaixaEntradaKeyPressed(evt);
@@ -190,17 +181,13 @@ public class CadastroEntrada extends javax.swing.JDialog {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data: ");
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Nome do Membro:");
 
-        CampoNomeMembro.setBackground(new java.awt.Color(255, 255, 255));
         CampoNomeMembro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNomeMembro.setForeground(new java.awt.Color(0, 0, 0));
         CampoNomeMembro.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoNomeMembroKeyPressed(evt);
@@ -209,19 +196,15 @@ public class CadastroEntrada extends javax.swing.JDialog {
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Tipo:");
 
-        CampoObs.setBackground(new java.awt.Color(255, 255, 255));
         CampoObs.setColumns(20);
         CampoObs.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoObs.setForeground(new java.awt.Color(0, 0, 0));
         CampoObs.setRows(3);
         jScrollPane1.setViewportView(CampoObs);
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Observações:");
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
@@ -266,14 +249,7 @@ public class CadastroEntrada extends javax.swing.JDialog {
             }
         });
 
-        CampoData.setBackground(new java.awt.Color(255, 255, 255));
-        CampoData.setForeground(new java.awt.Color(0, 0, 0));
-        CampoData.setDateFormatString("dd/MM/yyyy");
-        CampoData.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-
-        CampoTipo.setBackground(new java.awt.Color(255, 255, 255));
         CampoTipo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoTipo.setForeground(new java.awt.Color(0, 0, 0));
         CampoTipo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoTipoKeyPressed(evt);
@@ -319,6 +295,11 @@ public class CadastroEntrada extends javax.swing.JDialog {
                 BotaoAdicionarCargoActionPerformed(evt);
             }
         });
+
+        CampoData.setBackground(new java.awt.Color(255, 255, 255));
+        CampoData.setDateFormatString("dd/MM/yyyy");
+        CampoData.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        CampoData.setName("CampoData"); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -388,13 +369,13 @@ public class CadastroEntrada extends javax.swing.JDialog {
                     .addComponent(jLabel9)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(CampoData, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(CampoDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(CampoTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoBuscarCargo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoAdicionarCargo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(CampoDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(CampoTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoBuscarCargo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoAdicionarCargo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CampoData, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -618,7 +599,7 @@ public class CadastroEntrada extends javax.swing.JDialog {
     private javax.swing.JButton BuscarMembros;
     public static javax.swing.JTextField CampoCaixaEntrada;
     private javax.swing.JTextField CampoCodigo;
-    public static com.toedter.calendar.JDateChooser CampoData;
+    private com.toedter.calendar.JDateChooser CampoData;
     private javax.swing.JTextField CampoDescricao;
     public static javax.swing.JTextField CampoNomeMembro;
     private javax.swing.JTextArea CampoObs;

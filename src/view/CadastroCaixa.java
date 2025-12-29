@@ -8,7 +8,7 @@ import java.awt.Color;
 import java.util.Date;
 public class CadastroCaixa extends javax.swing.JDialog {
 
-    ClasseCaixas Entrada = new ClasseCaixas();
+    ClasseCaixas entrada = new ClasseCaixas();
     ConexaoBanco conectar = new ConexaoBanco();
     DataHora dt = new DataHora();
     Date data = new Date();
@@ -169,16 +169,16 @@ public class CadastroCaixa extends javax.swing.JDialog {
 
     private void BotaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarActionPerformed
         
-        Entrada.setDescricaoCaixa(CampoDescricao.getText());
+        entrada.setDescricaoCaixa(CampoDescricao.getText());
         
         
-        Entrada.setDataAbertura((java.sql.Date) dt.DataBd(CampoDataVencimento.getDate()));
-        Entrada.setStatus("Caixa Aberto");
-        Entrada.setSaldoInicial(Float.parseFloat(CampoSaldo.getText().toString().replace(",", "."))); 
-        Entrada.setSaldo(Entrada.getSaldoInicial());
+        entrada.setDataAbertura((java.sql.Date) dt.DataBd(CampoDataVencimento.getDate()));
+        entrada.setStatus("Caixa Aberto");
+        entrada.setSaldoInicial(Float.parseFloat(CampoSaldo.getText().toString().replace(",", "."))); 
+        entrada.setSaldo(entrada.getSaldoInicial());
         
         
-        Entrada.inserircaixa();
+        entrada.inserircaixa();
         this.dispose();
     }//GEN-LAST:event_BotaoSalvarActionPerformed
 
