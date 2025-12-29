@@ -1,13 +1,13 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
-import model.ClasseChamada;
-import model.ClasseClasses;
-import model.ClasseRegistroChamada;
-import model.ClasseRotas;
-import model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.model.ClasseChamada;
+import com.adonaisoft.adonaisdesktop.model.ClasseClasses;
+import com.adonaisoft.adonaisdesktop.model.ClasseRegistroChamada;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -290,9 +290,7 @@ public class Chamada extends javax.swing.JDialog {
         CampoCodigoClasse.setBorder(null);
         CampoCodigoClasse.setEnabled(false);
 
-        TabelaChamada.setBackground(new java.awt.Color(255, 255, 255));
         TabelaChamada.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaChamada.setForeground(new java.awt.Color(0, 0, 0));
         TabelaChamada.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -318,7 +316,6 @@ public class Chamada extends javax.swing.JDialog {
         });
         TabelaChamada.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaChamada.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaChamada.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaChamada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaChamadaMouseClicked(evt);
@@ -341,7 +338,7 @@ public class Chamada extends javax.swing.JDialog {
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar.setText("Salvar");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -582,7 +579,6 @@ public class Chamada extends javax.swing.JDialog {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        campoVisitas.setBackground(new java.awt.Color(255, 255, 255));
         campoVisitas.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         campoVisitas.setForeground(new java.awt.Color(1, 1, 34));
         campoVisitas.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -641,7 +637,6 @@ public class Chamada extends javax.swing.JDialog {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        CampoOfertas.setBackground(new java.awt.Color(255, 255, 255));
         CampoOfertas.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         CampoOfertas.setForeground(new java.awt.Color(1, 1, 34));
         CampoOfertas.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -675,7 +670,7 @@ public class Chamada extends javax.swing.JDialog {
         Calcular.setBackground(new java.awt.Color(1, 1, 34));
         Calcular.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Calcular.setForeground(new java.awt.Color(255, 255, 255));
-        Calcular.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Math_26px.png"))); // NOI18N
+        Calcular.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Math_26px.png"))); // NOI18N
         Calcular.setText("Calcular");
         Calcular.setBorder(null);
         Calcular.setBorderPainted(false);
@@ -722,7 +717,6 @@ public class Chamada extends javax.swing.JDialog {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        CampoTotal.setBackground(new java.awt.Color(255, 255, 255));
         CampoTotal.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         CampoTotal.setForeground(new java.awt.Color(1, 1, 34));
         CampoTotal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -756,11 +750,9 @@ public class Chamada extends javax.swing.JDialog {
         CampoClasse.setEditable(false);
         CampoClasse.setBackground(new java.awt.Color(238, 238, 238));
         CampoClasse.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
-        CampoClasse.setForeground(new java.awt.Color(0, 0, 0));
         CampoClasse.setBorder(null);
 
         CampoData.setBackground(new java.awt.Color(255, 255, 255));
-        CampoData.setForeground(new java.awt.Color(0, 0, 0));
         CampoData.setDateFormatString("dd/MM/yyyy");
         CampoData.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 

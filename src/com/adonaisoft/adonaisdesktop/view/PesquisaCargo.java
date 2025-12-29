@@ -1,9 +1,9 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.Membros;
-import view.membros.form.CadastroMembro;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Membros;
+import com.adonaisoft.adonaisdesktop.view.membros.form.CadastroMembro;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,4 +1,4 @@
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;

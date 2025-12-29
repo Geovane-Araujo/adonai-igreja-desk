@@ -1,9 +1,9 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.ImagemBd;
-import model.ClasseGlobais;
+import com.adonaisoft.adonaisdesktop.model.ClasseGlobais;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -81,7 +81,7 @@ public class CadastroGlobais extends javax.swing.JDialog {
         Salvar1.setBackground(new java.awt.Color(1, 1, 34));
         Salvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Salvar1.setForeground(new java.awt.Color(255, 255, 255));
-        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         Salvar1.setText("Salvar");
         Salvar1.setBorder(null);
         Salvar1.setBorderPainted(false);
@@ -101,31 +101,26 @@ public class CadastroGlobais extends javax.swing.JDialog {
         });
 
         jPanel2.setBackground(new java.awt.Color(238, 238, 238));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Relatórios", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 0, 14), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel2.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Relatórios", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 0, 14))); // NOI18N
 
-        campoTextoRelatorio.setBackground(new java.awt.Color(255, 255, 255));
         campoTextoRelatorio.setColumns(10);
         campoTextoRelatorio.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        campoTextoRelatorio.setForeground(new java.awt.Color(0, 0, 0));
         campoTextoRelatorio.setLineWrap(true);
         campoTextoRelatorio.setRows(4);
         jScrollPane1.setViewportView(campoTextoRelatorio);
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Texto do Cabeçalho do Relatório");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Imagem");
 
         BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
         BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Download_15px.png"))); // NOI18N
+        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Download_15px.png"))); // NOI18N
         BuscarCaixas.setBorder(null);
         BuscarCaixas.setBorderPainted(false);
         BuscarCaixas.setFocusPainted(false);
@@ -149,7 +144,7 @@ public class CadastroGlobais extends javax.swing.JDialog {
         Delimagen.setBackground(new java.awt.Color(1, 1, 34));
         Delimagen.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         Delimagen.setForeground(new java.awt.Color(255, 255, 255));
-        Delimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Delete_15px.png"))); // NOI18N
+        Delimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Delete_15px.png"))); // NOI18N
         Delimagen.setBorder(null);
         Delimagen.setBorderPainted(false);
         Delimagen.setFocusPainted(false);
@@ -207,49 +202,34 @@ public class CadastroGlobais extends javax.swing.JDialog {
         );
 
         jPanel3.setBackground(new java.awt.Color(238, 238, 238));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "E-mail", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 0, 14), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel3.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "E-mail", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 0, 14))); // NOI18N
         jPanel3.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 
-        campoSMTP.setBackground(new java.awt.Color(255, 255, 255));
         campoSMTP.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        campoSMTP.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoPorta.setBackground(new java.awt.Color(255, 255, 255));
         CampoPorta.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoPorta.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoUsuario.setBackground(new java.awt.Color(255, 255, 255));
         CampoUsuario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoUsuario.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Smtp:");
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Porta:");
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Usuário:");
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("E-Mail:");
 
-        CampoEmail.setBackground(new java.awt.Color(255, 255, 255));
         CampoEmail.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEmail.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoSenha.setBackground(new java.awt.Color(255, 255, 255));
         CampoSenha.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoSenha.setForeground(new java.awt.Color(0, 0, 0));
         CampoSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampoSenhaActionPerformed(evt);
@@ -258,12 +238,9 @@ public class CadastroGlobais extends javax.swing.JDialog {
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Senha:");
 
-        CampoAutenticacao.setBackground(new java.awt.Color(255, 255, 255));
         CampoAutenticacao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoAutenticacao.setForeground(new java.awt.Color(0, 0, 0));
         CampoAutenticacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Não usa Autenticação", "TSL", "SSL", "STARTSL" }));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -373,7 +350,7 @@ public class CadastroGlobais extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 631, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 631, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -1,7 +1,7 @@
 
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;

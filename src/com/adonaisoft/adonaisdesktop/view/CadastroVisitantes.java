@@ -1,9 +1,9 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
-import model.ClasseVisitantes;
+import com.adonaisoft.adonaisdesktop.model.ClasseVisitantes;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -103,22 +103,18 @@ public class CadastroVisitantes extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nome do Visitante:");
 
-        CampoNomeVisita.setBackground(new java.awt.Color(255, 255, 255));
         CampoNomeVisita.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNomeVisita.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data Primeira Visita:");
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar.setText("Salvar");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -139,35 +135,25 @@ public class CadastroVisitantes extends javax.swing.JDialog {
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Denominação:");
 
-        CampoEstado.setBackground(new java.awt.Color(255, 255, 255));
         CampoEstado.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEstado.setForeground(new java.awt.Color(0, 0, 0));
         CampoEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE" }));
         CampoEstado.setBorder(null);
 
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Cidade:");
 
         jLabel7.setBackground(new java.awt.Color(0, 0, 0));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("UF:");
 
-        CampoDenominacao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDenominacao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDenominacao.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoCidade.setBackground(new java.awt.Color(255, 255, 255));
         CampoCidade.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCidade.setForeground(new java.awt.Color(0, 0, 0));
 
         CampoData.setBackground(new java.awt.Color(255, 255, 255));
-        CampoData.setForeground(new java.awt.Color(0, 0, 0));
         CampoData.setDateFormatString("dd/MM/yyyy");
         CampoData.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 

@@ -1,7 +1,7 @@
 
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import java.awt.Dialog;
 import static java.awt.Frame.MAXIMIZED_BOTH;
 import java.awt.Toolkit;

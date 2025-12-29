@@ -1,8 +1,8 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseConfiguracoes;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseConfiguracoes;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -70,9 +70,7 @@ public class TabelaConfiguracoes extends javax.swing.JPanel {
         setForeground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(838, 579));
 
-        TabelaIgreja.setBackground(new java.awt.Color(255, 255, 255));
         TabelaIgreja.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaIgreja.setForeground(new java.awt.Color(0, 0, 0));
         TabelaIgreja.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -91,7 +89,6 @@ public class TabelaConfiguracoes extends javax.swing.JPanel {
         });
         TabelaIgreja.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaIgreja.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaIgreja.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaIgreja.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaIgrejaMouseClicked(evt);
@@ -110,13 +107,12 @@ public class TabelaConfiguracoes extends javax.swing.JPanel {
         }
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Cadastro da Igreja");
 
         BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
+        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
         BotaoEditar.setText("Editar");
         BotaoEditar.setBorder(null);
         BotaoEditar.setBorderPainted(false);
@@ -156,7 +152,7 @@ public class TabelaConfiguracoes extends javax.swing.JPanel {
         Buscar.setBackground(new java.awt.Color(1, 1, 34));
         Buscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Buscar.setForeground(new java.awt.Color(255, 255, 255));
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         Buscar.setText("Atualizar");
         Buscar.setBorder(null);
         Buscar.setBorderPainted(false);

@@ -1,10 +1,10 @@
 
-package view.gerais;
+package com.adonaisoft.adonaisdesktop.view.gerais;
 
-import database.ConexaoBanco;
-import model.ClasseEmail;
-import model.clsRedimensionarImagem;
-import view.contatoIgrejas.search.PesquisaIgrejas;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseEmail;
+import com.adonaisoft.adonaisdesktop.model.clsRedimensionarImagem;
+import com.adonaisoft.adonaisdesktop.view.contatoIgrejas.search.PesquisaIgrejas;
 
 import java.awt.Color;
 import java.io.File;
@@ -52,7 +52,7 @@ public class TelaEmail extends javax.swing.JDialog {
         BotaoEnviar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEnviar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoEnviar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEnviar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Paper_Plane_26px.png"))); // NOI18N
+        BotaoEnviar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Paper_Plane_26px.png"))); // NOI18N
         BotaoEnviar.setText("Enviar");
         BotaoEnviar.setBorder(null);
         BotaoEnviar.setBorderPainted(false);
@@ -71,7 +71,6 @@ public class TelaEmail extends javax.swing.JDialog {
             }
         });
 
-        CampoCorpoEmail.setBackground(new java.awt.Color(255, 255, 255));
         CampoCorpoEmail.setColumns(10);
         CampoCorpoEmail.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         CampoCorpoEmail.setLineWrap(true);
@@ -80,13 +79,12 @@ public class TelaEmail extends javax.swing.JDialog {
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Corpo do Email:");
 
         BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
         BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Download_15px.png"))); // NOI18N
+        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Download_15px.png"))); // NOI18N
         BuscarCaixas.setBorder(null);
         BuscarCaixas.setBorderPainted(false);
         BuscarCaixas.setFocusPainted(false);
@@ -107,36 +105,28 @@ public class TelaEmail extends javax.swing.JDialog {
         CampoAnexo.setEditable(false);
         CampoAnexo.setBackground(new java.awt.Color(255, 255, 255));
         CampoAnexo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoAnexo.setForeground(new java.awt.Color(0, 0, 0));
         CampoAnexo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(163, 163, 163)));
 
-        CampoDestinatario.setBackground(new java.awt.Color(255, 255, 255));
         CampoDestinatario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDestinatario.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Destinatario:");
 
-        CampoAssunto.setBackground(new java.awt.Color(255, 255, 255));
         CampoAssunto.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoAssunto.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Assunto:");
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Anexo:");
 
         BuscarEmail.setBackground(new java.awt.Color(1, 1, 34));
         BuscarEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarEmail.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BuscarEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BuscarEmail.setBorder(null);
         BuscarEmail.setBorderPainted(false);
         BuscarEmail.setFocusPainted(false);

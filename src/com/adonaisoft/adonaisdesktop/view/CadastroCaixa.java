@@ -1,9 +1,9 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
-import model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
 import java.awt.Color;
 import java.util.Date;
 public class CadastroCaixa extends javax.swing.JDialog {
@@ -52,32 +52,25 @@ public class CadastroCaixa extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Descrição:");
 
-        CampoDescricao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDescricao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDescricao.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Saldo Inicial:");
 
-        CampoSaldo.setBackground(new java.awt.Color(255, 255, 255));
         CampoSaldo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoSaldo.setForeground(new java.awt.Color(0, 0, 0));
         CampoSaldo.setText("0,00");
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data Abertura: ");
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Padlock_26px.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Padlock_26px.png"))); // NOI18N
         BotaoSalvar.setText("Abrir Caixa");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -96,7 +89,6 @@ public class CadastroCaixa extends javax.swing.JDialog {
             }
         });
 
-        CampoDataVencimento.setForeground(new java.awt.Color(0, 0, 0));
         CampoDataVencimento.setDateFormatString("dd/MM/yyyy");
         CampoDataVencimento.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 

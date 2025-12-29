@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseCaixas;
-import model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.Date;
@@ -183,7 +183,6 @@ public class TabelaCaixas extends javax.swing.JPanel {
         setBackground(new java.awt.Color(219, 230, 244));
 
         jTabbedPane1.setBackground(new java.awt.Color(219, 230, 244));
-        jTabbedPane1.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
@@ -191,7 +190,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
         BotaoAtualizar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAtualizar.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BotaoAtualizar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        BotaoAtualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         BotaoAtualizar.setText("Atualizar");
         BotaoAtualizar.setBorder(null);
         BotaoAtualizar.setBorderPainted(false);
@@ -210,9 +209,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
             }
         });
 
-        TabelaCaixa.setBackground(new java.awt.Color(255, 255, 255));
         TabelaCaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaCaixa.setForeground(new java.awt.Color(0, 0, 0));
         TabelaCaixa.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -238,7 +235,6 @@ public class TabelaCaixas extends javax.swing.JPanel {
         });
         TabelaCaixa.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaCaixa.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaCaixa.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaCaixa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaCaixaMouseClicked(evt);
@@ -259,7 +255,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
         BotaoAbrirCaixa.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAbrirCaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoAbrirCaixa.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAbrirCaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Padlock_26px.png"))); // NOI18N
+        BotaoAbrirCaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Padlock_26px.png"))); // NOI18N
         BotaoAbrirCaixa.setText("Abrir Caixa");
         BotaoAbrirCaixa.setBorder(null);
         BotaoAbrirCaixa.setBorderPainted(false);
@@ -281,7 +277,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
         BotaoFecharcaixa.setBackground(new java.awt.Color(1, 1, 34));
         BotaoFecharcaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoFecharcaixa.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoFecharcaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Password_26px.png"))); // NOI18N
+        BotaoFecharcaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Password_26px.png"))); // NOI18N
         BotaoFecharcaixa.setText("Fechar Caixa");
         BotaoFecharcaixa.setBorder(null);
         BotaoFecharcaixa.setBorderPainted(false);
@@ -301,7 +297,6 @@ public class TabelaCaixas extends javax.swing.JPanel {
         });
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Caixas");
 
         CampoSelecionadoNome.setBackground(new java.awt.Color(219, 230, 244));
@@ -314,12 +309,9 @@ public class TabelaCaixas extends javax.swing.JPanel {
         });
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Localizar:");
 
-        CampoPesquisa.setBackground(new java.awt.Color(255, 255, 255));
         CampoPesquisa.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        CampoPesquisa.setForeground(new java.awt.Color(0, 0, 0));
         CampoPesquisa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampoPesquisaActionPerformed(evt);
@@ -504,7 +496,6 @@ public class TabelaCaixas extends javax.swing.JPanel {
         CampoTotal.setEditable(false);
         CampoTotal.setBackground(new java.awt.Color(255, 255, 255));
         CampoTotal.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        CampoTotal.setForeground(new java.awt.Color(0, 0, 0));
         CampoTotal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         CampoTotal.setText("0,00");
         CampoTotal.setBorder(null);
@@ -599,9 +590,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(219, 230, 244));
 
-        TabelaHistorico.setBackground(new java.awt.Color(255, 255, 255));
         TabelaHistorico.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaHistorico.setForeground(new java.awt.Color(0, 0, 0));
         TabelaHistorico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -627,7 +616,6 @@ public class TabelaCaixas extends javax.swing.JPanel {
         });
         TabelaHistorico.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaHistorico.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaHistorico.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane2.setViewportView(TabelaHistorico);
         if (TabelaHistorico.getColumnModel().getColumnCount() > 0) {
             TabelaHistorico.getColumnModel().getColumn(0).setMinWidth(20);
@@ -636,11 +624,9 @@ public class TabelaCaixas extends javax.swing.JPanel {
         }
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Histórico");
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Localizar:");
 
         BotaoAtualizar1.setBackground(new java.awt.Color(1, 1, 34));
@@ -665,9 +651,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
             }
         });
 
-        CampoPesquisa2.setBackground(new java.awt.Color(255, 255, 255));
         CampoPesquisa2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        CampoPesquisa2.setForeground(new java.awt.Color(0, 0, 0));
         CampoPesquisa2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampoPesquisa2ActionPerformed(evt);

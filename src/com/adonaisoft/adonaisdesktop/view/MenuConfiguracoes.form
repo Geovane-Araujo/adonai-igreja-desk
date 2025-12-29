@@ -70,7 +70,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/icons8_Menorah_26px.png"/>
+              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Menorah_26px.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Igreja"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -98,7 +98,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/icons8_Male_User_26px_1.png"/>
+              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Male_User_26px_1.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Usuarios"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -129,7 +129,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/icons8_Settings_30px.png"/>
+              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Settings_30px.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Globais"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">

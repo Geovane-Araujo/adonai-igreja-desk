@@ -1,11 +1,11 @@
 
-package view.membros.list;
+package com.adonaisoft.adonaisdesktop.view.membros.list;
 
-import controller.MembrosController;
-import database.ConexaoBanco;
-import model.Membros;
-import model.ClasseRotas;
-import model.Relatorios;
+import com.adonaisoft.adonaisdesktop.controller.MembrosController;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Membros;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.Relatorios;
 import java.awt.Color;
 import java.io.IOException;
 import java.sql.Connection;
@@ -20,8 +20,8 @@ import static javax.swing.JOptionPane.showConfirmDialog;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 import net.sf.jasperreports.engine.JRException;
-import view.MenuSecretaria;
-import view.membros.form.CadastroMembro;
+import com.adonaisoft.adonaisdesktop.view.MenuSecretaria;
+import com.adonaisoft.adonaisdesktop.view.membros.form.CadastroMembro;
 
 public class TabelaMembros extends javax.swing.JPanel {
     
@@ -201,7 +201,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         BotaoImprimir.setBackground(new java.awt.Color(1, 1, 34));
         BotaoImprimir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoImprimir.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imprimir.png"))); // NOI18N
+        BotaoImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Imprimir.png"))); // NOI18N
         BotaoImprimir.setText("Imprimir");
         BotaoImprimir.setBorder(null);
         BotaoImprimir.setBorderPainted(false);
@@ -220,9 +220,7 @@ public class TabelaMembros extends javax.swing.JPanel {
             }
         });
 
-        TabelaMembros.setBackground(new java.awt.Color(255, 255, 255));
         TabelaMembros.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaMembros.setForeground(new java.awt.Color(0, 0, 0));
         TabelaMembros.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -248,7 +246,6 @@ public class TabelaMembros extends javax.swing.JPanel {
         });
         TabelaMembros.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaMembros.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaMembros.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaMembros.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaMembrosMouseClicked(evt);
@@ -276,7 +273,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         Adicionar.setBackground(new java.awt.Color(1, 1, 34));
         Adicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Adicionar.setForeground(new java.awt.Color(255, 255, 255));
-        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/AdicionarMembro.png"))); // NOI18N
+        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/AdicionarMembro.png"))); // NOI18N
         Adicionar.setText("Adicionar");
         Adicionar.setBorder(null);
         Adicionar.setBorderPainted(false);
@@ -298,7 +295,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
+        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
         BotaoEditar.setText("Editar");
         BotaoEditar.setBorder(null);
         BotaoEditar.setBorderPainted(false);
@@ -320,7 +317,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         Excluir.setBackground(new java.awt.Color(1, 1, 34));
         Excluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Excluir.setForeground(new java.awt.Color(255, 255, 255));
-        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
+        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
         Excluir.setText("Excluir");
         Excluir.setBorder(null);
         Excluir.setBorderPainted(false);
@@ -340,16 +337,12 @@ public class TabelaMembros extends javax.swing.JPanel {
         });
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Membros");
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Localizar:");
 
-        CampoPesquisar.setBackground(new java.awt.Color(255, 255, 255));
         CampoPesquisar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoPesquisar.setForeground(new java.awt.Color(0, 0, 0));
         CampoPesquisar.setSelectionColor(new java.awt.Color(192, 202, 6));
         CampoPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -365,7 +358,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         Buscar.setBackground(new java.awt.Color(1, 1, 34));
         Buscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Buscar.setForeground(new java.awt.Color(255, 255, 255));
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         Buscar.setText("Atualizar");
         Buscar.setBorder(null);
         Buscar.setBorderPainted(false);
@@ -563,7 +556,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         Frente.setBackground(new java.awt.Color(1, 1, 34));
         Frente.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Frente.setForeground(new java.awt.Color(255, 255, 255));
-        Frente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
+        Frente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
         Frente.setBorder(null);
         Frente.setBorderPainted(false);
         Frente.setFocusPainted(false);
@@ -584,7 +577,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         Atras.setBackground(new java.awt.Color(1, 1, 34));
         Atras.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         Atras.setForeground(new java.awt.Color(255, 255, 255));
-        Atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Back_15px.png"))); // NOI18N
+        Atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
         Atras.setBorder(null);
         Atras.setBorderPainted(false);
         Atras.setFocusPainted(false);
@@ -605,7 +598,6 @@ public class TabelaMembros extends javax.swing.JPanel {
         CampoResultados.setEditable(false);
         CampoResultados.setBackground(new java.awt.Color(219, 230, 244));
         CampoResultados.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoResultados.setForeground(new java.awt.Color(0, 0, 0));
         CampoResultados.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         CampoResultados.setText("sdfsdf");
         CampoResultados.setToolTipText("");

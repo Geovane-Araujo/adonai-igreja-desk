@@ -1,5 +1,5 @@
 
-package model.Var;
+package com.adonaisoft.adonaisdesktop.model.Var;
 
 import java.sql.Date;
 

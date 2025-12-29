@@ -1,19 +1,19 @@
 
-package view.relatorios;
+package com.adonaisoft.adonaisdesktop.view.relatorios;
 
-import database.ConexaoBanco;
-import model.Membros;
-import model.ClasseRotas;
-import model.Relatorios;
-import model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Membros;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.Relatorios;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import java.awt.Color;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import net.sf.jasperreports.engine.JRException;
-import view.gerais.TelaRelatorio;
-import view.membros.search.PesquisaMembros;
-import view.membros.form.CadastroMembro;
+import com.adonaisoft.adonaisdesktop.view.gerais.TelaRelatorio;
+import com.adonaisoft.adonaisdesktop.view.membros.search.PesquisaMembros;
+import com.adonaisoft.adonaisdesktop.view.membros.form.CadastroMembro;
 
 
 public class RelatorioMembro extends javax.swing.JDialog {
@@ -55,7 +55,7 @@ public class RelatorioMembro extends javax.swing.JDialog {
         BuscarMembros.setBackground(new java.awt.Color(1, 1, 34));
         BuscarMembros.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarMembros.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarMembros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BuscarMembros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BuscarMembros.setBorder(null);
         BuscarMembros.setBorderPainted(false);
         BuscarMembros.setFocusPainted(false);
@@ -81,17 +81,14 @@ public class RelatorioMembro extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nome Do Membro");
 
-        CampoNomeMembro.setBackground(new java.awt.Color(255, 255, 255));
         CampoNomeMembro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNomeMembro.setForeground(new java.awt.Color(0, 0, 0));
 
         BotaoGerar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoGerar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoGerar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoGerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imprimir.png"))); // NOI18N
+        BotaoGerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Imprimir.png"))); // NOI18N
         BotaoGerar.setText("Gerar");
         BotaoGerar.setBorder(null);
         BotaoGerar.setBorderPainted(false);

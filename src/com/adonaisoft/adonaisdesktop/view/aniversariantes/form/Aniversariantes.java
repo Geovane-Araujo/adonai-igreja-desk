@@ -1,7 +1,7 @@
 
-package view.aniversariantes.form;
+package com.adonaisoft.adonaisdesktop.view.aniversariantes.form;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 
 import java.awt.Color;
 import java.sql.Connection;
@@ -93,12 +93,9 @@ public class Aniversariantes extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Mês do Nascimento:");
 
-        TabelaTurma.setBackground(new java.awt.Color(255, 255, 255));
         TabelaTurma.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaTurma.setForeground(new java.awt.Color(0, 0, 0));
         TabelaTurma.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -124,7 +121,6 @@ public class Aniversariantes extends javax.swing.JDialog {
         });
         TabelaTurma.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaTurma.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaTurma.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaTurma.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaTurmaMouseClicked(evt);
@@ -142,7 +138,7 @@ public class Aniversariantes extends javax.swing.JDialog {
         BotaoSalvar1.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Busacar.png"))); // NOI18N
+        BotaoSalvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Busacar.png"))); // NOI18N
         BotaoSalvar1.setText("Buscar");
         BotaoSalvar1.setBorder(null);
         BotaoSalvar1.setBorderPainted(false);
@@ -161,9 +157,7 @@ public class Aniversariantes extends javax.swing.JDialog {
             }
         });
 
-        CampoMes.setBackground(new java.awt.Color(255, 255, 255));
         CampoMes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoMes.setForeground(new java.awt.Color(0, 0, 0));
         CampoMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" }));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);

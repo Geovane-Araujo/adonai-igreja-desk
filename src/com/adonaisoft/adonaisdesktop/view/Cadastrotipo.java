@@ -1,8 +1,8 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseTipo;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseTipo;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -85,17 +85,14 @@ public class Cadastrotipo extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Descrição:");
 
-        CampoDescricao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDescricao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDescricao.setForeground(new java.awt.Color(0, 0, 0));
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar.setText("Salvar");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -114,9 +111,7 @@ public class Cadastrotipo extends javax.swing.JDialog {
             }
         });
 
-        CampoPlanoContas.setBackground(new java.awt.Color(255, 255, 255));
         CampoPlanoContas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoPlanoContas.setForeground(new java.awt.Color(0, 0, 0));
         CampoPlanoContas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Entradas", "Despesas" }));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);

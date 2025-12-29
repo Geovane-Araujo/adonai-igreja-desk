@@ -1,8 +1,8 @@
 
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
-import database.ConexaoBanco;
-import view.Principal;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.view.Principal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

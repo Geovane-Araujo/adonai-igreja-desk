@@ -1,11 +1,11 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseClasses;
-import model.ClasseTurma;
-import model.VariaveisUniversais;
-import view.membros.search.PesquisaMembros;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseClasses;
+import com.adonaisoft.adonaisdesktop.model.ClasseTurma;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.view.membros.search.PesquisaMembros;
 
 import java.awt.Color;
 import java.sql.Connection;
@@ -200,16 +200,11 @@ public class CadastroTurma extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nome da Classe:");
 
-        CampoClasse.setBackground(new java.awt.Color(255, 255, 255));
         CampoClasse.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoClasse.setForeground(new java.awt.Color(0, 0, 0));
 
-        TabelaTurma.setBackground(new java.awt.Color(255, 255, 255));
         TabelaTurma.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaTurma.setForeground(new java.awt.Color(0, 0, 0));
         TabelaTurma.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -235,7 +230,6 @@ public class CadastroTurma extends javax.swing.JDialog {
         });
         TabelaTurma.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaTurma.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaTurma.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaTurma.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaTurmaMouseClicked(evt);
@@ -253,9 +247,7 @@ public class CadastroTurma extends javax.swing.JDialog {
             TabelaTurma.getColumnModel().getColumn(3).setMaxWidth(0);
         }
 
-        CampoNomeAluno.setBackground(new java.awt.Color(255, 255, 255));
         CampoNomeAluno.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNomeAluno.setForeground(new java.awt.Color(0, 0, 0));
         CampoNomeAluno.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoNomeAlunoKeyPressed(evt);
@@ -264,7 +256,7 @@ public class CadastroTurma extends javax.swing.JDialog {
 
         PesquisarAluno.setBackground(new java.awt.Color(1, 1, 34));
         PesquisarAluno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        PesquisarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        PesquisarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         PesquisarAluno.setBorder(null);
         PesquisarAluno.setBorderPainted(false);
         PesquisarAluno.setFocusPainted(false);
@@ -284,16 +276,16 @@ public class CadastroTurma extends javax.swing.JDialog {
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Nome do Aluno ou Professor:");
 
         BotaoSalvar1.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar1.setText("Salvar");
         BotaoSalvar1.setBorder(null);
         BotaoSalvar1.setBorderPainted(false);
+        BotaoSalvar1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar1.setFocusPainted(false);
         BotaoSalvar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -429,7 +421,7 @@ public class CadastroTurma extends javax.swing.JDialog {
 
         AdicionarAluno.setBackground(new java.awt.Color(1, 1, 34));
         AdicionarAluno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        AdicionarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
+        AdicionarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
         AdicionarAluno.setBorder(null);
         AdicionarAluno.setBorderPainted(false);
         AdicionarAluno.setFocusPainted(false);
@@ -449,7 +441,7 @@ public class CadastroTurma extends javax.swing.JDialog {
 
         ExcluirAluno.setBackground(new java.awt.Color(1, 1, 34));
         ExcluirAluno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        ExcluirAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Delete_15px.png"))); // NOI18N
+        ExcluirAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Delete_15px.png"))); // NOI18N
         ExcluirAluno.setBorder(null);
         ExcluirAluno.setBorderPainted(false);
         ExcluirAluno.setFocusPainted(false);
@@ -470,14 +462,12 @@ public class CadastroTurma extends javax.swing.JDialog {
         Aluno.setBackground(new java.awt.Color(238, 238, 238));
         ProfessorAluno.add(Aluno);
         Aluno.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        Aluno.setForeground(new java.awt.Color(0, 0, 0));
         Aluno.setSelected(true);
         Aluno.setText("Aluno");
 
         Professor.setBackground(new java.awt.Color(238, 238, 238));
         ProfessorAluno.add(Professor);
         Professor.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        Professor.setForeground(new java.awt.Color(0, 0, 0));
         Professor.setText("Professor");
 
         CampoCodigoAluno.setEditable(false);

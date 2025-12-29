@@ -5,14 +5,13 @@
   Versão: 1.0.40
   Data Ultima atualização: 25-02-2020
  */
-package adonaisoft;
+package com.adonaisoft.adonaisdesktop;
 
-import database.ConexaoBanco;
-
-import model.ClasseConfiguracoes;
-import view.CadastroIgreja;
-import view.Login;
-import view.Principal;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseConfiguracoes;
+import com.adonaisoft.adonaisdesktop.view.CadastroIgreja;
+import com.adonaisoft.adonaisdesktop.view.Login;
+import com.adonaisoft.adonaisdesktop.view.Principal;
 import java.sql.SQLException;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;

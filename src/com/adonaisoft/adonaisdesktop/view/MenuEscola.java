@@ -1,7 +1,7 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import java.awt.Color;
 
 
@@ -27,7 +27,7 @@ public class MenuEscola extends javax.swing.JPanel {
         BotaoClasses.setBackground(new java.awt.Color(1, 1, 34));
         BotaoClasses.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoClasses.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoClasses.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_School_26px.png"))); // NOI18N
+        BotaoClasses.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_School_26px.png"))); // NOI18N
         BotaoClasses.setText("Classes");
         BotaoClasses.setBorder(null);
         BotaoClasses.setFocusPainted(false);
@@ -72,13 +72,13 @@ public class MenuEscola extends javax.swing.JPanel {
     private void BotaoClassesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoClassesActionPerformed
       TabelaClasse chamar = new TabelaClasse();
 
-        l = Principal.Painel.getWidth();
-        a = Principal.Painel.getHeight();
+        l = Principal.PainelMenus.getWidth();
+        a = Principal.PainelMenus.getHeight();
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.PainelMenus.removeAll();
+        Principal.PainelMenus.add(chamar);
+        Principal.PainelMenus.revalidate();
+        Principal.PainelMenus.repaint();
         String sql = rota.getTabelaClasses();
         
         chamar.PovoarHistorico();

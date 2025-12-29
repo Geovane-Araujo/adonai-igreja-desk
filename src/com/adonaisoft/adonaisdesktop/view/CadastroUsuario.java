@@ -1,8 +1,8 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseUsuario;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseUsuario;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -109,22 +109,18 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Nome do Usuário");
 
-        campoNome.setBackground(new java.awt.Color(255, 255, 255));
         campoNome.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        campoNome.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Senha:");
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar.setText("Salvar");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -143,25 +139,19 @@ public class CadastroUsuario extends javax.swing.JDialog {
             }
         });
 
-        CampoSenha.setBackground(new java.awt.Color(255, 255, 255));
         CampoSenha.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoSenha.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoConfirmar.setBackground(new java.awt.Color(255, 255, 255));
         CampoConfirmar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoConfirmar.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Confirmar Senha:");
 
         jPanel2.setBackground(new java.awt.Color(238, 238, 238));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true), "Permissões", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 0, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true), "Permissões", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 0, 14))); // NOI18N
 
         Membros.setBackground(new java.awt.Color(238, 238, 238));
         Membros.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Membros.setForeground(new java.awt.Color(0, 0, 0));
         Membros.setText("Membros");
         Membros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,7 +161,6 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         Entradas.setBackground(new java.awt.Color(238, 238, 238));
         Entradas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Entradas.setForeground(new java.awt.Color(0, 0, 0));
         Entradas.setText("Entradas");
         Entradas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,7 +170,6 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         Caixas.setBackground(new java.awt.Color(238, 238, 238));
         Caixas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Caixas.setForeground(new java.awt.Color(0, 0, 0));
         Caixas.setText("Caixas");
         Caixas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,7 +179,6 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         Relatorios.setBackground(new java.awt.Color(238, 238, 238));
         Relatorios.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Relatorios.setForeground(new java.awt.Color(0, 0, 0));
         Relatorios.setText("Relatórios");
         Relatorios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,7 +188,6 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         Despesas.setBackground(new java.awt.Color(238, 238, 238));
         Despesas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Despesas.setForeground(new java.awt.Color(0, 0, 0));
         Despesas.setText("Despesas");
         Despesas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -211,7 +197,6 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         Conffiguracoes.setBackground(new java.awt.Color(238, 238, 238));
         Conffiguracoes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Conffiguracoes.setForeground(new java.awt.Color(0, 0, 0));
         Conffiguracoes.setText("Configurações");
         Conffiguracoes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,7 +206,6 @@ public class CadastroUsuario extends javax.swing.JDialog {
 
         Usuarios.setBackground(new java.awt.Color(238, 238, 238));
         Usuarios.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Usuarios.setForeground(new java.awt.Color(0, 0, 0));
         Usuarios.setText("Usuários");
         Usuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

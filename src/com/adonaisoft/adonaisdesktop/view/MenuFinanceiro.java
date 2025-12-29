@@ -1,7 +1,7 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import java.awt.Color;
 
 
@@ -37,7 +37,7 @@ public class MenuFinanceiro extends javax.swing.JPanel {
         BotaoEntradas.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEntradas.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoEntradas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEntradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Request_Money_23px_1.png"))); // NOI18N
+        BotaoEntradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Request_Money_23px_1.png"))); // NOI18N
         BotaoEntradas.setText("Entradas");
         BotaoEntradas.setBorder(null);
         BotaoEntradas.setFocusPainted(false);
@@ -62,7 +62,7 @@ public class MenuFinanceiro extends javax.swing.JPanel {
         BotaoCaixas1.setBackground(new java.awt.Color(1, 1, 34));
         BotaoCaixas1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoCaixas1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCaixas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Initiate_Money_Transfer_23px_1.png"))); // NOI18N
+        BotaoCaixas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Initiate_Money_Transfer_23px_1.png"))); // NOI18N
         BotaoCaixas1.setText("Despesas");
         BotaoCaixas1.setBorder(null);
         BotaoCaixas1.setFocusPainted(false);
@@ -85,7 +85,7 @@ public class MenuFinanceiro extends javax.swing.JPanel {
         BotaoCaixas.setBackground(new java.awt.Color(1, 1, 34));
         BotaoCaixas.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
+        BotaoCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
         BotaoCaixas.setText("Caixas");
         BotaoCaixas.setBorder(null);
         BotaoCaixas.setFocusPainted(false);
@@ -156,13 +156,13 @@ public class MenuFinanceiro extends javax.swing.JPanel {
 
        TabelaEntradas chamar = new TabelaEntradas();
 
-        l = Principal.Painel.getWidth();
-        a = Principal.Painel.getHeight();
+        l = Principal.PainelMenus.getWidth();
+        a = Principal.PainelMenus.getHeight();
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.PainelMenus.removeAll();
+        Principal.PainelMenus.add(chamar);
+        Principal.PainelMenus.revalidate();
+        Principal.PainelMenus.repaint();
         String sql = rota.getRTTabEntradas();
         chamar.Povoar(sql);
         
@@ -175,13 +175,13 @@ public class MenuFinanceiro extends javax.swing.JPanel {
        TabelaCaixas chamar = new TabelaCaixas();
         //chamar.setLocation(5, 5);
         
-         l = Principal.Painel.getWidth();
-         a = Principal.Painel.getHeight();
+         l = Principal.PainelMenus.getWidth();
+         a = Principal.PainelMenus.getHeight();
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.PainelMenus.removeAll();
+        Principal.PainelMenus.add(chamar);
+        Principal.PainelMenus.revalidate();
+        Principal.PainelMenus.repaint();
         String sql = rota.getRTCaixa();
         String sq = rota.getRTCXHistorico();
         chamar.povoarTabela(sql);
@@ -202,13 +202,13 @@ public class MenuFinanceiro extends javax.swing.JPanel {
         TelaDespesas chamar = new TelaDespesas();
         
         
-        int l = Principal.Painel.getWidth();
-        int a = Principal.Painel.getHeight();
+        int l = Principal.PainelMenus.getWidth();
+        int a = Principal.PainelMenus.getHeight();
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.PainelMenus.removeAll();
+        Principal.PainelMenus.add(chamar);
+        Principal.PainelMenus.revalidate();
+        Principal.PainelMenus.repaint();
 
         chamar.TabelaTodas(rota.getRTDespesasTodas());
         chamar.TabelaPendentes(rota.getRTDespesasPendentes());

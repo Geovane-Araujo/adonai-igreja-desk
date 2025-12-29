@@ -1,12 +1,12 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
 import Converter.Virgula;
-import model.ClasseDespesas;
-import model.ClasseUsuario;
-import model.Var.VarDespesas;
+import com.adonaisoft.adonaisdesktop.model.ClasseDespesas;
+import com.adonaisoft.adonaisdesktop.model.ClasseUsuario;
+import com.adonaisoft.adonaisdesktop.model.Var.VarDespesas;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -108,7 +108,6 @@ public class PagarDespesa extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Descrição");
 
         CampoDescricao.setEditable(false);
@@ -117,7 +116,6 @@ public class PagarDespesa extends javax.swing.JDialog {
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Valor Despesa");
 
         CampoValorDespesa.setEditable(false);
@@ -126,13 +124,12 @@ public class PagarDespesa extends javax.swing.JDialog {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data Vencimento: ");
 
         BotaoPagar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoPagar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoPagar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Cash_in_Hand_29px.png"))); // NOI18N
+        BotaoPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
         BotaoPagar.setText("Pagar");
         BotaoPagar.setBorder(null);
         BotaoPagar.setBorderPainted(false);
@@ -157,7 +154,6 @@ public class PagarDespesa extends javax.swing.JDialog {
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Caixa:");
 
         CampoUsuário.setEditable(false);
@@ -166,12 +162,10 @@ public class PagarDespesa extends javax.swing.JDialog {
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Usuário:");
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Data Pagamento:");
 
         CampoDataVencimento.setBackground(new java.awt.Color(255, 255, 255));

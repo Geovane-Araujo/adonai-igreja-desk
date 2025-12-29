@@ -1,8 +1,8 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseCargo;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseCargo;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -77,9 +77,7 @@ public class TabelaCadCargo extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
 
-        tabelaCargo.setBackground(new java.awt.Color(255, 255, 255));
         tabelaCargo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        tabelaCargo.setForeground(new java.awt.Color(0, 0, 0));
         tabelaCargo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -105,7 +103,6 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         });
         tabelaCargo.setGridColor(new java.awt.Color(255, 255, 255));
         tabelaCargo.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        tabelaCargo.setSelectionForeground(new java.awt.Color(0, 0, 0));
         tabelaCargo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabelaCargoMouseClicked(evt);
@@ -124,7 +121,7 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         BotaoAdicionar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAdicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoAdicionar.setText("Adicionar");
         BotaoAdicionar.setBorder(null);
         BotaoAdicionar.setBorderPainted(false);
@@ -146,7 +143,7 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
+        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
         BotaoEditar.setText("Editar");
         BotaoEditar.setBorder(null);
         BotaoEditar.setBorderPainted(false);
@@ -168,7 +165,7 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         Botaoexcluir.setBackground(new java.awt.Color(1, 1, 34));
         Botaoexcluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Botaoexcluir.setForeground(new java.awt.Color(255, 255, 255));
-        Botaoexcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
+        Botaoexcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
         Botaoexcluir.setText("Excluir");
         Botaoexcluir.setBorder(null);
         Botaoexcluir.setBorderPainted(false);
@@ -188,16 +185,12 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         });
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Cargos");
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Localizar:");
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -212,7 +205,7 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         Buscar.setBackground(new java.awt.Color(1, 1, 34));
         Buscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Buscar.setForeground(new java.awt.Color(255, 255, 255));
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         Buscar.setText("Atualizar");
         Buscar.setBorder(null);
         Buscar.setBorderPainted(false);

@@ -1,8 +1,8 @@
 
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
-import database.ConexaoBanco;
-import view.TabelaCadCargo;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.view.TabelaCadCargo;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

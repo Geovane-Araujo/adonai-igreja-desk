@@ -1,11 +1,11 @@
 
-package view;
-import database.ConexaoBanco;
+package com.adonaisoft.adonaisdesktop.view;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
-import model.ClasseCaixas;
-import model.ClasseRotas;
-import model.ClasseUsuario;
-import model.Relatorios;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.ClasseUsuario;
+import com.adonaisoft.adonaisdesktop.model.Relatorios;
 import java.awt.Color;
 import java.io.IOException;
 import java.sql.Connection;
@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
-import view.relatorios.RelatorioCaixas;
+import com.adonaisoft.adonaisdesktop.view.relatorios.RelatorioCaixas;
 
 public class FecharCaixa extends javax.swing.JDialog {
 
@@ -85,33 +85,28 @@ public class FecharCaixa extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Descrição");
 
         CampoDescricao.setEditable(false);
         CampoDescricao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDescricao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDescricao.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Saldo Inicial:");
 
         CampoSaldoInicial.setEditable(false);
         CampoSaldoInicial.setBackground(new java.awt.Color(255, 255, 255));
         CampoSaldoInicial.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoSaldoInicial.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data Abertura: ");
 
         BotaoFechar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoFechar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoFechar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Password_26px.png"))); // NOI18N
+        BotaoFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Password_26px.png"))); // NOI18N
         BotaoFechar.setText("Fechar Caixa");
         BotaoFechar.setBorder(null);
         BotaoFechar.setBorderPainted(false);
@@ -133,46 +128,37 @@ public class FecharCaixa extends javax.swing.JDialog {
         CampoEntradas.setEditable(false);
         CampoEntradas.setBackground(new java.awt.Color(255, 255, 255));
         CampoEntradas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEntradas.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Entradas:");
 
         CampoSaidas.setEditable(false);
         CampoSaidas.setBackground(new java.awt.Color(255, 255, 255));
         CampoSaidas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoSaidas.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel8.setBackground(new java.awt.Color(0, 0, 0));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Saídas:");
 
         CampoTotal.setEditable(false);
         CampoTotal.setBackground(new java.awt.Color(255, 255, 255));
         CampoTotal.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoTotal.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel9.setBackground(new java.awt.Color(0, 0, 0));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Total:");
 
         jLabel10.setBackground(new java.awt.Color(0, 0, 0));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Data Fechamento:");
 
         CampoData.setBackground(new java.awt.Color(255, 255, 255));
-        CampoData.setForeground(new java.awt.Color(0, 0, 0));
         CampoData.setDateFormatString("dd/MM/yyyy");
         CampoData.setEnabled(false);
         CampoData.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 
         CampoDataFechamento.setBackground(new java.awt.Color(255, 255, 255));
-        CampoDataFechamento.setForeground(new java.awt.Color(0, 0, 0));
         CampoDataFechamento.setDateFormatString("dd/MM/yyyy");
         CampoDataFechamento.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 

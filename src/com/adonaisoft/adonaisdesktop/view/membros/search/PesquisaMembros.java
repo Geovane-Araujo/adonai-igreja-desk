@@ -1,12 +1,12 @@
 
-package view.membros.search;
+package com.adonaisoft.adonaisdesktop.view.membros.search;
 
-import database.ConexaoBanco;
-import model.Var.VarEntradas;
-import model.VariaveisUniversais;
-import view.CadastroEntrada;
-import view.CadastroTurma;
-import view.relatorios.RelatorioMembro;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Var.VarEntradas;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.view.CadastroEntrada;
+import com.adonaisoft.adonaisdesktop.view.CadastroTurma;
+import com.adonaisoft.adonaisdesktop.view.relatorios.RelatorioMembro;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

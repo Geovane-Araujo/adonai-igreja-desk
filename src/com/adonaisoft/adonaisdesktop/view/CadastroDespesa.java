@@ -1,14 +1,14 @@
 
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
 import Converter.Virgula;
 
-import model.ClasseDespesas;
-import model.Var.VarDespesas;
-import model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.model.ClasseDespesas;
+import com.adonaisoft.adonaisdesktop.model.Var.VarDespesas;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -137,31 +137,22 @@ public class CadastroDespesa extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Descrição:");
 
-        CampoDescricao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDescricao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDescricao.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Valor:");
 
-        CampoValor.setBackground(new java.awt.Color(255, 255, 255));
         CampoValor.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoValor.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data: ");
 
-        CampoObs.setBackground(new java.awt.Color(255, 255, 255));
         CampoObs.setColumns(20);
         CampoObs.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoObs.setForeground(new java.awt.Color(0, 0, 0));
         CampoObs.setRows(2);
         CampoObs.setWrapStyleWord(true);
         CampoObs.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 0, true));
@@ -169,13 +160,12 @@ public class CadastroDespesa extends javax.swing.JDialog {
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Observações:");
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar.setText("Salvar");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -196,7 +186,6 @@ public class CadastroDespesa extends javax.swing.JDialog {
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Data Vencimento:");
 
         CampoStatus.setEditable(false);
@@ -208,13 +197,12 @@ public class CadastroDespesa extends javax.swing.JDialog {
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Caixa:");
 
         BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
         BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BuscarCaixas.setBorder(null);
         BuscarCaixas.setBorderPainted(false);
         BuscarCaixas.setFocusPainted(false);
@@ -232,9 +220,7 @@ public class CadastroDespesa extends javax.swing.JDialog {
             }
         });
 
-        CampoCaixaDespesa.setBackground(new java.awt.Color(255, 255, 255));
         CampoCaixaDespesa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCaixaDespesa.setForeground(new java.awt.Color(0, 0, 0));
         CampoCaixaDespesa.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoCaixaDespesaKeyPressed(evt);
@@ -243,18 +229,16 @@ public class CadastroDespesa extends javax.swing.JDialog {
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Tipo:");
 
         CampoDataVencimento.setBackground(new java.awt.Color(255, 255, 255));
-        CampoDataVencimento.setForeground(new java.awt.Color(0, 0, 0));
         CampoDataVencimento.setDateFormatString("dd/MM/yyyy");
         CampoDataVencimento.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 
         BotaoAdicionarCargo.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAdicionarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BotaoAdicionarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
+        BotaoAdicionarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
         BotaoAdicionarCargo.setBorder(null);
         BotaoAdicionarCargo.setBorderPainted(false);
         BotaoAdicionarCargo.setFocusPainted(false);
@@ -275,7 +259,7 @@ public class CadastroDespesa extends javax.swing.JDialog {
         BotaoBuscarCargo.setBackground(new java.awt.Color(1, 1, 34));
         BotaoBuscarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BotaoBuscarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BotaoBuscarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BotaoBuscarCargo.setBorder(null);
         BotaoBuscarCargo.setBorderPainted(false);
         BotaoBuscarCargo.setFocusPainted(false);
@@ -293,9 +277,7 @@ public class CadastroDespesa extends javax.swing.JDialog {
             }
         });
 
-        CampoTipo.setBackground(new java.awt.Color(255, 255, 255));
         CampoTipo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoTipo.setForeground(new java.awt.Color(0, 0, 0));
         CampoTipo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoTipoKeyPressed(evt);
@@ -303,7 +285,6 @@ public class CadastroDespesa extends javax.swing.JDialog {
         });
 
         CampoDataVencimento1.setBackground(new java.awt.Color(255, 255, 255));
-        CampoDataVencimento1.setForeground(new java.awt.Color(0, 0, 0));
         CampoDataVencimento1.setDateFormatString("dd/MM/yyyy");
         CampoDataVencimento1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 

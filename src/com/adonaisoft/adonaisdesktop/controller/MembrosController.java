@@ -1,7 +1,7 @@
-package controller;
+package com.adonaisoft.adonaisdesktop.controller;
 
-import database.ConexaoBanco;
-import model.Membros;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Membros;
 
 import javax.swing.*;
 import java.sql.Connection;

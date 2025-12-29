@@ -1,13 +1,13 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseCaixas;
-import model.ClasseDespesas;
-import model.Var.VarDespesas;
-import model.Var.VarEntradas;
-import model.VariaveisUniversais;
-import view.relatorios.RelatorioCaixas;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.ClasseDespesas;
+import com.adonaisoft.adonaisdesktop.model.Var.VarDespesas;
+import com.adonaisoft.adonaisdesktop.model.Var.VarEntradas;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.view.relatorios.RelatorioCaixas;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
 import java.awt.Color;
 
@@ -39,7 +39,7 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
         BotaoIgreja.setBackground(new java.awt.Color(1, 1, 34));
         BotaoIgreja.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoIgreja.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoIgreja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Menorah_26px.png"))); // NOI18N
+        BotaoIgreja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Menorah_26px.png"))); // NOI18N
         BotaoIgreja.setText(" Igreja");
         BotaoIgreja.setBorder(null);
         BotaoIgreja.setFocusPainted(false);
@@ -62,7 +62,7 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
         BotaoUsuario.setBackground(new java.awt.Color(1, 1, 34));
         BotaoUsuario.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Male_User_26px_1.png"))); // NOI18N
+        BotaoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Male_User_26px_1.png"))); // NOI18N
         BotaoUsuario.setText("Usuarios");
         BotaoUsuario.setBorder(null);
         BotaoUsuario.setFocusPainted(false);
@@ -96,7 +96,7 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
         BotaoGlobais.setBackground(new java.awt.Color(1, 1, 34));
         BotaoGlobais.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoGlobais.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoGlobais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Settings_30px.png"))); // NOI18N
+        BotaoGlobais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Settings_30px.png"))); // NOI18N
         BotaoGlobais.setText("Globais");
         BotaoGlobais.setBorder(null);
         BotaoGlobais.setFocusPainted(false);
@@ -167,13 +167,13 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
        TabelaConfiguracoes chamar = new TabelaConfiguracoes();
         
         
-         l = Principal.Painel.getWidth();
-         a = Principal.Painel.getHeight();
+         l = Principal.PainelMenus.getWidth();
+         a = Principal.PainelMenus.getHeight();
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.PainelMenus.removeAll();
+        Principal.PainelMenus.add(chamar);
+        Principal.PainelMenus.revalidate();
+        Principal.PainelMenus.repaint();
         String sql = "SELECT * FROM Configuracoes";        
         chamar.Preencher(sql);
         
@@ -184,13 +184,13 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
         TabelaUsuarios chamar = new TabelaUsuarios();
        
         
-        l = Principal.Painel.getWidth();
-        a = Principal.Painel.getHeight(); 
+        l = Principal.PainelMenus.getWidth();
+        a = Principal.PainelMenus.getHeight(); 
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.PainelMenus.removeAll();
+        Principal.PainelMenus.add(chamar);
+        Principal.PainelMenus.revalidate();
+        Principal.PainelMenus.repaint();
         
         String sql = "SELECT CodigoUsuario,NomeUsuario FROM Usuario ORDER BY CodigoUsuario DESC";
         chamar.Povoar(sql);

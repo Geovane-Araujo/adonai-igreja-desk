@@ -1,13 +1,13 @@
 
-package view.membros.form;
+package com.adonaisoft.adonaisdesktop.view.membros.form;
 
-import controller.MembrosController;
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.controller.MembrosController;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
 import Converter.ImagemBd;
-import model.Membros;
-import model.Relatorios;
-import model.clsRedimensionarImagem;
+import com.adonaisoft.adonaisdesktop.model.Membros;
+import com.adonaisoft.adonaisdesktop.model.Relatorios;
+import com.adonaisoft.adonaisdesktop.model.clsRedimensionarImagem;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,8 +24,8 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import net.sf.jasperreports.engine.JRException;
-import view.CadastroCargo;
-import view.PesquisaCargo;
+import com.adonaisoft.adonaisdesktop.view.CadastroCargo;
+import com.adonaisoft.adonaisdesktop.view.PesquisaCargo;
 
 
 public class CadastroMembro extends javax.swing.JDialog {
@@ -139,7 +139,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         BotaoImprimir.setBackground(new java.awt.Color(1, 1, 34));
         BotaoImprimir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoImprimir.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imprimir.png"))); // NOI18N
+        BotaoImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Imprimir.png"))); // NOI18N
         BotaoImprimir.setText("Imprimir");
         BotaoImprimir.setBorder(null);
         BotaoImprimir.setBorderPainted(false);
@@ -167,7 +167,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         Salvar1.setBackground(new java.awt.Color(1, 1, 34));
         Salvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Salvar1.setForeground(new java.awt.Color(255, 255, 255));
-        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         Salvar1.setText("Salvar");
         Salvar1.setBorder(null);
         Salvar1.setBorderPainted(false);
@@ -186,13 +186,10 @@ public class CadastroMembro extends javax.swing.JDialog {
             }
         });
 
-        CampoNome.setBackground(new java.awt.Color(255, 255, 255));
         CampoNome.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNome.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nome Completo:");
 
         labelImagem.setBackground(new java.awt.Color(255, 255, 255));
@@ -202,7 +199,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         BuscarImg.setBackground(new java.awt.Color(1, 1, 34));
         BuscarImg.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarImg.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Download_15px.png"))); // NOI18N
+        BuscarImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Download_15px.png"))); // NOI18N
         BuscarImg.setBorder(null);
         BuscarImg.setBorderPainted(false);
         BuscarImg.setFocusPainted(false);
@@ -221,18 +218,14 @@ public class CadastroMembro extends javax.swing.JDialog {
         });
 
         CampoDtNasc.setBackground(new java.awt.Color(255, 255, 255));
-        CampoDtNasc.setForeground(new java.awt.Color(0, 0, 0));
         CampoDtNasc.setDateFormatString("dd/MM/yyyy");
         CampoDtNasc.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nascimento");
 
-        CampoTelefone.setBackground(new java.awt.Color(255, 255, 255));
         CampoTelefone.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        CampoTelefone.setForeground(new java.awt.Color(0, 0, 0));
         try {
             CampoTelefone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##)#####-####")));
         } catch (java.text.ParseException ex) {
@@ -242,83 +235,58 @@ public class CadastroMembro extends javax.swing.JDialog {
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Telefone:");
 
-        CampoEmail.setBackground(new java.awt.Color(255, 255, 255));
         CampoEmail.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEmail.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel14.setBackground(new java.awt.Color(255, 255, 255));
         jLabel14.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Email:");
 
-        CampoEstadoCivil.setBackground(new java.awt.Color(255, 255, 255));
         CampoEstadoCivil.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEstadoCivil.setForeground(new java.awt.Color(0, 0, 0));
         CampoEstadoCivil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro(a)", "Casado(a)", "Viúvo(a)", "Divorciado(a)", "Uniao Estavel" }));
         CampoEstadoCivil.setBorder(null);
 
         jLabel16.setBackground(new java.awt.Color(255, 255, 255));
         jLabel16.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Estado Civil:");
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Número:");
 
-        CampoEndereco.setBackground(new java.awt.Color(255, 255, 255));
         CampoEndereco.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEndereco.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Endereço:");
 
-        CampoNumero.setBackground(new java.awt.Color(255, 255, 255));
         CampoNumero.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNumero.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoBairro.setBackground(new java.awt.Color(255, 255, 255));
         CampoBairro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoBairro.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Bairro:");
 
-        CampoCidade.setBackground(new java.awt.Color(255, 255, 255));
         CampoCidade.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCidade.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Cidade:");
 
-        CampoEstado.setBackground(new java.awt.Color(255, 255, 255));
-        CampoEstado.setForeground(new java.awt.Color(0, 0, 0));
         CampoEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE" }));
         CampoEstado.setBorder(null);
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Estado:");
 
         jLabel15.setBackground(new java.awt.Color(255, 255, 255));
         jLabel15.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("CEP:");
 
-        CampoCep.setBackground(new java.awt.Color(255, 255, 255));
         CampoCep.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        CampoCep.setForeground(new java.awt.Color(0, 0, 0));
         try {
             CampoCep.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
         } catch (java.text.ParseException ex) {
@@ -328,7 +296,6 @@ public class CadastroMembro extends javax.swing.JDialog {
 
         CampoAtivo.setBackground(new java.awt.Color(238, 238, 238));
         CampoAtivo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoAtivo.setForeground(new java.awt.Color(0, 0, 0));
         CampoAtivo.setSelected(true);
         CampoAtivo.setText("Ativo");
         CampoAtivo.addActionListener(new java.awt.event.ActionListener() {
@@ -339,12 +306,10 @@ public class CadastroMembro extends javax.swing.JDialog {
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Cargo:");
 
         CampoBatizado.setBackground(new java.awt.Color(238, 238, 238));
         CampoBatizado.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoBatizado.setForeground(new java.awt.Color(0, 0, 0));
         CampoBatizado.setText("Batizado");
         CampoBatizado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -354,12 +319,9 @@ public class CadastroMembro extends javax.swing.JDialog {
 
         jLabel13.setBackground(new java.awt.Color(255, 255, 255));
         jLabel13.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Data de Batismo:");
 
-        CampoDataBatismo.setBackground(new java.awt.Color(255, 255, 255));
         CampoDataBatismo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        CampoDataBatismo.setForeground(new java.awt.Color(0, 0, 0));
         try {
             CampoDataBatismo.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
@@ -367,23 +329,20 @@ public class CadastroMembro extends javax.swing.JDialog {
         }
         CampoDataBatismo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 
-        CampoObservacoes.setBackground(new java.awt.Color(255, 255, 255));
         CampoObservacoes.setColumns(20);
         CampoObservacoes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoObservacoes.setForeground(new java.awt.Color(0, 0, 0));
         CampoObservacoes.setLineWrap(true);
         CampoObservacoes.setRows(5);
         jScrollPane1.setViewportView(CampoObservacoes);
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Observações:");
 
         BotaoAdicionarCargo.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAdicionarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BotaoAdicionarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
+        BotaoAdicionarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
         BotaoAdicionarCargo.setBorder(null);
         BotaoAdicionarCargo.setBorderPainted(false);
         BotaoAdicionarCargo.setFocusPainted(false);
@@ -404,7 +363,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         BotaoBuscarCargo.setBackground(new java.awt.Color(1, 1, 34));
         BotaoBuscarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BotaoBuscarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BotaoBuscarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BotaoBuscarCargo.setBorder(null);
         BotaoBuscarCargo.setBorderPainted(false);
         BotaoBuscarCargo.setFocusPainted(false);
@@ -422,9 +381,7 @@ public class CadastroMembro extends javax.swing.JDialog {
             }
         });
 
-        CampoCargo.setBackground(new java.awt.Color(255, 255, 255));
         CampoCargo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCargo.setForeground(new java.awt.Color(0, 0, 0));
         CampoCargo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoCargoKeyPressed(evt);
@@ -434,7 +391,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         Delimagen.setBackground(new java.awt.Color(1, 1, 34));
         Delimagen.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         Delimagen.setForeground(new java.awt.Color(255, 255, 255));
-        Delimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Delete_15px.png"))); // NOI18N
+        Delimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Delete_15px.png"))); // NOI18N
         Delimagen.setBorder(null);
         Delimagen.setBorderPainted(false);
         Delimagen.setFocusPainted(false);
@@ -479,7 +436,7 @@ public class CadastroMembro extends javax.swing.JDialog {
                                         .addGap(218, 218, 218)
                                         .addComponent(jLabel10))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(CampoEndereco, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE)
+                                        .addComponent(CampoEndereco)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(CampoNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(10, 10, 10)

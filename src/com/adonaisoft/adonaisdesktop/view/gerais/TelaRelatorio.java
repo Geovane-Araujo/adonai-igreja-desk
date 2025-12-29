@@ -1,9 +1,9 @@
 
-package view.gerais;
+package com.adonaisoft.adonaisdesktop.view.gerais;
 
-import model.VariaveisUniversais;
-import view.relatorios.RelatorioCaixas;
-import view.relatorios.RelatorioMembro;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.view.relatorios.RelatorioCaixas;
+import com.adonaisoft.adonaisdesktop.view.relatorios.RelatorioMembro;
 
 import java.awt.Color;
 

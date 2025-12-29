@@ -1,8 +1,8 @@
 
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
-import database.ConexaoBanco;
-import model.Var.VarDespesas;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Var.VarDespesas;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

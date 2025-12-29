@@ -1,8 +1,8 @@
 
-package view.contatoIgrejas.search;
+package com.adonaisoft.adonaisdesktop.view.contatoIgrejas.search;
 
-import database.ConexaoBanco;
-import view.gerais.TelaEmail;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.view.gerais.TelaEmail;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

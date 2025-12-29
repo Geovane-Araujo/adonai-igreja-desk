@@ -1,11 +1,11 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseChamada;
-import model.ClasseClasses;
-import model.ClasseRotas;
-import model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseChamada;
+import com.adonaisoft.adonaisdesktop.model.ClasseClasses;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -133,9 +133,7 @@ public class TabelaClasse extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
 
-        TabelaClasses.setBackground(new java.awt.Color(255, 255, 255));
         TabelaClasses.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaClasses.setForeground(new java.awt.Color(0, 0, 0));
         TabelaClasses.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -161,7 +159,6 @@ public class TabelaClasse extends javax.swing.JPanel {
         });
         TabelaClasses.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaClasses.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaClasses.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaClasses.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaClassesMouseClicked(evt);
@@ -180,7 +177,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         BotaoAdicionar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAdicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoAdicionar.setText("Adicionar");
         BotaoAdicionar.setBorder(null);
         BotaoAdicionar.setBorderPainted(false);
@@ -202,7 +199,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Editar.png"))); // NOI18N
+        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
         BotaoEditar.setText("Editar");
         BotaoEditar.setBorder(null);
         BotaoEditar.setBorderPainted(false);
@@ -224,7 +221,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         Botaoexcluir.setBackground(new java.awt.Color(1, 1, 34));
         Botaoexcluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Botaoexcluir.setForeground(new java.awt.Color(255, 255, 255));
-        Botaoexcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Excluir.png"))); // NOI18N
+        Botaoexcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
         Botaoexcluir.setText("Excluir");
         Botaoexcluir.setBorder(null);
         Botaoexcluir.setBorderPainted(false);
@@ -244,16 +241,12 @@ public class TabelaClasse extends javax.swing.JPanel {
         });
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Classes");
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Localizar:");
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -268,7 +261,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         BotaoBuscar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoBuscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoBuscar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atualizar.png"))); // NOI18N
+        BotaoBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
         BotaoBuscar.setText("Atualizar");
         BotaoBuscar.setBorder(null);
         BotaoBuscar.setBorderPainted(false);
@@ -290,7 +283,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         BotaoTurma.setBackground(new java.awt.Color(1, 1, 34));
         BotaoTurma.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoTurma.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoTurma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Classroom_26px.png"))); // NOI18N
+        BotaoTurma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Classroom_26px.png"))); // NOI18N
         BotaoTurma.setText("Turma");
         BotaoTurma.setBorder(null);
         BotaoTurma.setBorderPainted(false);
@@ -312,7 +305,7 @@ public class TabelaClasse extends javax.swing.JPanel {
         BotaoChamada.setBackground(new java.awt.Color(1, 1, 34));
         BotaoChamada.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoChamada.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoChamada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Leadership_26px.png"))); // NOI18N
+        BotaoChamada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Leadership_26px.png"))); // NOI18N
         BotaoChamada.setText("Chamada");
         BotaoChamada.setBorder(null);
         BotaoChamada.setBorderPainted(false);
@@ -388,9 +381,7 @@ public class TabelaClasse extends javax.swing.JPanel {
 
         jPanel3.setBackground(new java.awt.Color(219, 230, 244));
 
-        TabelaHistorico.setBackground(new java.awt.Color(255, 255, 255));
         TabelaHistorico.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        TabelaHistorico.setForeground(new java.awt.Color(0, 0, 0));
         TabelaHistorico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -416,7 +407,6 @@ public class TabelaClasse extends javax.swing.JPanel {
         });
         TabelaHistorico.setGridColor(new java.awt.Color(255, 255, 255));
         TabelaHistorico.setSelectionBackground(new java.awt.Color(219, 230, 244));
-        TabelaHistorico.setSelectionForeground(new java.awt.Color(0, 0, 0));
         TabelaHistorico.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TabelaHistoricoMouseClicked(evt);
@@ -438,16 +428,12 @@ public class TabelaClasse extends javax.swing.JPanel {
         }
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Histórico de Chamadas");
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Localizar:");
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
         jTextField3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);

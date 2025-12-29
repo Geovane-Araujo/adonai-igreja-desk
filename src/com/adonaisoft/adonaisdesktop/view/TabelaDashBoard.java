@@ -1,12 +1,11 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import model.ClasseCaixas;
-import model.VariaveisUniversais;
-import view.membros.list.TabelaMembros;
-
-import static view.Principal.h;
-import static view.Principal.w;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.view.membros.list.TabelaMembros;
+import static com.adonaisoft.adonaisdesktop.view.Principal.h;
+import static com.adonaisoft.adonaisdesktop.view.Principal.w;
 import java.awt.Color;
 import java.text.DecimalFormat;
 

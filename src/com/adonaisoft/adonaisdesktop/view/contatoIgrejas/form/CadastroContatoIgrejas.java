@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.contatoIgrejas.form;
+package com.adonaisoft.adonaisdesktop.view.contatoIgrejas.form;
 
-import controller.IgrejaController;
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.controller.IgrejaController;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.Data;
-import model.Igrejas;
-import model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.Igrejas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -92,7 +92,7 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
         Salvar1.setBackground(new java.awt.Color(1, 1, 34));
         Salvar1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         Salvar1.setForeground(new java.awt.Color(255, 255, 255));
-        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         Salvar1.setText("Salvar");
         Salvar1.setBorder(null);
         Salvar1.setBorderPainted(false);
@@ -111,37 +111,25 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
             }
         });
 
-        CampoCidade.setBackground(new java.awt.Color(255, 255, 255));
         CampoCidade.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCidade.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Cidade:");
 
-        CampoEndereco.setBackground(new java.awt.Color(255, 255, 255));
         CampoEndereco.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEndereco.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Endereço:");
 
-        CampoNumero.setBackground(new java.awt.Color(255, 255, 255));
         CampoNumero.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNumero.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoEstado.setBackground(new java.awt.Color(255, 255, 255));
         CampoEstado.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEstado.setForeground(new java.awt.Color(0, 0, 0));
         CampoEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE" }));
         CampoEstado.setBorder(null);
 
-        CampoCep.setBackground(new java.awt.Color(255, 255, 255));
         CampoCep.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        CampoCep.setForeground(new java.awt.Color(0, 0, 0));
         try {
             CampoCep.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
         } catch (java.text.ParseException ex) {
@@ -151,35 +139,25 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Estado:");
 
         jLabel15.setBackground(new java.awt.Color(255, 255, 255));
         jLabel15.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("CEP:");
 
-        CampoBairro.setBackground(new java.awt.Color(255, 255, 255));
         CampoBairro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoBairro.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Bairro:");
 
         jLabel10.setBackground(new java.awt.Color(255, 255, 255));
         jLabel10.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Número:");
 
-        CampoEmail.setBackground(new java.awt.Color(255, 255, 255));
         CampoEmail.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoEmail.setForeground(new java.awt.Color(0, 0, 0));
 
-        CampoTelefone.setBackground(new java.awt.Color(255, 255, 255));
         CampoTelefone.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        CampoTelefone.setForeground(new java.awt.Color(0, 0, 0));
         try {
             CampoTelefone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##)#####-####")));
         } catch (java.text.ParseException ex) {
@@ -189,30 +167,22 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
 
         jLabel14.setBackground(new java.awt.Color(255, 255, 255));
         jLabel14.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("E-Mail:");
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Telefone:");
 
-        CamoNomeIgreja.setBackground(new java.awt.Color(255, 255, 255));
         CamoNomeIgreja.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CamoNomeIgreja.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nome da igreja:");
 
-        CampopastorResponsavel.setBackground(new java.awt.Color(255, 255, 255));
         CampopastorResponsavel.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampopastorResponsavel.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nome Pastor Responsável:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

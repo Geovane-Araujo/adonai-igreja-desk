@@ -1,12 +1,12 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
-import model.ClasseCaixas;
-import model.ClasseUsuario;
-import model.VariaveisUniversais;
-import view.gerais.TelaRelatorio;
-import view.membros.list.TabelaMembros;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.ClasseUsuario;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.view.gerais.TelaRelatorio;
+import com.adonaisoft.adonaisdesktop.view.membros.list.TabelaMembros;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -37,8 +37,8 @@ public class Principal extends javax.swing.JFrame {
    
    public Principal() {
         initComponents();
-       w = Painel.getWidth();
-       h = Painel.getHeight();
+       w = painel.getWidth();
+       h = painel.getHeight();
        TabelaMembros tabMen = new TabelaMembros();
        
        int tm,ta,ti;
@@ -106,7 +106,7 @@ public class Principal extends javax.swing.JFrame {
         BotaoSobre = new javax.swing.JButton();
         PainelPrincipal = new javax.swing.JPanel();
         PainelMenus = new javax.swing.JPanel();
-        Painel = new javax.swing.JPanel();
+        painel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
@@ -356,10 +356,9 @@ public class Principal extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        Painel.setBackground(new java.awt.Color(219, 230, 244));
+        painel.setBackground(new java.awt.Color(219, 230, 244));
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("DashBoard");
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
@@ -697,7 +696,7 @@ public class Principal extends javax.swing.JFrame {
         Adicionar.setBackground(new java.awt.Color(1, 1, 34));
         Adicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         Adicionar.setForeground(new java.awt.Color(255, 255, 255));
-        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Busacar.png"))); // NOI18N
+        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Busacar.png"))); // NOI18N
         Adicionar.setText("Buscar Saldo");
         Adicionar.setBorder(null);
         Adicionar.setBorderPainted(false);
@@ -725,9 +724,9 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -736,7 +735,6 @@ public class Principal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(305, 305, 305)))
                 .addContainerGap())
@@ -759,27 +757,25 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(18, 18, 18))
         );
 
-        javax.swing.GroupLayout PainelLayout = new javax.swing.GroupLayout(Painel);
-        Painel.setLayout(PainelLayout);
-        PainelLayout.setHorizontalGroup(
-            PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PainelLayout.createSequentialGroup()
-                .addGroup(PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PainelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PainelLayout.createSequentialGroup()
-                        .addGap(167, 167, 167)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(178, Short.MAX_VALUE))
-        );
-        PainelLayout.setVerticalGroup(
-            PainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PainelLayout.createSequentialGroup()
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
+        javax.swing.GroupLayout painelLayout = new javax.swing.GroupLayout(painel);
+        painel.setLayout(painelLayout);
+        painelLayout.setHorizontalGroup(
+            painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelLayout.createSequentialGroup()
+                .addGap(192, 192, 192)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(153, Short.MAX_VALUE))
+            .addGroup(painelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        painelLayout.setVerticalGroup(
+            painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelLayout.createSequentialGroup()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(85, 85, 85)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
         );
 
         NomeUsuario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
@@ -798,7 +794,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(PainelPrincipalLayout.createSequentialGroup()
                 .addComponent(PainelMenus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(PainelPrincipalLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(NomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -811,7 +807,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(PainelPrincipalLayout.createSequentialGroup()
                 .addGroup(PainelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PainelMenus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PainelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(NomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -819,7 +815,7 @@ public class Principal extends javax.swing.JFrame {
         );
 
         jLabel1.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sdona.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/sdona.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -835,11 +831,11 @@ public class Principal extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PainelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
+                .addComponent(PainelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -863,14 +859,14 @@ public class Principal extends javax.swing.JFrame {
         
 
         
-        int l = Painel.getWidth();
-        int a = Painel.getHeight();
+        int l = painel.getWidth();
+        int a = painel.getHeight();
         
         
-        Painel.removeAll();
-        Painel.add(ch);
-        Painel.revalidate();
-        Painel.repaint();
+        painel.removeAll();
+        painel.add(ch);
+        painel.revalidate();
+        painel.repaint();
         
        ch.setSize(l  ,a);
     }//GEN-LAST:event_BotaoDashBoardActionPerformed
@@ -996,40 +992,6 @@ public class Principal extends javax.swing.JFrame {
        chamar.setSize(171 ,445);
     }//GEN-LAST:event_BotaoConfiguracoessActionPerformed
 
-    private void CampoEntradasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoEntradasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CampoEntradasActionPerformed
-
-    private void CampoSaídasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoSaídasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CampoSaídasActionPerformed
-
-    private void AdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseEntered
-        Adicionar.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_AdicionarMouseEntered
-
-    private void AdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseExited
-        Adicionar.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_AdicionarMouseExited
-
-    private void AdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdicionarActionPerformed
-        VariaveisUniversais saldo = new VariaveisUniversais();
-        ClasseCaixas caixa = new ClasseCaixas();
-        saldo.setEntrada(3);
-        PesquisaCaixas valor = new PesquisaCaixas(null, true);
-        
-        valor.setVisible(true);
-        caixa.SomarEntradas();
-        caixa.SomarSaidas();
-        caixa.pegarsaldo();
-        total = caixa.getSomaEntradas() - caixa.SomaDespesas + caixa.getSaldoInicial();
-        CampoTotal.setText(String.valueOf(dt.format(total)));
-        CampoEntradas.setText(String.valueOf(dt.format(caixa.getSomaEntradas())));
-        CampoSaídas.setText(String.valueOf(dt.format(caixa.getSomaDespesas())));
-        
-        
-    }//GEN-LAST:event_AdicionarActionPerformed
-
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
  
         preencher();
@@ -1049,9 +1011,42 @@ public class Principal extends javax.swing.JFrame {
         abrir.setVisible(true);
     }//GEN-LAST:event_BotaoSobreActionPerformed
 
+    private void AdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdicionarActionPerformed
+        VariaveisUniversais saldo = new VariaveisUniversais();
+        ClasseCaixas caixa = new ClasseCaixas();
+        saldo.setEntrada(3);
+        PesquisaCaixas valor = new PesquisaCaixas(null, true);
+
+        valor.setVisible(true);
+        caixa.SomarEntradas();
+        caixa.SomarSaidas();
+        caixa.pegarsaldo();
+        total = caixa.getSomaEntradas() - caixa.SomaDespesas + caixa.getSaldoInicial();
+        CampoTotal.setText(String.valueOf(dt.format(total)));
+        CampoEntradas.setText(String.valueOf(dt.format(caixa.getSomaEntradas())));
+        CampoSaídas.setText(String.valueOf(dt.format(caixa.getSomaDespesas())));
+
+    }//GEN-LAST:event_AdicionarActionPerformed
+
+    private void AdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseExited
+        Adicionar.setBackground(new Color(1,1,34));
+    }//GEN-LAST:event_AdicionarMouseExited
+
+    private void AdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseEntered
+        Adicionar.setBackground(new Color(219,230,244));
+    }//GEN-LAST:event_AdicionarMouseEntered
+
     private void CampoTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoTotalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CampoTotalActionPerformed
+
+    private void CampoSaídasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoSaídasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampoSaídasActionPerformed
+
+    private void CampoEntradasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoEntradasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampoEntradasActionPerformed
 
     public void preencher(){
             String sql = "SELECT * FROM Configuracoes WHERE CodiIgreja = 1";
@@ -1125,7 +1120,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel MembrosInativos;
     private javax.swing.JLabel NomeIgreja;
     private javax.swing.JLabel NomeUsuario;
-    public static javax.swing.JPanel Painel;
     public static javax.swing.JPanel PainelMenus;
     public static javax.swing.JPanel PainelPrincipal;
     private javax.swing.JLabel TotalMembros;
@@ -1153,5 +1147,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    public static javax.swing.JPanel painel;
     // End of variables declaration//GEN-END:variables
 }

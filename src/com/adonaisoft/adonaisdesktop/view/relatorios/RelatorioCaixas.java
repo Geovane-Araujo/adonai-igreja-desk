@@ -1,21 +1,21 @@
 
-package view.relatorios;
+package com.adonaisoft.adonaisdesktop.view.relatorios;
 
-import database.ConexaoBanco;
-import model.ClasseCaixas;
-import model.ClasseRotas;
-import model.ClasseTipo;
-import model.Relatorios;
-import model.VariaveisUniversais;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.model.ClasseTipo;
+import com.adonaisoft.adonaisdesktop.model.Relatorios;
+import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import java.awt.Color;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import net.sf.jasperreports.engine.JRException;
-import view.PesquisaCaixas;
-import view.PesquisaTipo;
-import view.gerais.TelaRelatorio;
+import com.adonaisoft.adonaisdesktop.view.PesquisaCaixas;
+import com.adonaisoft.adonaisdesktop.view.PesquisaTipo;
+import com.adonaisoft.adonaisdesktop.view.gerais.TelaRelatorio;
 
 
 public class RelatorioCaixas extends javax.swing.JDialog {
@@ -65,17 +65,14 @@ public class RelatorioCaixas extends javax.swing.JDialog {
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Descrição do Caixa:");
 
-        CampoCaixa.setBackground(new java.awt.Color(255, 255, 255));
         CampoCaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoCaixa.setForeground(new java.awt.Color(0, 0, 0));
 
         BotaoGerar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoGerar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoGerar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoGerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imprimir.png"))); // NOI18N
+        BotaoGerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Imprimir.png"))); // NOI18N
         BotaoGerar.setText("Gerar");
         BotaoGerar.setBorder(null);
         BotaoGerar.setBorderPainted(false);
@@ -97,7 +94,7 @@ public class RelatorioCaixas extends javax.swing.JDialog {
         BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
         BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BuscarCaixas.setBorder(null);
         BuscarCaixas.setBorderPainted(false);
         BuscarCaixas.setFocusPainted(false);
@@ -115,14 +112,12 @@ public class RelatorioCaixas extends javax.swing.JDialog {
             }
         });
 
-        CampoTipo.setBackground(new java.awt.Color(255, 255, 255));
         CampoTipo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoTipo.setForeground(new java.awt.Color(0, 0, 0));
 
         BotaoBuscarTipoRelatorio.setBackground(new java.awt.Color(1, 1, 34));
         BotaoBuscarTipoRelatorio.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BotaoBuscarTipoRelatorio.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarTipoRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BotaoBuscarTipoRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BotaoBuscarTipoRelatorio.setBorder(null);
         BotaoBuscarTipoRelatorio.setBorderPainted(false);
         BotaoBuscarTipoRelatorio.setFocusPainted(false);
@@ -142,7 +137,6 @@ public class RelatorioCaixas extends javax.swing.JDialog {
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Tipo:");
 
         CampoCodigoTipo.setEditable(false);

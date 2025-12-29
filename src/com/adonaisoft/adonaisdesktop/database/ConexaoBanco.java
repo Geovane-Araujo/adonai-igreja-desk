@@ -1,5 +1,5 @@
 
-package database;
+package com.adonaisoft.adonaisdesktop.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

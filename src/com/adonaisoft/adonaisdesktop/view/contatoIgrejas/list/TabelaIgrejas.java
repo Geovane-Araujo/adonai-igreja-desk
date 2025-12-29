@@ -1,13 +1,13 @@
 
-package view.contatoIgrejas.list;
+package com.adonaisoft.adonaisdesktop.view.contatoIgrejas.list;
 
-import controller.IgrejaController;
-import database.ConexaoBanco;
-import model.Igrejas;
-import model.ClasseRotas;
-import view.MenuSecretaria;
-import view.gerais.TelaEmail;
-import view.contatoIgrejas.form.CadastroContatoIgrejas;
+import com.adonaisoft.adonaisdesktop.controller.IgrejaController;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.model.Igrejas;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.view.MenuSecretaria;
+import com.adonaisoft.adonaisdesktop.view.gerais.TelaEmail;
+import com.adonaisoft.adonaisdesktop.view.contatoIgrejas.form.CadastroContatoIgrejas;
 
 import java.awt.Color;
 import java.sql.Connection;

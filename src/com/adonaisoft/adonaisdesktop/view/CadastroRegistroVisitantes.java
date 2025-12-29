@@ -1,9 +1,9 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
 import Converter.DataHora;
-import model.ClasseVisitantes;
+import com.adonaisoft.adonaisdesktop.model.ClasseVisitantes;
 import java.awt.Color;
 import java.util.Date;
 
@@ -65,12 +65,9 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nome do Visitante:");
 
-        CampoNomeVisita.setBackground(new java.awt.Color(255, 255, 255));
         CampoNomeVisita.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoNomeVisita.setForeground(new java.awt.Color(0, 0, 0));
         CampoNomeVisita.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CampoNomeVisitaKeyPressed(evt);
@@ -79,13 +76,12 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Data:");
 
         BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
         BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Salvar.png"))); // NOI18N
+        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
         BotaoSalvar.setText("Salvar");
         BotaoSalvar.setBorder(null);
         BotaoSalvar.setBorderPainted(false);
@@ -106,20 +102,17 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Denominação:");
 
-        CampoDenominacao.setBackground(new java.awt.Color(255, 255, 255));
         CampoDenominacao.setColumns(20);
         CampoDenominacao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CampoDenominacao.setForeground(new java.awt.Color(0, 0, 0));
         CampoDenominacao.setRows(5);
         jScrollPane1.setViewportView(CampoDenominacao);
 
         BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
         BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Search_15px.png"))); // NOI18N
+        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
         BuscarCaixas.setBorder(null);
         BuscarCaixas.setBorderPainted(false);
         BuscarCaixas.setFocusPainted(false);
@@ -138,7 +131,6 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
         });
 
         CampoData.setBackground(new java.awt.Color(255, 255, 255));
-        CampoData.setForeground(new java.awt.Color(0, 0, 0));
         CampoData.setDateFormatString("dd/MM/yyyy");
         CampoData.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
 
@@ -209,9 +201,7 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 255, Short.MAX_VALUE)
         );
 
         pack();

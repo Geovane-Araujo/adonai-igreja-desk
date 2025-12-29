@@ -1,5 +1,5 @@
 
-package model;
+package com.adonaisoft.adonaisdesktop.model;
 
 import java.sql.Date;
 

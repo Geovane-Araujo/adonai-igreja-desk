@@ -1,10 +1,10 @@
 
-package view;
+package com.adonaisoft.adonaisdesktop.view;
 
-import view.aniversariantes.form.Aniversariantes;
-import model.ClasseRotas;
-import view.contatoIgrejas.list.TabelaIgrejas;
-import view.membros.list.TabelaMembros;
+import com.adonaisoft.adonaisdesktop.view.aniversariantes.form.Aniversariantes;
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.view.contatoIgrejas.list.TabelaIgrejas;
+import com.adonaisoft.adonaisdesktop.view.membros.list.TabelaMembros;
 
 import java.awt.Color;
 
@@ -41,7 +41,7 @@ public class MenuSecretaria extends javax.swing.JPanel {
         BotaoVisitantes.setBackground(new java.awt.Color(1, 1, 34));
         BotaoVisitantes.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoVisitantes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoVisitantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Businessman_26px.png"))); // NOI18N
+        BotaoVisitantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Businessman_26px.png"))); // NOI18N
         BotaoVisitantes.setText("Visitantes");
         BotaoVisitantes.setBorder(null);
         BotaoVisitantes.setFocusPainted(false);
@@ -64,7 +64,7 @@ public class MenuSecretaria extends javax.swing.JPanel {
         BotaoMembros.setBackground(new java.awt.Color(1, 1, 34));
         BotaoMembros.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoMembros.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoMembros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Membros.png"))); // NOI18N
+        BotaoMembros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Membros.png"))); // NOI18N
         BotaoMembros.setText("Membros");
         BotaoMembros.setBorder(null);
         BotaoMembros.setFocusPainted(false);
@@ -87,7 +87,7 @@ public class MenuSecretaria extends javax.swing.JPanel {
         BotaoIgrejas.setBackground(new java.awt.Color(1, 1, 34));
         BotaoIgrejas.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoIgrejas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoIgrejas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Cross_26px.png"))); // NOI18N
+        BotaoIgrejas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Cross_26px.png"))); // NOI18N
         BotaoIgrejas.setText("Igrejas");
         BotaoIgrejas.setBorder(null);
         BotaoIgrejas.setFocusPainted(false);
@@ -110,7 +110,7 @@ public class MenuSecretaria extends javax.swing.JPanel {
         BotaoTipos.setBackground(new java.awt.Color(1, 1, 34));
         BotaoTipos.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoTipos.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoTipos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
+        BotaoTipos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
         BotaoTipos.setText(" Tipos Contas");
         BotaoTipos.setBorder(null);
         BotaoTipos.setFocusPainted(false);
@@ -133,7 +133,7 @@ public class MenuSecretaria extends javax.swing.JPanel {
         BotaoCargo.setBackground(new java.awt.Color(1, 1, 34));
         BotaoCargo.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Collaborator_Male_26px.png"))); // NOI18N
+        BotaoCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Collaborator_Male_26px.png"))); // NOI18N
         BotaoCargo.setText("Cargos");
         BotaoCargo.setBorder(null);
         BotaoCargo.setFocusPainted(false);
@@ -156,7 +156,7 @@ public class MenuSecretaria extends javax.swing.JPanel {
         BotaoAniversariantes.setBackground(new java.awt.Color(1, 1, 34));
         BotaoAniversariantes.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         BotaoAniversariantes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAniversariantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8_Birthday_Cake_26px.png"))); // NOI18N
+        BotaoAniversariantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Birthday_Cake_26px.png"))); // NOI18N
         BotaoAniversariantes.setText("Aniversariantes");
         BotaoAniversariantes.setBorder(null);
         BotaoAniversariantes.setFocusPainted(false);
@@ -225,14 +225,14 @@ public class MenuSecretaria extends javax.swing.JPanel {
        TabelaMembros chamar = new TabelaMembros();
         //chamar.setLocation(5, 5);
         
-         l = Principal.Painel.getWidth();
-         a = Principal.Painel.getHeight();
+         l = Principal.painel.getWidth();
+         a = Principal.painel.getHeight();
 
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
         chamar.ContarMembros();
         chamar.ContarAtivos();
         chamar.ContarInativos();
@@ -249,14 +249,14 @@ public class MenuSecretaria extends javax.swing.JPanel {
     private void BotaoVisitantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoVisitantesActionPerformed
         TabelaVisitantes chamar = new TabelaVisitantes();
 
-         l = Principal.Painel.getWidth();
-         a = Principal.Painel.getHeight();
+         l = Principal.painel.getWidth();
+         a = Principal.painel.getHeight();
 
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
         
         String sql = rota.getRTVisitantes();
         String sq = rota.getRTHistoricoVisita();
@@ -284,14 +284,14 @@ public class MenuSecretaria extends javax.swing.JPanel {
         
         
         
-         l = Principal.Painel.getWidth();
-         a = Principal.Painel.getHeight();
+         l = Principal.painel.getWidth();
+         a = Principal.painel.getHeight();
 
         
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
         
         String sql = rota.getRTIgrejas();
         
@@ -312,13 +312,13 @@ public class MenuSecretaria extends javax.swing.JPanel {
     private void BotaoTiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoTiposActionPerformed
         TabelaTipo chamar = new TabelaTipo();
 
-        l = Principal.Painel.getWidth();
-        a = Principal.Painel.getHeight();
+        l = Principal.painel.getWidth();
+        a = Principal.painel.getHeight();
 
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
 
         String sql = rota.getRTTipo();
 
@@ -337,13 +337,13 @@ public class MenuSecretaria extends javax.swing.JPanel {
     private void BotaoCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCargoActionPerformed
         TabelaCadCargo chamar = new TabelaCadCargo();
 
-        l = Principal.Painel.getWidth();
-        a = Principal.Painel.getHeight();
+        l = Principal.painel.getWidth();
+        a = Principal.painel.getHeight();
 
-        Principal.Painel.removeAll();
-        Principal.Painel.add(chamar);
-        Principal.Painel.revalidate();
-        Principal.Painel.repaint();
+        Principal.painel.removeAll();
+        Principal.painel.add(chamar);
+        Principal.painel.revalidate();
+        Principal.painel.repaint();
 
         String sql = rota.getRTCargo();
 
