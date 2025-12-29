@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -98,7 +98,7 @@ public class ClasseEmail {
     public void Povoar(){
         
         String sql = "SELECT SMPT,Porta,Email,Senha,Autenticacao FROM Globais WHERE Id_Globais = 1";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         ResultSet rs= null;
         PreparedStatement stmt = null;
         

@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -30,7 +30,7 @@ public class ClasseRegistroChamada {
         
         try{
             
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             

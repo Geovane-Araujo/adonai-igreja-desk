@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.view.membros.search;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.Var.VarEntradas;
 import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import com.adonaisoft.adonaisdesktop.view.CadastroEntrada;
@@ -29,7 +29,7 @@ public class PesquisaMembros extends javax.swing.JDialog {
     public void povoar(String sql){
         
         //String sql = "SELECT CodigoMembro, NomeCompleto FROM Membros";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.Var.VarEntradas;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,7 +20,7 @@ public class ClasseEntradas {
         String sql = "INSERT INTO Duplicatas(Descricao,DataC,IDTipo,Valor,IDCaixa,Observacoes,IDMembro,Tipo,Status) VALUES(?,?,?,?,?,?,?,?,?)";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -53,7 +53,7 @@ public class ClasseEntradas {
                     "Observacoes = ?,IDMembro =?,Tipo = ? WHERE ID = ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setString(1, entradas.getDescricao());
@@ -81,7 +81,7 @@ public class ClasseEntradas {
         String sql = "DELETE FROM Duplicatas WHERE ID = ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setInt(1, entradas.getID());

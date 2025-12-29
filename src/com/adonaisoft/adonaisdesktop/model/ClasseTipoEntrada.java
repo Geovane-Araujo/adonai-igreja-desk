@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,7 +26,7 @@ public class ClasseTipoEntrada {
         
         try{
             
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -51,7 +51,7 @@ public class ClasseTipoEntrada {
                     "	WHERE IDTipo=? ";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setString(1, Descricao);
@@ -72,7 +72,7 @@ public class ClasseTipoEntrada {
         String sql = "DELETE FROM TipoEntrada WHERE IDTipo = ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setInt(1, IDTipo);

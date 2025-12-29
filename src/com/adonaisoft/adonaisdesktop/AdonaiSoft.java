@@ -7,7 +7,7 @@
  */
 package com.adonaisoft.adonaisdesktop;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.ClasseConfiguracoes;
 import com.adonaisoft.adonaisdesktop.view.CadastroIgreja;
 import com.adonaisoft.adonaisdesktop.view.Login;
@@ -24,8 +24,7 @@ public class AdonaiSoft {
     public static void main(String[] args) throws ClassNotFoundException, SQLException{
        
         ConexaoBanco con = new ConexaoBanco();
-        con.Conectando();
-        con.ConectarLocalBanco();
+        con.connectDatabase();
         con.povoar();
         
         
@@ -58,11 +57,7 @@ public class AdonaiSoft {
     }
         
         
-        
-        
-        
-        ConexaoBanco abrir = new ConexaoBanco();
-        abrir.ConectandoBanco();
+       
         
         
         ClasseConfiguracoes conf = new ClasseConfiguracoes();
@@ -94,7 +89,6 @@ public class AdonaiSoft {
             
         }
         
-        abrir.FecharConexao();  
     }
     
 }

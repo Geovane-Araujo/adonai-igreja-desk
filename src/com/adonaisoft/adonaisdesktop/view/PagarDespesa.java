@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.view;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import Converter.DataHora;
 import Converter.Virgula;
 import com.adonaisoft.adonaisdesktop.model.ClasseDespesas;

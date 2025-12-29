@@ -2,7 +2,7 @@
 package com.adonaisoft.adonaisdesktop.view.membros.form;
 
 import com.adonaisoft.adonaisdesktop.controller.MembrosController;
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import Converter.DataHora;
 import Converter.ImagemBd;
 import com.adonaisoft.adonaisdesktop.model.Membros;
@@ -809,7 +809,7 @@ public class CadastroMembro extends javax.swing.JDialog {
                     "FROM membros\n" +
                     "INNER JOIN cargo ON cargo.IDCargo = membros.IdCargo\n" +
                     "where codigomembro = "+ id;
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         ResultSet rs= null;
         PreparedStatement stmt = null;
         

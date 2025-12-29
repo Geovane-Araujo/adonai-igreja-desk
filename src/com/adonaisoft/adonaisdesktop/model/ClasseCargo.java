@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.view.TabelaCadCargo;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,7 +26,7 @@ public class ClasseCargo {
         
         try{
             
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setString(1, Descricao);
@@ -54,7 +54,7 @@ public class ClasseCargo {
                     "	WHERE idcargo=? ";
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setString(1, Descricao);
@@ -84,7 +84,7 @@ public class ClasseCargo {
         String sql = "DELETE FROM Cargo WHERE IDCargo = ?";
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setInt(1, IDCargo);

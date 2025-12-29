@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -150,7 +150,7 @@ public class ClasseCaixas {
         
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -176,7 +176,7 @@ public class ClasseCaixas {
         String sql = "DELETE FROM Caixa WHERE CodigoCaixa = ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setInt(1, getCodigoCaixa());
@@ -196,7 +196,7 @@ public class ClasseCaixas {
                 + " QuemFechou = ?,Entradas = ?, Status = ?, Saidas =? WHERE CodigoCaixa = ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -229,7 +229,7 @@ public class ClasseCaixas {
         ResultSet rs = null;
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             stmt = con.prepareStatement(sql);
             stmt.execute();
             rs = stmt.executeQuery();
@@ -256,7 +256,7 @@ public class ClasseCaixas {
         ResultSet rs = null;
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             stmt = con.prepareStatement(sql);
             stmt.execute();
             rs = stmt.executeQuery();
@@ -277,7 +277,7 @@ public class ClasseCaixas {
     public void pegarsaldo(){
         
         String sql = "SELECT SaldoInicial FROM Caixas WHERE CodigoCaixa = " +this.getCodigoCaixa();
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

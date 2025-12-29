@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import java.awt.Dialog;
 import static java.awt.Frame.MAXIMIZED_BOTH;
 import java.awt.Toolkit;
@@ -44,7 +44,7 @@ public class Relatorios {
                     "	 membros.codigomembro ="+ id;
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -89,7 +89,7 @@ public class Relatorios {
                     "	 membros.batizado = true";
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -149,7 +149,7 @@ public class Relatorios {
                     "	 AND Duplicatas.idtipo ="+ClasseTipo.IDTipo+" AND Duplicatas.Tipo = 0 \n" +
                     "ORDER BY tipo.idtipo DESC";
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -192,7 +192,7 @@ public class Relatorios {
                     "where codigomembro ="+ id;
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -260,7 +260,7 @@ public class Relatorios {
                         "ORDER BY DataC Desc";
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -319,7 +319,7 @@ public class Relatorios {
                     "	 caixas.codigocaixa = "+ClasseCaixas.CodigoCaixa+" AND Duplicatas.Tipo = 0\n" +
                     "ORDER BY tipo.idtipo DESC";
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -377,7 +377,7 @@ public class Relatorios {
                     "	 caixas.codigocaixa = "+ClasseCaixas.CodigoCaixa+" AND duplicatas.Tipo = 1 AND duplicatas.Status = 'Paga'\n" +
                     "ORDER BY tipo.idtipo DESC";
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -408,7 +408,7 @@ public class Relatorios {
     }
     
     public void CartaApresentacao(String sql) throws JRException, IOException{
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -436,7 +436,7 @@ public class Relatorios {
     }
     
     public void CartaMudanca(String sql) throws JRException, IOException{
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

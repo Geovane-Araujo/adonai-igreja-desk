@@ -1,6 +1,6 @@
 package com.adonaisoft.adonaisdesktop.controller;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.Membros;
 
 import javax.swing.*;
@@ -28,7 +28,7 @@ public class MembrosController {
 
         try{
 
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
 
 
@@ -84,7 +84,7 @@ public class MembrosController {
 
         try{
 
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
 
 
@@ -131,7 +131,7 @@ public class MembrosController {
 
         try{
 
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
 
             stmt.setInt(1, id);

@@ -1,6 +1,6 @@
 package com.adonaisoft.adonaisdesktop.controller;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.Igrejas;
 
 import javax.swing.*;
@@ -21,7 +21,7 @@ public class IgrejaController {
                 "	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
 
 
@@ -59,7 +59,7 @@ public class IgrejaController {
                 "	WHERE id_igreja=?";
 
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
 
             stmt.setString(1, igreja.getNomeIgreja());
@@ -94,7 +94,7 @@ public class IgrejaController {
         String sql = "DELETE FROM Igrejas WHERE id_igreja=?";
 
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
 
             stmt.setInt(1, id);

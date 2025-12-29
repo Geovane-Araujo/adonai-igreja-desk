@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.view.gerais;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.ClasseEmail;
 import com.adonaisoft.adonaisdesktop.model.clsRedimensionarImagem;
 import com.adonaisoft.adonaisdesktop.view.contatoIgrejas.search.PesquisaIgrejas;

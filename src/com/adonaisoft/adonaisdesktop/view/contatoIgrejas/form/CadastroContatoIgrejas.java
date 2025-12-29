@@ -6,7 +6,7 @@
 package com.adonaisoft.adonaisdesktop.view.contatoIgrejas.form;
 
 import com.adonaisoft.adonaisdesktop.controller.IgrejaController;
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import Converter.Data;
 import com.adonaisoft.adonaisdesktop.model.Igrejas;
 import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
@@ -368,7 +368,7 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
     public void onPovoar(int id){
         
         String sql = "SELECT * FROM Igrejas WHERE ID_Igreja = '"+ id +"'";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         ResultSet rs= null;
         PreparedStatement stmt = null;
         

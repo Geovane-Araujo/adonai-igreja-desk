@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.view.Principal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -59,7 +59,7 @@ public class ClasseConfiguracoes {
                 + ",IgrejaSede,SecretarioIgreja,TesoureiroIgreja,PedirSenha) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -96,7 +96,7 @@ public class ClasseConfiguracoes {
                 + "TesoureiroIgreja = ?,  PedirSenha = ?, PastorPresidente = ?, IgrejaSede = ?, Numero = ? WHERE CodiIgreja= ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -129,7 +129,7 @@ public class ClasseConfiguracoes {
     
     public void verificar(){
         String sql = "SELECT MAX(CodiIgreja) FROM Configuracoes";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -150,7 +150,7 @@ public class ClasseConfiguracoes {
     }
     public void pedirsenha(){
         String sql = "SELECT PedirSenha FROM Configuracoes WHERE CodiIgreja = 1";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         try{

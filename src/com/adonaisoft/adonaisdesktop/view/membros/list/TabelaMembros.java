@@ -2,7 +2,7 @@
 package com.adonaisoft.adonaisdesktop.view.membros.list;
 
 import com.adonaisoft.adonaisdesktop.controller.MembrosController;
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.Membros;
 import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import com.adonaisoft.adonaisdesktop.model.Relatorios;
@@ -55,7 +55,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         String sql = "SELECT COUNT(Ativo) FROM Membros ";
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             stmt = con.prepareStatement(sql);
             rs = stmt.executeQuery();
             
@@ -81,7 +81,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         String sql = "SELECT COUNT(Ativo) FROM Membros WHERE Ativo = true";
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             stmt = con.prepareStatement(sql);
             rs = stmt.executeQuery();
             
@@ -108,7 +108,7 @@ public class TabelaMembros extends javax.swing.JPanel {
         String sql = "SELECT COUNT(Ativo) FROM Membros WHERE Ativo = false";
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             stmt = con.prepareStatement(sql);
             rs = stmt.executeQuery();
             
@@ -130,7 +130,7 @@ public class TabelaMembros extends javax.swing.JPanel {
     public void preencher(String sql){
  
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.execute();
             ResultSet rs = stmt.executeQuery();
@@ -917,7 +917,7 @@ public class TabelaMembros extends javax.swing.JPanel {
     
     public void mimx() {
         String sql = "Select Max(CodigoMembro),min(CodigoMembro) from Membros";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 

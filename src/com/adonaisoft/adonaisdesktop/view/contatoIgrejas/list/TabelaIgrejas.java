@@ -2,7 +2,7 @@
 package com.adonaisoft.adonaisdesktop.view.contatoIgrejas.list;
 
 import com.adonaisoft.adonaisdesktop.controller.IgrejaController;
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.Igrejas;
 import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import com.adonaisoft.adonaisdesktop.view.MenuSecretaria;
@@ -46,7 +46,7 @@ public class TabelaIgrejas extends javax.swing.JPanel {
         
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.execute();
             ResultSet rs = stmt.executeQuery();

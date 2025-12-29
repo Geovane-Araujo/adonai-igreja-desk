@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.view.relatorios;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.model.ClasseCaixas;
 import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
 import com.adonaisoft.adonaisdesktop.model.ClasseTipo;

@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.model;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -40,7 +40,7 @@ public class ClasseChamada {
         
         try{
             
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setInt(1, ID);
@@ -68,7 +68,7 @@ public class ClasseChamada {
         String sql = "DELETE FROM Chamada WHERE ID = ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setInt(1,ID);
@@ -87,7 +87,7 @@ public class ClasseChamada {
         ResultSet rs = null;
         
         try{
-             con = conectar.Conectar();
+             con = conectar.connectDatabase();
              stmt = con.prepareStatement(sql);
              rs = stmt.executeQuery();
              rs.next();

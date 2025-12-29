@@ -1,7 +1,7 @@
 
 package com.adonaisoft.adonaisdesktop.view.contatoIgrejas.search;
 
-import com.adonaisoft.adonaisdesktop.database.ConexaoBanco;
+import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
 import com.adonaisoft.adonaisdesktop.view.gerais.TelaEmail;
 
 import java.sql.Connection;
@@ -24,7 +24,7 @@ public class PesquisaIgrejas extends javax.swing.JDialog {
     public void povoar(String sql){
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
