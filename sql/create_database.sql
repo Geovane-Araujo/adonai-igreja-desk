@@ -64,7 +64,7 @@ CREATE TABLE configuracoes
     igrejasede varchar(50),
     secretarioigreja varchar(50),
     tesoureiroigreja varchar(50),
-    pedirsenha boolean,
+    pedirsenha integer(1),
     tema varchar(50)
 );
 
@@ -136,14 +136,14 @@ CREATE TABLE membros
     cidade varchar(50),
     numero integer,
     uf varchar(2),
-    ativo boolean,
+    ativo integer(1),
     idcargo integer,
     observacoes varchar(500),
     databatismo varchar(15),
     cep varchar(10),
     estadocivil varchar(15),
     imagem bytea,
-    batizado boolean,
+    batizado integer(1),
     email varchar(70),
 	FOREIGN KEY (idcargo)  REFERENCES cargo (idcargo)
 );
@@ -168,7 +168,7 @@ CREATE TABLE registrochamada
     id integer PRIMARY KEY AUTOINCREMENT,
     idchamada integer,
     idmatriculado integer,
-    presente boolean,
+    presente integer(1),
 	FOREIGN KEY (idchamada)  REFERENCES chamada (id),
 	FOREIGN KEY (idmatriculado)  REFERENCES membros (codigomembro)
 );
@@ -196,13 +196,13 @@ CREATE TABLE usuario
     nomeusuario varchar(30) NOT NULL,
     senha varchar(15) NOT NULL,
     confirmarsenha varchar(15) NOT NULL,
-    membros boolean,
-    despesas boolean,
-    entradas boolean,
-    caixas boolean,
-    configuracoes boolean,
-    usuarios boolean,
-    relatorios boolean
+    membros integer(1),
+    despesas integer(1),
+    entradas integer(1),
+    caixas integer(1),
+    configuracoes integer(1),
+    usuarios integer(1),
+    relatorios integer(1)
 );
 
 CREATE TABLE visitantes
@@ -214,3 +214,11 @@ CREATE TABLE visitantes
     cidade varchar(50),
     uf varchar(2)
 );
+
+CREATE TABLE localdb(
+    id integer primary key autoincrement,
+    Local varchar(70),
+    Porta integer,
+    Database varchar(50),
+    Senha varchar(50)
+)

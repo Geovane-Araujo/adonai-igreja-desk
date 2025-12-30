@@ -46,7 +46,7 @@ public class TelaDespesas extends javax.swing.JPanel {
 
     public void TabelaTodas(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         
         PreparedStatement stmt = null;
         ResultSet rs = null;
@@ -84,7 +84,7 @@ public class TelaDespesas extends javax.swing.JPanel {
     }
     public void TabelaPendentes(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -120,7 +120,7 @@ public class TelaDespesas extends javax.swing.JPanel {
     }
     public void TabelaPagas(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -1254,7 +1254,7 @@ public class TelaDespesas extends javax.swing.JPanel {
     public void Verificar(){
 
        String sql = "SELECT Status FROM Caixas WHERE  codigocaixa  = "+IdCaixa;
-       Connection con = conectar.Conectar();
+       Connection con = conectar.connectDatabase();
        PreparedStatement stmt = null;
        ResultSet rs = null;
         
@@ -1604,7 +1604,7 @@ public class TelaDespesas extends javax.swing.JPanel {
 
     public void MinimoMaximoTodas() {
         String sql = "Select Max(ID),min(ID) from Duplicatas WHERE Tipo = 1";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
@@ -1692,7 +1692,7 @@ public class TelaDespesas extends javax.swing.JPanel {
 
     public void MinimoMaximoPendente() {
         String sql = "Select Max(ID),min(ID) from Duplicatas WHERE Duplicatas.Status = 'Pendente' AND Tipo = 1 ";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
@@ -1778,7 +1778,7 @@ public class TelaDespesas extends javax.swing.JPanel {
 
     public void MinimoMaximoPagas() {
         String sql = "Select Max(ID),min(ID) from Duplicatas WHERE Duplicatas.Status = 'Paga' AND Tipo = 1 ";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 

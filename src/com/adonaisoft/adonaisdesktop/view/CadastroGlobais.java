@@ -478,7 +478,7 @@ public class CadastroGlobais extends javax.swing.JDialog {
     public void Povoar(){
         
         String sql = "SELECT * FROM Globais WHERE Id_Globais = 1";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         ResultSet rs= null;
         PreparedStatement stmt = null;
         

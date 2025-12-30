@@ -32,7 +32,7 @@ public class PesquisaCaixas extends javax.swing.JDialog {
     public void povoar(String sql){
         
         //String sql = "SELECT CodigoMembro, NomeCompleto FROM Membros";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

@@ -40,7 +40,7 @@ public class ClasseGlobais {
                 + ",Email = ?,Senha = ?,Usuario = ?,Autenticacao = ? WHERE Id_Globais= ?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             stmt.setBytes(1, imagem);

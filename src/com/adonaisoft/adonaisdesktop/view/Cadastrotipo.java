@@ -30,7 +30,7 @@ public class Cadastrotipo extends javax.swing.JDialog {
     
     public void Povoar(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

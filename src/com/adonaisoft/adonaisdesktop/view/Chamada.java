@@ -41,7 +41,7 @@ public class Chamada extends javax.swing.JDialog {
     
     public void PovoarClasse(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -72,7 +72,7 @@ public class Chamada extends javax.swing.JDialog {
                     "INNER JOIN Classe ON Classe.IDClasse = Turma.IDClasse\n" +
                     "WHERE Turma.IDClasse = "+ClasseClasses.IDClasse;
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -159,7 +159,7 @@ public class Chamada extends javax.swing.JDialog {
                     "FROM public.registrochamada\n" +
                     "INNER JOIN Membros ON Membros.CodigoMembro = IdMatriculado\n" +
                     "WHERE IDChamada ="+ClasseChamada.ID;
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -200,7 +200,7 @@ public class Chamada extends javax.swing.JDialog {
                     "WHERE Chamada.ID ="+ClasseChamada.ID;
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

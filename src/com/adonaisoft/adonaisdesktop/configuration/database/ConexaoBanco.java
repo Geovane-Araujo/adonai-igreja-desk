@@ -18,7 +18,6 @@ public class ConexaoBanco {
     public static String database;
     public static String senha;
     public Connection openConnection;
-    public static final String ur = "jdbc:sqlite:"+System.getProperty("user.dir")+"/data/conexaobase.db";
     public static String url = "jdbc:sqlite:"+System.getProperty("user.dir")+"/data/base.db";
 
     

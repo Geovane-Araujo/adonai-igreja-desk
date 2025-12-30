@@ -19,7 +19,7 @@ public class CadastroIgreja extends javax.swing.JDialog {
 
     public void povoar(){
         String sql = "SELECT * FROM Configuracoes WHERE CodiIgreja = 1";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

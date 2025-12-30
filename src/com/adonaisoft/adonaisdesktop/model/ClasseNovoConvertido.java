@@ -45,7 +45,7 @@ public class ClasseNovoConvertido {
                     "	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -78,7 +78,7 @@ public class ClasseNovoConvertido {
                     "	WHERE id_novoconverido=?";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
@@ -111,7 +111,7 @@ public class ClasseNovoConvertido {
 "	WHERE id_novoconverido=? ";
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = con.prepareStatement(sql);
     
             stmt.setInt(1, id_NovoConverido);

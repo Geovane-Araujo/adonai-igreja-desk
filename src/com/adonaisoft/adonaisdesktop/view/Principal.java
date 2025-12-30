@@ -1050,7 +1050,7 @@ public class Principal extends javax.swing.JFrame {
 
     public void preencher(){
             String sql = "SELECT * FROM Configuracoes WHERE CodiIgreja = 1";
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = null;
             ResultSet rs = null;
 

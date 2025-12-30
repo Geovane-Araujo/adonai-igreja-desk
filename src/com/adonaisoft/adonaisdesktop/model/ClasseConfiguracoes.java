@@ -158,7 +158,7 @@ public class ClasseConfiguracoes {
             stmt.execute();
             rs = stmt.executeQuery();
             rs.next();
-            PedirSenha = rs.getBoolean("PedirSenha");
+            PedirSenha = rs.getInt("PedirSenha") == 1 ? true : false;
             stmt.close();
             rs.close();
         }

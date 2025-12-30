@@ -58,7 +58,7 @@ public class AdonaiSoft {
         
         
        
-        
+       
         
         ClasseConfiguracoes conf = new ClasseConfiguracoes();
         conf.verificar();

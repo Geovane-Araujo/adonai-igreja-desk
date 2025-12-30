@@ -60,7 +60,7 @@ public class CadastroDespesa extends javax.swing.JDialog {
                         "INNER JOIN Tipo ON Tipo.IDTipo = Duplicatas.IDTipo\n" +
                         "WHERE ID ="+ despesas.getID();
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

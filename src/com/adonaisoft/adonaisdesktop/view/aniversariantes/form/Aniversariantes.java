@@ -29,7 +29,7 @@ public class Aniversariantes extends javax.swing.JDialog {
         
         
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

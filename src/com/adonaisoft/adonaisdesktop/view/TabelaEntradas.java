@@ -44,7 +44,7 @@ public class TabelaEntradas extends javax.swing.JPanel {
 
     public void Povoar(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -552,7 +552,7 @@ public class TabelaEntradas extends javax.swing.JPanel {
     public void Verificar(){
           
         String sql = "SELECT Status FROM Caixas WHERE  codigocaixa = '"+IdCaixa+"'";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -685,7 +685,7 @@ public class TabelaEntradas extends javax.swing.JPanel {
 
     public void Povoar() {
         String sql = "Select Max(id),min(id) from duplicatas WHERE tipo = 0";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 

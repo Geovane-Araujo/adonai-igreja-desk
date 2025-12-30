@@ -32,7 +32,7 @@ public class TabelaTipo extends javax.swing.JPanel {
      
     public void Povoar(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

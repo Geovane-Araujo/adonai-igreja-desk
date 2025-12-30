@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/view/TabelaClasse.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/AdonaiSoft.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/configuration/database/ConexaoBanco.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/model/ClasseConfiguracoes.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/view/Principal.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/model/ClasseCaixas.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/sql/create_database.sql</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/model/ClasseGlobais.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/model/ClasseUsuario.java</file>
+            <file>file:/home/geovane/Documents/workspace/Adonai/Desktop/adonai-igreja-desk/src/com/adonaisoft/adonaisdesktop/view/TabelaCadCargo.java</file>
+        </group>
     </open-files>
 </project-private>

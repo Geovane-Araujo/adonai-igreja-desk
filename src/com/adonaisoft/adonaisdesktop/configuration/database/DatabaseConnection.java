@@ -7,6 +7,8 @@ package com.adonaisoft.adonaisdesktop.configuration.database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -22,8 +24,10 @@ public class DatabaseConnection {
 
     private DatabaseConnection() {
         try {
+            
+            Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection(url);
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException("Erro ao conectar ao banco SQLite", e);
         }
     }

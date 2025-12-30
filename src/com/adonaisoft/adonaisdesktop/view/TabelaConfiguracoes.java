@@ -22,7 +22,7 @@ public class TabelaConfiguracoes extends javax.swing.JPanel {
     
 
     public void Preencher(String sql){
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt  = null;
         ResultSet rs = null;
         

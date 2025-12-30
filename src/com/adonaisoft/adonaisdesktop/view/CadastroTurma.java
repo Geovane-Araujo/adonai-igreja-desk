@@ -32,7 +32,7 @@ public class CadastroTurma extends javax.swing.JDialog {
     
     public void PovoarClasse(String sql){
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
@@ -63,7 +63,7 @@ public class CadastroTurma extends javax.swing.JDialog {
                     "INNER JOIN Classe ON Classe.IDClasse = Turma.IDClasse\n" +
                     "WHERE Turma.IDClasse = "+ClasseClasses.IDClasse;
         
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

@@ -317,7 +317,7 @@ public class FecharCaixa extends javax.swing.JDialog {
     public void Povoar(){
           
        String sql = "SELECT * FROM Caixas WHERE  CodigoCaixa= "+Entrada.getCodigoCaixa();
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 

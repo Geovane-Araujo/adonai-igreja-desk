@@ -29,7 +29,7 @@ public class PesquisaTipo extends javax.swing.JDialog {
     public void povoar(String sql){
         
        
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
         

@@ -52,7 +52,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
 
     public void Povoar(String sql) {
 
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
@@ -83,7 +83,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
 
     public void historico(String sql) {
 
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
@@ -954,7 +954,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
 
     public void Povoar() {
         String sql = "Select Max(codigovisitante),min(codigovisitante) from visitantes";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
@@ -1010,7 +1010,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     
     public void Povoarhistorico() {
         String sql = "Select Max(codigovisitante),min(codigovisitante) from HistoricoVisita";
-        Connection con = conectar.Conectar();
+        Connection con = conectar.connectDatabase();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 

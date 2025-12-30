@@ -45,7 +45,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
         
         
         try{
-            Connection con = conectar.Conectar();
+            Connection con = conectar.connectDatabase();
             PreparedStatement stmt = null;
             ResultSet rs = null;
             stmt = con.prepareStatement(sql);
@@ -81,7 +81,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
         ResultSet rs = null;
         
         try{
-            con = conectar.Conectar();
+            con = conectar.connectDatabase();
             stmt = con.prepareStatement(sql);
             stmt.execute();
             rs = stmt.executeQuery();
