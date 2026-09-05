@@ -335,14 +335,13 @@ public class Chamada extends javax.swing.JDialog {
             TabelaChamada.getColumnModel().getColumn(3).setMaxWidth(0);
         }
 
-        BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         BotaoSalvar.setText("Salvar");
-        BotaoSalvar.setBorder(null);
-        BotaoSalvar.setBorderPainted(false);
-        BotaoSalvar.setFocusPainted(false);
+
+
+
         BotaoSalvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoSalvarMouseEntered(evt);
@@ -667,14 +666,13 @@ public class Chamada extends javax.swing.JDialog {
                 .addGap(0, 9, Short.MAX_VALUE))
         );
 
-        Calcular.setBackground(new java.awt.Color(1, 1, 34));
-        Calcular.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Calcular.setForeground(new java.awt.Color(255, 255, 255));
-        Calcular.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Math_26px.png"))); // NOI18N
+
+
+
         Calcular.setText("Calcular");
-        Calcular.setBorder(null);
-        Calcular.setBorderPainted(false);
-        Calcular.setFocusPainted(false);
+
+
+
         Calcular.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 CalcularMouseEntered(evt);
@@ -766,9 +764,9 @@ public class Chamada extends javax.swing.JDialog {
                     .addComponent(jScrollPane1)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(Calcular, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Calcular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(BotaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigoClasse, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -864,11 +862,11 @@ public class Chamada extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoSalvarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvarMouseEntered
-        BotaoSalvar.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoSalvarMouseEntered
 
     private void BotaoSalvarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvarMouseExited
-        BotaoSalvar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoSalvarMouseExited
 
     private void BotaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarActionPerformed
@@ -920,11 +918,11 @@ public class Chamada extends javax.swing.JDialog {
     }//GEN-LAST:event_CampoOfertasActionPerformed
 
     private void CalcularMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CalcularMouseEntered
-        Calcular.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_CalcularMouseEntered
 
     private void CalcularMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CalcularMouseExited
-       Calcular.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_CalcularMouseExited
 
     private void CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcularActionPerformed

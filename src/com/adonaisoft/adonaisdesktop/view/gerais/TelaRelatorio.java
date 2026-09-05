@@ -50,14 +50,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
 
         jPanel2.setBackground(new java.awt.Color(219, 230, 244));
 
-        CarteirinhaMembros.setBackground(new java.awt.Color(1, 1, 34));
-        CarteirinhaMembros.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CarteirinhaMembros.setForeground(new java.awt.Color(255, 255, 255));
+
+
         CarteirinhaMembros.setText("Carteirinha");
         CarteirinhaMembros.setToolTipText("Carteirinha de Membros");
-        CarteirinhaMembros.setBorder(null);
-        CarteirinhaMembros.setFocusPainted(false);
-        CarteirinhaMembros.setFocusable(false);
+
+
+
         CarteirinhaMembros.setMaximumSize(new java.awt.Dimension(86, 26));
         CarteirinhaMembros.setPreferredSize(new java.awt.Dimension(86, 26));
         CarteirinhaMembros.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -74,14 +73,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        Certificado.setBackground(new java.awt.Color(1, 1, 34));
-        Certificado.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Certificado.setForeground(new java.awt.Color(255, 255, 255));
+
+
         Certificado.setText("Certificado");
         Certificado.setToolTipText("Carteirinha de Membros");
-        Certificado.setBorder(null);
-        Certificado.setFocusPainted(false);
-        Certificado.setFocusable(false);
+
+
+
         Certificado.setMaximumSize(new java.awt.Dimension(86, 26));
         Certificado.setPreferredSize(new java.awt.Dimension(86, 26));
         Certificado.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -98,14 +96,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        CartaMudanca.setBackground(new java.awt.Color(1, 1, 34));
-        CartaMudanca.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CartaMudanca.setForeground(new java.awt.Color(255, 255, 255));
+
+
         CartaMudanca.setText("Mudança");
         CartaMudanca.setToolTipText("Carteirinha de Membros");
-        CartaMudanca.setBorder(null);
-        CartaMudanca.setFocusPainted(false);
-        CartaMudanca.setFocusable(false);
+
+
+
         CartaMudanca.setMaximumSize(new java.awt.Dimension(86, 26));
         CartaMudanca.setPreferredSize(new java.awt.Dimension(86, 26));
         CartaMudanca.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -122,14 +119,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        CartaConvite.setBackground(new java.awt.Color(1, 1, 34));
-        CartaConvite.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CartaConvite.setForeground(new java.awt.Color(255, 255, 255));
+
+
         CartaConvite.setText("Convite");
         CartaConvite.setToolTipText("Carteirinha de Membros");
-        CartaConvite.setBorder(null);
-        CartaConvite.setFocusPainted(false);
-        CartaConvite.setFocusable(false);
+
+
+
         CartaConvite.setMaximumSize(new java.awt.Dimension(86, 26));
         CartaConvite.setPreferredSize(new java.awt.Dimension(86, 26));
         CartaConvite.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -146,14 +142,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        CartaRecomendacao.setBackground(new java.awt.Color(1, 1, 34));
-        CartaRecomendacao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        CartaRecomendacao.setForeground(new java.awt.Color(255, 255, 255));
+
+
         CartaRecomendacao.setText("Recomendação");
         CartaRecomendacao.setToolTipText("Carteirinha de Membros");
-        CartaRecomendacao.setBorder(null);
-        CartaRecomendacao.setFocusPainted(false);
-        CartaRecomendacao.setFocusable(false);
+
+
+
         CartaRecomendacao.setMaximumSize(new java.awt.Dimension(86, 26));
         CartaRecomendacao.setPreferredSize(new java.awt.Dimension(86, 26));
         CartaRecomendacao.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -187,7 +182,7 @@ public class TelaRelatorio extends javax.swing.JDialog {
                         .addGap(44, 44, 44)
                         .addComponent(CartaConvite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CartaRecomendacao, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(CartaRecomendacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -209,14 +204,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
 
         jPanel3.setBackground(new java.awt.Color(219, 230, 244));
 
-        RelatorioDizimista.setBackground(new java.awt.Color(1, 1, 34));
-        RelatorioDizimista.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        RelatorioDizimista.setForeground(new java.awt.Color(255, 255, 255));
+
+
         RelatorioDizimista.setText("Dizimistas");
         RelatorioDizimista.setToolTipText("Relatório de Dizimistas");
-        RelatorioDizimista.setBorder(null);
-        RelatorioDizimista.setFocusPainted(false);
-        RelatorioDizimista.setFocusable(false);
+
+
+
         RelatorioDizimista.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 RelatorioDizimistaMouseEntered(evt);
@@ -231,14 +225,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        RelatorioEntradas.setBackground(new java.awt.Color(1, 1, 34));
-        RelatorioEntradas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        RelatorioEntradas.setForeground(new java.awt.Color(255, 255, 255));
+
+
         RelatorioEntradas.setText("Entradas");
         RelatorioEntradas.setToolTipText("Relatório de Dizimistas");
-        RelatorioEntradas.setBorder(null);
-        RelatorioEntradas.setFocusPainted(false);
-        RelatorioEntradas.setFocusable(false);
+
+
+
         RelatorioEntradas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 RelatorioEntradasMouseEntered(evt);
@@ -253,14 +246,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        RelatorioDespesa.setBackground(new java.awt.Color(1, 1, 34));
-        RelatorioDespesa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        RelatorioDespesa.setForeground(new java.awt.Color(255, 255, 255));
+
+
         RelatorioDespesa.setText("Despesas");
         RelatorioDespesa.setToolTipText("Relatório de Dizimistas");
-        RelatorioDespesa.setBorder(null);
-        RelatorioDespesa.setFocusPainted(false);
-        RelatorioDespesa.setFocusable(false);
+
+
+
         RelatorioDespesa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 RelatorioDespesaMouseEntered(evt);
@@ -275,14 +267,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             }
         });
 
-        RelatorioCaixa.setBackground(new java.awt.Color(1, 1, 34));
-        RelatorioCaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        RelatorioCaixa.setForeground(new java.awt.Color(255, 255, 255));
+
+
         RelatorioCaixa.setText("Caixa");
         RelatorioCaixa.setToolTipText("Relatório de Dizimistas");
-        RelatorioCaixa.setBorder(null);
-        RelatorioCaixa.setFocusPainted(false);
-        RelatorioCaixa.setFocusable(false);
+
+
+
         RelatorioCaixa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 RelatorioCaixaMouseEntered(evt);
@@ -303,13 +294,13 @@ public class TelaRelatorio extends javax.swing.JDialog {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(RelatorioDizimista, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RelatorioDizimista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(RelatorioCaixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(RelatorioEntradas, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RelatorioDespesa, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RelatorioDespesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -354,11 +345,11 @@ public class TelaRelatorio extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CarteirinhaMembrosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CarteirinhaMembrosMouseEntered
-        CarteirinhaMembros.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_CarteirinhaMembrosMouseEntered
 
     private void CarteirinhaMembrosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CarteirinhaMembrosMouseExited
-        CarteirinhaMembros.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_CarteirinhaMembrosMouseExited
 
     private void CarteirinhaMembrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CarteirinhaMembrosActionPerformed
@@ -368,11 +359,11 @@ public class TelaRelatorio extends javax.swing.JDialog {
     }//GEN-LAST:event_CarteirinhaMembrosActionPerformed
 
     private void CertificadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CertificadoMouseEntered
-        Certificado.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_CertificadoMouseEntered
 
     private void CertificadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CertificadoMouseExited
-        Certificado.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_CertificadoMouseExited
 
     private void CertificadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CertificadoActionPerformed
@@ -419,11 +410,11 @@ public class TelaRelatorio extends javax.swing.JDialog {
     }//GEN-LAST:event_CartaRecomendacaoActionPerformed
 
     private void RelatorioDizimistaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioDizimistaMouseEntered
-        RelatorioDizimista.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_RelatorioDizimistaMouseEntered
 
     private void RelatorioDizimistaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioDizimistaMouseExited
-        RelatorioDizimista.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_RelatorioDizimistaMouseExited
 
     private void RelatorioDizimistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelatorioDizimistaActionPerformed
@@ -435,11 +426,11 @@ public class TelaRelatorio extends javax.swing.JDialog {
     }//GEN-LAST:event_RelatorioDizimistaActionPerformed
 
     private void RelatorioEntradasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioEntradasMouseEntered
-        RelatorioEntradas.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_RelatorioEntradasMouseEntered
 
     private void RelatorioEntradasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioEntradasMouseExited
-        RelatorioEntradas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_RelatorioEntradasMouseExited
 
     private void RelatorioEntradasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelatorioEntradasActionPerformed
@@ -450,11 +441,11 @@ public class TelaRelatorio extends javax.swing.JDialog {
     }//GEN-LAST:event_RelatorioEntradasActionPerformed
 
     private void RelatorioDespesaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioDespesaMouseEntered
-        RelatorioDespesa.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_RelatorioDespesaMouseEntered
 
     private void RelatorioDespesaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioDespesaMouseExited
-        RelatorioDespesa.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_RelatorioDespesaMouseExited
 
     private void RelatorioDespesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelatorioDespesaActionPerformed
@@ -465,11 +456,11 @@ public class TelaRelatorio extends javax.swing.JDialog {
     }//GEN-LAST:event_RelatorioDespesaActionPerformed
 
     private void RelatorioCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioCaixaMouseEntered
-        RelatorioCaixa.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_RelatorioCaixaMouseEntered
 
     private void RelatorioCaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RelatorioCaixaMouseExited
-        RelatorioCaixa.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_RelatorioCaixaMouseExited
 
     private void RelatorioCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelatorioCaixaActionPerformed

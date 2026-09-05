@@ -41,8 +41,10 @@ public class RelatorioCaixas extends javax.swing.JDialog {
         CampoCaixa = new javax.swing.JTextField();
         BotaoGerar = new javax.swing.JButton();
         BuscarCaixas = new javax.swing.JButton();
+        BuscarCaixas.setText("Buscar");
         CampoTipo = new javax.swing.JTextField();
         BotaoBuscarTipoRelatorio = new javax.swing.JButton();
+        BotaoBuscarTipoRelatorio.setText("Buscar");
         jLabel8 = new javax.swing.JLabel();
         CampoCodigoTipo = new javax.swing.JTextField();
 
@@ -69,14 +71,13 @@ public class RelatorioCaixas extends javax.swing.JDialog {
 
         CampoCaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 
-        BotaoGerar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoGerar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoGerar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoGerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Imprimir.png"))); // NOI18N
+
+
+
         BotaoGerar.setText("Gerar");
-        BotaoGerar.setBorder(null);
-        BotaoGerar.setBorderPainted(false);
-        BotaoGerar.setFocusPainted(false);
+
+
+
         BotaoGerar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoGerarMouseEntered(evt);
@@ -91,13 +92,12 @@ public class RelatorioCaixas extends javax.swing.JDialog {
             }
         });
 
-        BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BuscarCaixas.setBorder(null);
-        BuscarCaixas.setBorderPainted(false);
-        BuscarCaixas.setFocusPainted(false);
+
+
+
+
+
+
         BuscarCaixas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarCaixasMouseEntered(evt);
@@ -114,13 +114,12 @@ public class RelatorioCaixas extends javax.swing.JDialog {
 
         CampoTipo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 
-        BotaoBuscarTipoRelatorio.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoBuscarTipoRelatorio.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BotaoBuscarTipoRelatorio.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarTipoRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BotaoBuscarTipoRelatorio.setBorder(null);
-        BotaoBuscarTipoRelatorio.setBorderPainted(false);
-        BotaoBuscarTipoRelatorio.setFocusPainted(false);
+
+
+
+
+
+
         BotaoBuscarTipoRelatorio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoBuscarTipoRelatorioMouseEntered(evt);
@@ -156,13 +155,13 @@ public class RelatorioCaixas extends javax.swing.JDialog {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(CampoCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(CampoTipo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoBuscarTipoRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BotaoBuscarTipoRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotaoGerar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoGerar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigoCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -334,19 +333,19 @@ public class RelatorioCaixas extends javax.swing.JDialog {
     }//GEN-LAST:event_BuscarCaixasActionPerformed
 
     private void BuscarCaixasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseExited
-        BuscarCaixas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarCaixasMouseExited
 
     private void BuscarCaixasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseEntered
-        BuscarCaixas.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BuscarCaixasMouseEntered
 
     private void BotaoGerarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoGerarMouseEntered
-        BotaoGerar.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoGerarMouseEntered
 
     private void BotaoGerarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoGerarMouseExited
-        BotaoGerar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoGerarMouseExited
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
@@ -360,11 +359,11 @@ public class RelatorioCaixas extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoBuscarTipoRelatorioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoBuscarTipoRelatorioMouseEntered
-        BotaoBuscarTipoRelatorio.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoBuscarTipoRelatorioMouseEntered
 
     private void BotaoBuscarTipoRelatorioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoBuscarTipoRelatorioMouseExited
-        BotaoBuscarTipoRelatorio.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoBuscarTipoRelatorioMouseExited
 
     private void BotaoBuscarTipoRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoBuscarTipoRelatorioActionPerformed

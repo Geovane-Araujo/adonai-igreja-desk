@@ -118,14 +118,13 @@ public class TabelaCadCargo extends javax.swing.JPanel {
             tabelaCargo.getColumnModel().getColumn(2).setPreferredWidth(700);
         }
 
-        BotaoAdicionar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAdicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         BotaoAdicionar.setText("Adicionar");
-        BotaoAdicionar.setBorder(null);
-        BotaoAdicionar.setBorderPainted(false);
-        BotaoAdicionar.setFocusPainted(false);
+
+
+
         BotaoAdicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAdicionarMouseEntered(evt);
@@ -140,14 +139,13 @@ public class TabelaCadCargo extends javax.swing.JPanel {
             }
         });
 
-        BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
+
+
+
         BotaoEditar.setText("Editar");
-        BotaoEditar.setBorder(null);
-        BotaoEditar.setBorderPainted(false);
-        BotaoEditar.setFocusPainted(false);
+
+
+
         BotaoEditar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEditarMouseEntered(evt);
@@ -162,14 +160,13 @@ public class TabelaCadCargo extends javax.swing.JPanel {
             }
         });
 
-        Botaoexcluir.setBackground(new java.awt.Color(1, 1, 34));
-        Botaoexcluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Botaoexcluir.setForeground(new java.awt.Color(255, 255, 255));
-        Botaoexcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
+
+
+
         Botaoexcluir.setText("Excluir");
-        Botaoexcluir.setBorder(null);
-        Botaoexcluir.setBorderPainted(false);
-        Botaoexcluir.setFocusPainted(false);
+
+
+
         Botaoexcluir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoexcluirMouseEntered(evt);
@@ -202,14 +199,13 @@ public class TabelaCadCargo extends javax.swing.JPanel {
         CampoCodigo.setForeground(new java.awt.Color(219, 230, 244));
         CampoCodigo.setBorder(null);
 
-        Buscar.setBackground(new java.awt.Color(1, 1, 34));
-        Buscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Buscar.setForeground(new java.awt.Color(255, 255, 255));
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         Buscar.setText("Atualizar");
-        Buscar.setBorder(null);
-        Buscar.setBorderPainted(false);
-        Buscar.setFocusPainted(false);
+
+
+
         Buscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarMouseEntered(evt);
@@ -233,11 +229,11 @@ public class TabelaCadCargo extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 864, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotaoAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoEditar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Botaoexcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Botaoexcluir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(577, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -248,7 +244,7 @@ public class TabelaCadCargo extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -362,35 +358,35 @@ public class TabelaCadCargo extends javax.swing.JPanel {
     }//GEN-LAST:event_BuscarActionPerformed
 
     private void BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseEntered
-        Buscar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BuscarMouseEntered
 
     private void BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseExited
-        Buscar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarMouseExited
 
     private void BotaoexcluirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoexcluirMouseEntered
-        Botaoexcluir.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoexcluirMouseEntered
 
     private void BotaoexcluirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoexcluirMouseExited
-        Botaoexcluir.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoexcluirMouseExited
 
     private void BotaoEditarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseEntered
-        BotaoEditar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEditarMouseEntered
 
     private void BotaoEditarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseExited
-        BotaoEditar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEditarMouseExited
 
     private void BotaoAdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseEntered
-        BotaoAdicionar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAdicionarMouseEntered
 
     private void BotaoAdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseExited
-        BotaoAdicionar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAdicionarMouseExited
 
 

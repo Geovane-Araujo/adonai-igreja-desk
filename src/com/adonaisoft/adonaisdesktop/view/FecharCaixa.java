@@ -103,14 +103,13 @@ public class FecharCaixa extends javax.swing.JDialog {
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Data Abertura: ");
 
-        BotaoFechar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoFechar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoFechar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Password_26px.png"))); // NOI18N
+
+
+
         BotaoFechar.setText("Fechar Caixa");
-        BotaoFechar.setBorder(null);
-        BotaoFechar.setBorderPainted(false);
-        BotaoFechar.setFocusPainted(false);
+
+
+
         BotaoFechar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoFecharMouseEntered(evt);
@@ -204,7 +203,7 @@ public class FecharCaixa extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(CampoDataFechamento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotaoFechar, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoFechar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CodigoCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -293,11 +292,11 @@ public class FecharCaixa extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoFecharMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoFecharMouseEntered
-        BotaoFechar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoFecharMouseEntered
 
     private void BotaoFecharMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoFecharMouseExited
-        BotaoFechar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoFecharMouseExited
 
     public void gerarfechamento(){

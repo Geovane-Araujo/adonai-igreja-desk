@@ -30,6 +30,7 @@ public class TelaEmail extends javax.swing.JDialog {
         CampoCorpoEmail = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         BuscarCaixas = new javax.swing.JButton();
+        BuscarCaixas.setText("Anexar");
         CampoAnexo = new javax.swing.JTextField();
         CampoDestinatario = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -37,6 +38,7 @@ public class TelaEmail extends javax.swing.JDialog {
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         BuscarEmail = new javax.swing.JButton();
+        BuscarEmail.setText("Buscar");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Emails");
@@ -49,14 +51,13 @@ public class TelaEmail extends javax.swing.JDialog {
 
         jPanel1.setBackground(new java.awt.Color(238, 238, 238));
 
-        BotaoEnviar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEnviar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEnviar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEnviar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Paper_Plane_26px.png"))); // NOI18N
+
+
+
         BotaoEnviar.setText("Enviar");
-        BotaoEnviar.setBorder(null);
-        BotaoEnviar.setBorderPainted(false);
-        BotaoEnviar.setFocusPainted(false);
+
+
+
         BotaoEnviar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEnviarMouseEntered(evt);
@@ -81,13 +82,12 @@ public class TelaEmail extends javax.swing.JDialog {
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel11.setText("Corpo do Email:");
 
-        BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Download_15px.png"))); // NOI18N
-        BuscarCaixas.setBorder(null);
-        BuscarCaixas.setBorderPainted(false);
-        BuscarCaixas.setFocusPainted(false);
+
+
+
+
+
+
         BuscarCaixas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarCaixasMouseEntered(evt);
@@ -123,13 +123,12 @@ public class TelaEmail extends javax.swing.JDialog {
         jLabel12.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel12.setText("Anexo:");
 
-        BuscarEmail.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarEmail.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarEmail.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BuscarEmail.setBorder(null);
-        BuscarEmail.setBorderPainted(false);
-        BuscarEmail.setFocusPainted(false);
+
+
+
+
+
+
         BuscarEmail.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarEmailMouseEntered(evt);
@@ -155,7 +154,7 @@ public class TelaEmail extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(CampoDestinatario, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BuscarEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BuscarEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel11)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -169,8 +168,8 @@ public class TelaEmail extends javax.swing.JDialog {
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addComponent(CampoAnexo)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addComponent(BotaoEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addComponent(BotaoEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 20, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -225,11 +224,11 @@ public class TelaEmail extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoEnviarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEnviarMouseEntered
-        BotaoEnviar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEnviarMouseEntered
 
     private void BotaoEnviarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEnviarMouseExited
-        BotaoEnviar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEnviarMouseExited
 
     private void BotaoEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEnviarActionPerformed
@@ -248,11 +247,11 @@ public class TelaEmail extends javax.swing.JDialog {
     }//GEN-LAST:event_BotaoEnviarActionPerformed
 
     private void BuscarCaixasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseEntered
-        BuscarCaixas.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BuscarCaixasMouseEntered
 
     private void BuscarCaixasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseExited
-        BuscarCaixas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarCaixasMouseExited
 
     private void BuscarCaixasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarCaixasActionPerformed

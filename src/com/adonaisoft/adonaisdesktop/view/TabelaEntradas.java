@@ -112,7 +112,9 @@ public class TabelaEntradas extends javax.swing.JPanel {
         CampoCodigo = new javax.swing.JTextField();
         CamoCaixa = new javax.swing.JTextField();
         Frente = new javax.swing.JButton();
+        Frente.setText("Próxima");
         Atras = new javax.swing.JButton();
+        Atras.setText("Anterior");
         CampoResultados = new javax.swing.JTextField();
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
@@ -165,14 +167,13 @@ public class TabelaEntradas extends javax.swing.JPanel {
             TabelaEntradas.getColumnModel().getColumn(8).setMaxWidth(0);
         }
 
-        BotaoAdicionar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAdicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         BotaoAdicionar.setText("Adicionar");
-        BotaoAdicionar.setBorder(null);
-        BotaoAdicionar.setBorderPainted(false);
-        BotaoAdicionar.setFocusPainted(false);
+
+
+
         BotaoAdicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAdicionarMouseEntered(evt);
@@ -187,14 +188,13 @@ public class TabelaEntradas extends javax.swing.JPanel {
             }
         });
 
-        BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
+
+
+
         BotaoEditar.setText("Editar");
-        BotaoEditar.setBorder(null);
-        BotaoEditar.setBorderPainted(false);
-        BotaoEditar.setFocusPainted(false);
+
+
+
         BotaoEditar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEditarMouseEntered(evt);
@@ -209,12 +209,11 @@ public class TabelaEntradas extends javax.swing.JPanel {
             }
         });
 
-        BotaoExcluir.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoExcluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoExcluir.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
+
+
+
         BotaoExcluir.setText("Excluir");
-        BotaoExcluir.setBorder(null);
+
         BotaoExcluir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoExcluirMouseEntered(evt);
@@ -249,14 +248,13 @@ public class TabelaEntradas extends javax.swing.JPanel {
             }
         });
 
-        Buscar.setBackground(new java.awt.Color(1, 1, 34));
-        Buscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Buscar.setForeground(new java.awt.Color(255, 255, 255));
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         Buscar.setText("Atualizar");
-        Buscar.setBorder(null);
-        Buscar.setBorderPainted(false);
-        Buscar.setFocusPainted(false);
+
+
+
         Buscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarMouseEntered(evt);
@@ -289,13 +287,12 @@ public class TabelaEntradas extends javax.swing.JPanel {
             }
         });
 
-        Frente.setBackground(new java.awt.Color(1, 1, 34));
-        Frente.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Frente.setForeground(new java.awt.Color(255, 255, 255));
-        Frente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
-        Frente.setBorder(null);
-        Frente.setBorderPainted(false);
-        Frente.setFocusPainted(false);
+
+
+
+
+
+
         Frente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 FrenteBuscarMouseEntered(evt);
@@ -310,13 +307,12 @@ public class TabelaEntradas extends javax.swing.JPanel {
             }
         });
 
-        Atras.setBackground(new java.awt.Color(1, 1, 34));
-        Atras.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Atras.setForeground(new java.awt.Color(255, 255, 255));
-        Atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
-        Atras.setBorder(null);
-        Atras.setBorderPainted(false);
-        Atras.setFocusPainted(false);
+
+
+
+
+
+
         Atras.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AtrasBuscarMouseEntered(evt);
@@ -354,13 +350,13 @@ public class TabelaEntradas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotaoAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoEditar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
@@ -368,9 +364,9 @@ public class TabelaEntradas extends javax.swing.JPanel {
                         .addGap(135, 135, 135)
                         .addComponent(CampoResultados, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(Atras, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Atras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Frente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Frente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -453,20 +449,20 @@ public class TabelaEntradas extends javax.swing.JPanel {
     }//GEN-LAST:event_BotaoAdicionarActionPerformed
 
     private void BotaoAdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseEntered
-        BotaoAdicionar.setBackground(new Color (219,230,244));
+
         
     }//GEN-LAST:event_BotaoAdicionarMouseEntered
 
     private void BotaoAdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseExited
-        BotaoAdicionar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAdicionarMouseExited
 
     private void BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseEntered
-        Buscar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BuscarMouseEntered
 
     private void BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseExited
-        Buscar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarMouseExited
 
     private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
@@ -577,19 +573,19 @@ public class TabelaEntradas extends javax.swing.JPanel {
     
     
     private void BotaoEditarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseEntered
-        BotaoEditar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEditarMouseEntered
 
     private void BotaoEditarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseExited
-        BotaoEditar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEditarMouseExited
 
     private void BotaoExcluirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoExcluirMouseEntered
-        BotaoExcluir.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoExcluirMouseEntered
 
     private void BotaoExcluirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoExcluirMouseExited
-        BotaoExcluir.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoExcluirMouseExited
 
     private void CamoCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CamoCaixaActionPerformed
@@ -597,11 +593,11 @@ public class TabelaEntradas extends javax.swing.JPanel {
     }//GEN-LAST:event_CamoCaixaActionPerformed
 
     private void FrenteBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FrenteBuscarMouseEntered
-        Frente.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_FrenteBuscarMouseEntered
 
     private void FrenteBuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FrenteBuscarMouseExited
-        Frente.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_FrenteBuscarMouseExited
 
     private void FrenteBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrenteBuscarActionPerformed
@@ -610,11 +606,11 @@ public class TabelaEntradas extends javax.swing.JPanel {
     }//GEN-LAST:event_FrenteBuscarActionPerformed
 
     private void AtrasBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasBuscarMouseEntered
-        Atras.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_AtrasBuscarMouseEntered
 
     private void AtrasBuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasBuscarMouseExited
-        Atras.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_AtrasBuscarMouseExited
 
     private void AtrasBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtrasBuscarActionPerformed

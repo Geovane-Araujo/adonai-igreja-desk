@@ -415,14 +415,13 @@ public class TabelaDashBoard extends javax.swing.JPanel {
                 .addGap(21, 21, 21))
         );
 
-        Adicionar.setBackground(new java.awt.Color(1, 1, 34));
-        Adicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Adicionar.setForeground(new java.awt.Color(255, 255, 255));
-        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Busacar.png"))); // NOI18N
+
+
+
         Adicionar.setText("Buscar Saldo");
-        Adicionar.setBorder(null);
-        Adicionar.setBorderPainted(false);
-        Adicionar.setFocusPainted(false);
+
+
+
         Adicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AdicionarMouseEntered(evt);
@@ -458,7 +457,7 @@ public class TabelaDashBoard extends javax.swing.JPanel {
                         .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(305, 305, 305)))
                 .addContainerGap())
         );
@@ -532,11 +531,11 @@ public class TabelaDashBoard extends javax.swing.JPanel {
     }//GEN-LAST:event_CampoTotalActionPerformed
 
     private void AdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseEntered
-        Adicionar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_AdicionarMouseEntered
 
     private void AdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseExited
-        Adicionar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_AdicionarMouseExited
 
     private void AdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdicionarActionPerformed

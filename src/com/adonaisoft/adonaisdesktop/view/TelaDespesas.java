@@ -236,7 +236,9 @@ public class TelaDespesas extends javax.swing.JPanel {
         CampoCodigoDespesaTodas = new javax.swing.JTextField();
         BuscarTodas = new javax.swing.JButton();
         Frente = new javax.swing.JButton();
+        Frente.setText("Próxima");
         Atras = new javax.swing.JButton();
+        Atras.setText("Anterior");
         CampoResultados = new javax.swing.JTextField();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
@@ -251,7 +253,9 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoAtualizar = new javax.swing.JButton();
         CampoCodigoDespesasPendentes = new javax.swing.JTextField();
         Frente1 = new javax.swing.JButton();
+        Frente1.setText("Próxima");
         Atras1 = new javax.swing.JButton();
+        Atras1.setText("Anterior");
         CampoResultados1 = new javax.swing.JTextField();
         jPanel16 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
@@ -264,7 +268,9 @@ public class TelaDespesas extends javax.swing.JPanel {
         BotaoAtualizarPagas = new javax.swing.JButton();
         CampoCodigoDespesasPagas = new javax.swing.JTextField();
         Frente2 = new javax.swing.JButton();
+        Frente2.setText("Próxima");
         Atras2 = new javax.swing.JButton();
+        Atras2.setText("Anterior");
         CampoResultados2 = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -331,14 +337,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             TabelaDespesas.getColumnModel().getColumn(7).setMaxWidth(0);
         }
 
-        BotaoAdicionar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAdicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_26px.png"))); // NOI18N
+
+
+
         BotaoAdicionar.setText("Adicionar");
-        BotaoAdicionar.setBorder(null);
-        BotaoAdicionar.setBorderPainted(false);
-        BotaoAdicionar.setFocusPainted(false);
+
+
+
         BotaoAdicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAdicionarMouseEntered(evt);
@@ -353,15 +358,14 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BotaoEditarTodas.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEditarTodas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEditarTodas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditarTodas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
+
+
+
         BotaoEditarTodas.setText("Editar");
-        BotaoEditarTodas.setBorder(null);
-        BotaoEditarTodas.setBorderPainted(false);
-        BotaoEditarTodas.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
-        BotaoEditarTodas.setFocusPainted(false);
+
+
+
+
         BotaoEditarTodas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEditarTodasMouseEntered(evt);
@@ -376,14 +380,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BotaoExcluirDespesa.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoExcluirDespesa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoExcluirDespesa.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoExcluirDespesa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
+
+
+
         BotaoExcluirDespesa.setText("Excluir");
-        BotaoExcluirDespesa.setBorder(null);
-        BotaoExcluirDespesa.setBorderPainted(false);
-        BotaoExcluirDespesa.setFocusPainted(false);
+
+
+
         BotaoExcluirDespesa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoExcluirDespesaMouseEntered(evt);
@@ -425,14 +428,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BuscarTodas.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarTodas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BuscarTodas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarTodas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         BuscarTodas.setText("Atualizar");
-        BuscarTodas.setBorder(null);
-        BuscarTodas.setBorderPainted(false);
-        BuscarTodas.setFocusPainted(false);
+
+
+
         BuscarTodas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarTodasMouseEntered(evt);
@@ -447,13 +449,12 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        Frente.setBackground(new java.awt.Color(1, 1, 34));
-        Frente.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Frente.setForeground(new java.awt.Color(255, 255, 255));
-        Frente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
-        Frente.setBorder(null);
-        Frente.setBorderPainted(false);
-        Frente.setFocusPainted(false);
+
+
+
+
+
+
         Frente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 FrenteBuscarMouseEntered(evt);
@@ -468,13 +469,12 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        Atras.setBackground(new java.awt.Color(1, 1, 34));
-        Atras.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Atras.setForeground(new java.awt.Color(255, 255, 255));
-        Atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
-        Atras.setBorder(null);
-        Atras.setBorderPainted(false);
-        Atras.setFocusPainted(false);
+
+
+
+
+
+
         Atras.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AtrasBuscarMouseEntered(evt);
@@ -506,19 +506,19 @@ public class TelaDespesas extends javax.swing.JPanel {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(BotaoAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoEditarTodas, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoEditarTodas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoExcluirDespesa, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoExcluirDespesa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigoDespesaTodas, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CampoResultados, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(Atras, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Atras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Frente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Frente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 338, Short.MAX_VALUE)
@@ -526,7 +526,7 @@ public class TelaDespesas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoLocalizarTodas, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BuscarTodas, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(BuscarTodas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -621,14 +621,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             TabelaPendentes.getColumnModel().getColumn(7).setMaxWidth(0);
         }
 
-        BotaoPagar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoPagar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoPagar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Donate_26px.png"))); // NOI18N
+
+
+
         BotaoPagar.setText("Pagar");
-        BotaoPagar.setBorder(null);
-        BotaoPagar.setBorderPainted(false);
-        BotaoPagar.setFocusPainted(false);
+
+
+
         BotaoPagar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoPagarMouseEntered(evt);
@@ -643,14 +642,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BotaoEditarPendentes.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEditarPendentes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEditarPendentes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditarPendentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
+
+
+
         BotaoEditarPendentes.setText("Editar");
-        BotaoEditarPendentes.setBorder(null);
-        BotaoEditarPendentes.setBorderPainted(false);
-        BotaoEditarPendentes.setFocusPainted(false);
+
+
+
         BotaoEditarPendentes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEditarPendentesMouseEntered(evt);
@@ -665,14 +663,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BotaoExcluirDespesasPendentes.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoExcluirDespesasPendentes.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoExcluirDespesasPendentes.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoExcluirDespesasPendentes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
+
+
+
         BotaoExcluirDespesasPendentes.setText("Excluir");
-        BotaoExcluirDespesasPendentes.setBorder(null);
-        BotaoExcluirDespesasPendentes.setBorderPainted(false);
-        BotaoExcluirDespesasPendentes.setFocusPainted(false);
+
+
+
         BotaoExcluirDespesasPendentes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoExcluirDespesasPendentesMouseEntered(evt);
@@ -707,14 +704,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BotaoAtualizar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAtualizar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAtualizar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         BotaoAtualizar.setText("Atualizar");
-        BotaoAtualizar.setBorder(null);
-        BotaoAtualizar.setBorderPainted(false);
-        BotaoAtualizar.setFocusPainted(false);
+
+
+
         BotaoAtualizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAtualizarMouseEntered(evt);
@@ -733,13 +729,12 @@ public class TelaDespesas extends javax.swing.JPanel {
         CampoCodigoDespesasPendentes.setForeground(new java.awt.Color(219, 230, 244));
         CampoCodigoDespesasPendentes.setBorder(null);
 
-        Frente1.setBackground(new java.awt.Color(1, 1, 34));
-        Frente1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Frente1.setForeground(new java.awt.Color(255, 255, 255));
-        Frente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
-        Frente1.setBorder(null);
-        Frente1.setBorderPainted(false);
-        Frente1.setFocusPainted(false);
+
+
+
+
+
+
         Frente1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Frente1BuscarMouseEntered(evt);
@@ -754,13 +749,12 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        Atras1.setBackground(new java.awt.Color(1, 1, 34));
-        Atras1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Atras1.setForeground(new java.awt.Color(255, 255, 255));
-        Atras1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
-        Atras1.setBorder(null);
-        Atras1.setBorderPainted(false);
-        Atras1.setFocusPainted(false);
+
+
+
+
+
+
         Atras1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Atras1BuscarMouseEntered(evt);
@@ -792,19 +786,19 @@ public class TelaDespesas extends javax.swing.JPanel {
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane4)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                        .addComponent(BotaoPagar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoPagar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoEditarPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoEditarPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoExcluirDespesasPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoExcluirDespesasPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigoDespesasPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CampoResultados1, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(Atras1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Atras1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Frente1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Frente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 210, Short.MAX_VALUE)
@@ -812,7 +806,7 @@ public class TelaDespesas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoLOcalizarPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(BotaoAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
@@ -904,13 +898,12 @@ public class TelaDespesas extends javax.swing.JPanel {
             TabelaPagas.getColumnModel().getColumn(8).setMaxWidth(0);
         }
 
-        BotaoEstornar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEstornar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEstornar.setForeground(new java.awt.Color(255, 255, 255));
+
+
         BotaoEstornar.setText("Estornar");
-        BotaoEstornar.setBorder(null);
-        BotaoEstornar.setBorderPainted(false);
-        BotaoEstornar.setFocusPainted(false);
+
+
+
         BotaoEstornar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEstornarMouseEntered(evt);
@@ -944,14 +937,13 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        BotaoAtualizarPagas.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAtualizarPagas.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAtualizarPagas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizarPagas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         BotaoAtualizarPagas.setText("Atualizar");
-        BotaoAtualizarPagas.setBorder(null);
-        BotaoAtualizarPagas.setBorderPainted(false);
-        BotaoAtualizarPagas.setFocusPainted(false);
+
+
+
         BotaoAtualizarPagas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAtualizarPagasMouseEntered(evt);
@@ -970,13 +962,12 @@ public class TelaDespesas extends javax.swing.JPanel {
         CampoCodigoDespesasPagas.setForeground(new java.awt.Color(219, 230, 244));
         CampoCodigoDespesasPagas.setBorder(null);
 
-        Frente2.setBackground(new java.awt.Color(1, 1, 34));
-        Frente2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Frente2.setForeground(new java.awt.Color(255, 255, 255));
-        Frente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
-        Frente2.setBorder(null);
-        Frente2.setBorderPainted(false);
-        Frente2.setFocusPainted(false);
+
+
+
+
+
+
         Frente2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Frente2BuscarMouseEntered(evt);
@@ -991,13 +982,12 @@ public class TelaDespesas extends javax.swing.JPanel {
             }
         });
 
-        Atras2.setBackground(new java.awt.Color(1, 1, 34));
-        Atras2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Atras2.setForeground(new java.awt.Color(255, 255, 255));
-        Atras2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
-        Atras2.setBorder(null);
-        Atras2.setBorderPainted(false);
-        Atras2.setFocusPainted(false);
+
+
+
+
+
+
         Atras2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Atras2BuscarMouseEntered(evt);
@@ -1035,17 +1025,17 @@ public class TelaDespesas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoLocalizarPagas, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoAtualizarPagas, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BotaoAtualizarPagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                        .addComponent(BotaoEstornar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoEstornar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CampoCodigoDespesasPagas, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoResultados2, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(Atras2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Atras2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Frente2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Frente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel17Layout.setVerticalGroup(
@@ -1277,35 +1267,35 @@ public class TelaDespesas extends javax.swing.JPanel {
         
     }
     private void BotaoAdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseEntered
-        BotaoAdicionar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAdicionarMouseEntered
 
     private void BotaoAdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseExited
-        BotaoAdicionar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAdicionarMouseExited
 
     private void BotaoEditarTodasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarTodasMouseEntered
-        BotaoEditarTodas.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEditarTodasMouseEntered
 
     private void BotaoEditarTodasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarTodasMouseExited
-        BotaoEditarTodas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEditarTodasMouseExited
 
     private void BotaoExcluirDespesaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoExcluirDespesaMouseEntered
-        BotaoExcluirDespesa.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoExcluirDespesaMouseEntered
 
     private void BotaoExcluirDespesaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoExcluirDespesaMouseExited
-        BotaoExcluirDespesa.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoExcluirDespesaMouseExited
 
     private void BuscarTodasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarTodasMouseEntered
-        BuscarTodas.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BuscarTodasMouseEntered
 
     private void BuscarTodasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarTodasMouseExited
-        BuscarTodas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarTodasMouseExited
 
     private void BuscarTodasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarTodasActionPerformed
@@ -1398,43 +1388,43 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_TabelaPendentesMouseClicked
 
     private void BotaoEditarPendentesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarPendentesMouseEntered
-        BotaoEditarPendentes.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEditarPendentesMouseEntered
 
     private void BotaoEditarPendentesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarPendentesMouseExited
-        BotaoEditarPendentes.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEditarPendentesMouseExited
 
     private void BotaoExcluirDespesasPendentesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoExcluirDespesasPendentesMouseEntered
-        BotaoExcluirDespesasPendentes.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoExcluirDespesasPendentesMouseEntered
 
     private void BotaoExcluirDespesasPendentesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoExcluirDespesasPendentesMouseExited
-        BotaoExcluirDespesasPendentes.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoExcluirDespesasPendentesMouseExited
 
     private void BotaoPagarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoPagarMouseEntered
-        BotaoPagar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoPagarMouseEntered
 
     private void BotaoPagarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoPagarMouseExited
-        BotaoPagar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoPagarMouseExited
 
     private void BotaoAtualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAtualizarMouseEntered
-        BotaoAtualizar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAtualizarMouseEntered
 
     private void BotaoAtualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAtualizarMouseExited
-        BotaoAtualizar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAtualizarMouseExited
 
     private void BotaoAtualizarPagasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAtualizarPagasMouseEntered
-        BotaoAtualizarPagas.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAtualizarPagasMouseEntered
 
     private void BotaoAtualizarPagasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAtualizarPagasMouseExited
-        BotaoAtualizarPagas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAtualizarPagasMouseExited
 
     private void BotaoEstornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEstornarActionPerformed
@@ -1462,19 +1452,19 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_BotaoEstornarActionPerformed
 
     private void BotaoEstornarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEstornarMouseEntered
-        BotaoEstornar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEstornarMouseEntered
 
     private void BotaoEstornarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEstornarMouseExited
-        BotaoEstornar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEstornarMouseExited
 
     private void FrenteBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FrenteBuscarMouseEntered
-        Frente.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_FrenteBuscarMouseEntered
 
     private void FrenteBuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FrenteBuscarMouseExited
-        Frente.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_FrenteBuscarMouseExited
 
     private void FrenteBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrenteBuscarActionPerformed
@@ -1483,11 +1473,11 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_FrenteBuscarActionPerformed
 
     private void AtrasBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasBuscarMouseEntered
-        Atras.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_AtrasBuscarMouseEntered
 
     private void AtrasBuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasBuscarMouseExited
-        Atras.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_AtrasBuscarMouseExited
 
     private void AtrasBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtrasBuscarActionPerformed
@@ -1496,11 +1486,11 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_AtrasBuscarActionPerformed
 
     private void Frente1BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Frente1BuscarMouseEntered
-        Frente1.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Frente1BuscarMouseEntered
 
     private void Frente1BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Frente1BuscarMouseExited
-        Frente1.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_Frente1BuscarMouseExited
 
     private void Frente1BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Frente1BuscarActionPerformed
@@ -1508,11 +1498,11 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_Frente1BuscarActionPerformed
 
     private void Atras1BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Atras1BuscarMouseEntered
-        Atras1.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Atras1BuscarMouseEntered
 
     private void Atras1BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Atras1BuscarMouseExited
-        Atras1.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_Atras1BuscarMouseExited
 
     private void Atras1BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Atras1BuscarActionPerformed
@@ -1520,11 +1510,11 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_Atras1BuscarActionPerformed
 
     private void Frente2BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Frente2BuscarMouseEntered
-        Frente2.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Frente2BuscarMouseEntered
 
     private void Frente2BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Frente2BuscarMouseExited
-        Frente2.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_Frente2BuscarMouseExited
 
     private void Frente2BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Frente2BuscarActionPerformed
@@ -1532,11 +1522,11 @@ public class TelaDespesas extends javax.swing.JPanel {
     }//GEN-LAST:event_Frente2BuscarActionPerformed
 
     private void Atras2BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Atras2BuscarMouseEntered
-        Atras2.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Atras2BuscarMouseEntered
 
     private void Atras2BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Atras2BuscarMouseExited
-        Atras2.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_Atras2BuscarMouseExited
 
     private void Atras2BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Atras2BuscarActionPerformed

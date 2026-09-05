@@ -53,6 +53,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         CampoEstado.setSelectedItem("AC");
         CampoCidade.setText("");
         CampoCargo.setText("");
+        membros.setIdCargo(0);
         CampoObservacoes.setText("");
         CampoAtivo.setSelected(false);
         CampoDataBatismo.setText("");
@@ -92,6 +93,7 @@ public class CadastroMembro extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         labelImagem = new javax.swing.JLabel();
         BuscarImg = new javax.swing.JButton();
+        BuscarImg.setText("Carregar");
         CampoDtNasc = new com.toedter.calendar.JDateChooser();
         jLabel3 = new javax.swing.JLabel();
         CampoTelefone = new javax.swing.JFormattedTextField();
@@ -121,9 +123,12 @@ public class CadastroMembro extends javax.swing.JDialog {
         CampoObservacoes = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         BotaoAdicionarCargo = new javax.swing.JButton();
+        BotaoAdicionarCargo.setText("Adicionar");
         BotaoBuscarCargo = new javax.swing.JButton();
+        BotaoBuscarCargo.setText("Buscar");
         CampoCargo = new javax.swing.JTextField();
         Delimagen = new javax.swing.JButton();
+        Delimagen.setText("Remover");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro de Membros");
@@ -136,14 +141,13 @@ public class CadastroMembro extends javax.swing.JDialog {
 
         jPanel1.setBackground(new java.awt.Color(238, 238, 238));
 
-        BotaoImprimir.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoImprimir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoImprimir.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Imprimir.png"))); // NOI18N
+
+
+
         BotaoImprimir.setText("Imprimir");
-        BotaoImprimir.setBorder(null);
-        BotaoImprimir.setBorderPainted(false);
-        BotaoImprimir.setFocusPainted(false);
+
+
+
         BotaoImprimir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoImprimirMouseEntered(evt);
@@ -164,14 +168,13 @@ public class CadastroMembro extends javax.swing.JDialog {
         CampoCodigo.setForeground(new java.awt.Color(238, 238, 238));
         CampoCodigo.setBorder(null);
 
-        Salvar1.setBackground(new java.awt.Color(1, 1, 34));
-        Salvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Salvar1.setForeground(new java.awt.Color(255, 255, 255));
-        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         Salvar1.setText("Salvar");
-        Salvar1.setBorder(null);
-        Salvar1.setBorderPainted(false);
-        Salvar1.setFocusPainted(false);
+
+
+
         Salvar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Salvar1MouseEntered(evt);
@@ -196,13 +199,12 @@ public class CadastroMembro extends javax.swing.JDialog {
         labelImagem.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(163, 163, 163)));
         labelImagem.setMaximumSize(new java.awt.Dimension(135, 116));
 
-        BuscarImg.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarImg.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarImg.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Download_15px.png"))); // NOI18N
-        BuscarImg.setBorder(null);
-        BuscarImg.setBorderPainted(false);
-        BuscarImg.setFocusPainted(false);
+
+
+
+
+
+
         BuscarImg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarImgMouseEntered(evt);
@@ -339,13 +341,12 @@ public class CadastroMembro extends javax.swing.JDialog {
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel11.setText("Observações:");
 
-        BotaoAdicionarCargo.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAdicionarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BotaoAdicionarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
-        BotaoAdicionarCargo.setBorder(null);
-        BotaoAdicionarCargo.setBorderPainted(false);
-        BotaoAdicionarCargo.setFocusPainted(false);
+
+
+
+
+
+
         BotaoAdicionarCargo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAdicionarCargoMouseEntered(evt);
@@ -360,13 +361,12 @@ public class CadastroMembro extends javax.swing.JDialog {
             }
         });
 
-        BotaoBuscarCargo.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoBuscarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BotaoBuscarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BotaoBuscarCargo.setBorder(null);
-        BotaoBuscarCargo.setBorderPainted(false);
-        BotaoBuscarCargo.setFocusPainted(false);
+
+
+
+
+
+
         BotaoBuscarCargo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoBuscarCargoMouseEntered(evt);
@@ -388,13 +388,12 @@ public class CadastroMembro extends javax.swing.JDialog {
             }
         });
 
-        Delimagen.setBackground(new java.awt.Color(1, 1, 34));
-        Delimagen.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        Delimagen.setForeground(new java.awt.Color(255, 255, 255));
-        Delimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Delete_15px.png"))); // NOI18N
-        Delimagen.setBorder(null);
-        Delimagen.setBorderPainted(false);
-        Delimagen.setFocusPainted(false);
+
+
+
+
+
+
         Delimagen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 DelimagenMouseEntered(evt);
@@ -458,9 +457,9 @@ public class CadastroMembro extends javax.swing.JDialog {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(52, 52, 52)
-                                .addComponent(Delimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Delimagen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BuscarImg, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(BuscarImg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(labelImagem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -490,14 +489,14 @@ public class CadastroMembro extends javax.swing.JDialog {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(CampoCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)
-                                .addComponent(BotaoBuscarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(BotaoBuscarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotaoAdicionarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(BotaoAdicionarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel12)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotaoImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(BotaoImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(46, 46, 46)
                                 .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel11)
@@ -614,11 +613,11 @@ public class CadastroMembro extends javax.swing.JDialog {
     }//GEN-LAST:event_CampoAtivoActionPerformed
 
     private void BotaoImprimirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoImprimirMouseEntered
-        BotaoImprimir.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoImprimirMouseEntered
 
     private void BotaoImprimirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoImprimirMouseExited
-        BotaoImprimir.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoImprimirMouseExited
 
     private void BotaoImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoImprimirActionPerformed
@@ -648,11 +647,11 @@ public class CadastroMembro extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void Salvar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Salvar1MouseEntered
-        Salvar1.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Salvar1MouseEntered
 
     private void Salvar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Salvar1MouseExited
-        Salvar1.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_Salvar1MouseExited
 
     private void Salvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar1ActionPerformed
@@ -663,11 +662,11 @@ public class CadastroMembro extends javax.swing.JDialog {
    
     
     private void BuscarImgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarImgMouseEntered
-        BuscarImg.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BuscarImgMouseEntered
 
     private void BuscarImgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarImgMouseExited
-        BuscarImg.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarImgMouseExited
 
     private void BuscarImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarImgActionPerformed
@@ -718,11 +717,11 @@ public class CadastroMembro extends javax.swing.JDialog {
     }//GEN-LAST:event_CampoBatizadoActionPerformed
 
     private void BotaoAdicionarCargoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarCargoMouseEntered
-        BotaoAdicionarCargo.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoAdicionarCargoMouseEntered
 
     private void BotaoAdicionarCargoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarCargoMouseExited
-        BotaoAdicionarCargo.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAdicionarCargoMouseExited
 
     private void BotaoAdicionarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoAdicionarCargoActionPerformed
@@ -731,24 +730,23 @@ public class CadastroMembro extends javax.swing.JDialog {
     }//GEN-LAST:event_BotaoAdicionarCargoActionPerformed
 
     private void BotaoBuscarCargoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoBuscarCargoMouseEntered
-        BotaoBuscarCargo.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoBuscarCargoMouseEntered
 
     private void BotaoBuscarCargoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoBuscarCargoMouseExited
-        BotaoBuscarCargo.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoBuscarCargoMouseExited
 
     private void BotaoBuscarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoBuscarCargoActionPerformed
-        PesquisaCargo cargo = new PesquisaCargo(null, true);
-        cargo.setVisible(true);
+        selecionarCargo();
     }//GEN-LAST:event_BotaoBuscarCargoActionPerformed
 
     private void DelimagenMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DelimagenMouseEntered
-        Delimagen.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_DelimagenMouseEntered
 
     private void DelimagenMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DelimagenMouseExited
-        Delimagen.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_DelimagenMouseExited
 
     private void DelimagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DelimagenActionPerformed
@@ -759,9 +757,18 @@ public class CadastroMembro extends javax.swing.JDialog {
     }//GEN-LAST:event_DelimagenActionPerformed
 
     private void CampoCargoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CampoCargoKeyPressed
-        PesquisaCargo cargo = new PesquisaCargo(null, true);
-        cargo.setVisible(true);
+        selecionarCargo();
     }//GEN-LAST:event_CampoCargoKeyPressed
+
+    private void selecionarCargo() {
+        PesquisaCargo cargo = new PesquisaCargo((java.awt.Frame) getOwner(), true);
+        cargo.setLocationRelativeTo(this);
+        cargo.setVisible(true);
+        if (cargo.getIdCargoSelecionado() != null) {
+            membros.setIdCargo(cargo.getIdCargoSelecionado());
+            CampoCargo.setText(cargo.getDescricaoSelecionada());
+        }
+    }
 
     public void salvar(){
 

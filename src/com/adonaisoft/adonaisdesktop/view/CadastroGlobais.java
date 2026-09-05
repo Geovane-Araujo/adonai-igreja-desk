@@ -47,8 +47,10 @@ public class CadastroGlobais extends javax.swing.JDialog {
         jLabel11 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         BuscarCaixas = new javax.swing.JButton();
+        BuscarCaixas.setText("Carregar");
         LabelImagem = new javax.swing.JLabel();
         Delimagen = new javax.swing.JButton();
+        Delimagen.setText("Remover");
         jPanel3 = new javax.swing.JPanel();
         campoSMTP = new javax.swing.JTextField();
         CampoPorta = new javax.swing.JTextField();
@@ -78,14 +80,13 @@ public class CadastroGlobais extends javax.swing.JDialog {
         CampoCodigo.setForeground(new java.awt.Color(238, 238, 238));
         CampoCodigo.setBorder(null);
 
-        Salvar1.setBackground(new java.awt.Color(1, 1, 34));
-        Salvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Salvar1.setForeground(new java.awt.Color(255, 255, 255));
-        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         Salvar1.setText("Salvar");
-        Salvar1.setBorder(null);
-        Salvar1.setBorderPainted(false);
-        Salvar1.setFocusPainted(false);
+
+
+
         Salvar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Salvar1MouseEntered(evt);
@@ -117,13 +118,12 @@ public class CadastroGlobais extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel2.setText("Imagem");
 
-        BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Download_15px.png"))); // NOI18N
-        BuscarCaixas.setBorder(null);
-        BuscarCaixas.setBorderPainted(false);
-        BuscarCaixas.setFocusPainted(false);
+
+
+
+
+
+
         BuscarCaixas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarCaixasMouseEntered(evt);
@@ -141,13 +141,12 @@ public class CadastroGlobais extends javax.swing.JDialog {
         LabelImagem.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
         LabelImagem.setMaximumSize(new java.awt.Dimension(122, 171));
 
-        Delimagen.setBackground(new java.awt.Color(1, 1, 34));
-        Delimagen.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        Delimagen.setForeground(new java.awt.Color(255, 255, 255));
-        Delimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Delete_15px.png"))); // NOI18N
-        Delimagen.setBorder(null);
-        Delimagen.setBorderPainted(false);
-        Delimagen.setFocusPainted(false);
+
+
+
+
+
+
         Delimagen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 DelimagenMouseEntered(evt);
@@ -177,9 +176,9 @@ public class CadastroGlobais extends javax.swing.JDialog {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(LabelImagem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(Delimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Delimagen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -326,7 +325,7 @@ public class CadastroGlobais extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(46, 46, 46)
                                 .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -369,11 +368,11 @@ public class CadastroGlobais extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void Salvar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Salvar1MouseEntered
-        Salvar1.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Salvar1MouseEntered
 
     private void Salvar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Salvar1MouseExited
-        Salvar1.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_Salvar1MouseExited
 
     private void Salvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar1ActionPerformed
@@ -409,11 +408,11 @@ public class CadastroGlobais extends javax.swing.JDialog {
     }//GEN-LAST:event_CampoSenhaActionPerformed
 
     private void BuscarCaixasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseEntered
-        BuscarCaixas.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BuscarCaixasMouseEntered
 
     private void BuscarCaixasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseExited
-        BuscarCaixas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarCaixasMouseExited
 
     private void BuscarCaixasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarCaixasActionPerformed
@@ -461,11 +460,11 @@ public class CadastroGlobais extends javax.swing.JDialog {
     }
     
     private void DelimagenMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DelimagenMouseEntered
-        Delimagen.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_DelimagenMouseEntered
 
     private void DelimagenMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DelimagenMouseExited
-        Delimagen.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_DelimagenMouseExited
 
     private void DelimagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DelimagenActionPerformed

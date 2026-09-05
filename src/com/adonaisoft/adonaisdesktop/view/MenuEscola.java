@@ -24,15 +24,14 @@ public class MenuEscola extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(171, 444));
         setPreferredSize(new java.awt.Dimension(171, 444));
 
-        BotaoClasses.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoClasses.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        BotaoClasses.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoClasses.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_School_26px.png"))); // NOI18N
+
+
+
         BotaoClasses.setText("Classes");
-        BotaoClasses.setBorder(null);
-        BotaoClasses.setFocusPainted(false);
-        BotaoClasses.setFocusable(false);
-        BotaoClasses.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         BotaoClasses.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoClassesMouseEntered(evt);
@@ -62,11 +61,11 @@ public class MenuEscola extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotaoClassesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoClassesMouseEntered
-       BotaoClasses.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoClassesMouseEntered
 
     private void BotaoClassesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoClassesMouseExited
-        BotaoClasses.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoClassesMouseExited
 
     private void BotaoClassesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoClassesActionPerformed

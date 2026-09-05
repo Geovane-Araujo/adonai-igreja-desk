@@ -66,9 +66,9 @@
                               <Group type="102" attributes="0">
                                   <Component id="CampoTipo" pref="135" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="BotaoBuscarCargo" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="BotaoBuscarCargo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="BotaoAdicionarCargo" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="BotaoAdicionarCargo" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
@@ -94,7 +94,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="CampoNomeMembro" min="-2" pref="240" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="BuscarMembros" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="BuscarMembros" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -103,7 +103,7 @@
                               <Group type="102" attributes="0">
                                   <Component id="CampoCaixaEntrada" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="BuscarCaixas" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="BuscarCaixas" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -115,7 +115,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="BotaoSalvar" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <Component id="BotaoSalvar" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                                   <Component id="CampoCodigo" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -191,20 +191,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="BuscarMembros">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="22" green="1" red="1" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="focusPainted" type="boolean" value="false"/>
+          <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
           <Events>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BuscarMembrosMouseEntered"/>
@@ -367,24 +354,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BotaoSalvar">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="22" green="1" red="1" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Salvar"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="focusPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoSalvarMouseEntered"/>
@@ -394,20 +364,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BuscarCaixas">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="22" green="1" red="1" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="focusPainted" type="boolean" value="false"/>
+          <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
           <Events>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BuscarCaixasMouseEntered"/>
@@ -430,20 +387,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BotaoBuscarCargo">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="22" green="1" red="1" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="focusPainted" type="boolean" value="false"/>
+          <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
           <Events>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoBuscarCargoMouseEntered"/>
@@ -453,20 +397,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BotaoAdicionarCargo">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="22" green="1" red="1" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="borderPainted" type="boolean" value="false"/>
-            <Property name="focusPainted" type="boolean" value="false"/>
+          <Property name="text" type="java.lang.String" value="Adicionar"/>
           </Properties>
           <Events>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoAdicionarCargoMouseEntered"/>

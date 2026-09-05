@@ -89,14 +89,13 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
         CampoCodigo.setForeground(new java.awt.Color(238, 238, 238));
         CampoCodigo.setBorder(null);
 
-        Salvar1.setBackground(new java.awt.Color(1, 1, 34));
-        Salvar1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        Salvar1.setForeground(new java.awt.Color(255, 255, 255));
-        Salvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         Salvar1.setText("Salvar");
-        Salvar1.setBorder(null);
-        Salvar1.setBorderPainted(false);
-        Salvar1.setFocusPainted(false);
+
+
+
         Salvar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Salvar1MouseEntered(evt);
@@ -193,7 +192,7 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Salvar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -328,11 +327,11 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void Salvar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Salvar1MouseEntered
-        Salvar1.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_Salvar1MouseEntered
 
     private void Salvar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Salvar1MouseExited
-        Salvar1.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_Salvar1MouseExited
 
     private void Salvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar1ActionPerformed

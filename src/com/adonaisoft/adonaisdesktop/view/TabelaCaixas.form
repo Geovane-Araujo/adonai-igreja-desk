@@ -87,9 +87,9 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jScrollPane1" alignment="0" pref="727" max="32767" attributes="0"/>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="BotaoAbrirCaixa" min="-2" pref="117" max="-2" attributes="0"/>
+                                      <Component id="BotaoAbrirCaixa" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="BotaoFecharcaixa" min="-2" pref="131" max="-2" attributes="0"/>
+                                      <Component id="BotaoFecharcaixa" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="CampoSelecionadoNome" min="-2" pref="48" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -112,7 +112,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="CampoPesquisa" min="-2" pref="212" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="BotaoAtualizar" min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="BotaoAtualizar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -158,24 +158,7 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="BotaoAtualizar">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="22" green="1" red="1" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Berlin Sans FB" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Atualizar"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
-                <Property name="borderPainted" type="boolean" value="false"/>
-                <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoAtualizarMouseEntered"/>
@@ -257,24 +240,7 @@
             </Container>
             <Component class="javax.swing.JButton" name="BotaoAbrirCaixa">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="22" green="1" red="1" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Padlock_26px.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Abrir Caixa"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
-                <Property name="borderPainted" type="boolean" value="false"/>
-                <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoAbrirCaixaMouseEntered"/>
@@ -284,24 +250,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="BotaoFecharcaixa">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="22" green="1" red="1" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/icons8_Password_26px.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Fechar Caixa"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
-                <Property name="borderPainted" type="boolean" value="false"/>
-                <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoFecharcaixaMouseEntered"/>
@@ -734,7 +683,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="CampoPesquisa2" min="-2" pref="212" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="BotaoAtualizar1" min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="BotaoAtualizar1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
@@ -862,24 +811,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="BotaoAtualizar1">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="22" green="1" red="1" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="SansSerif" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Atualizar"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
-                <Property name="borderPainted" type="boolean" value="false"/>
-                <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotaoAtualizar1MouseEntered"/>

@@ -133,7 +133,9 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         AtualizarCadastro = new javax.swing.JButton();
         btnRegistrar = new javax.swing.JButton();
         Frente = new javax.swing.JButton();
+        Frente.setText("Próxima");
         Atras = new javax.swing.JButton();
+        Atras.setText("Anterior");
         CampoResultados = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -145,7 +147,9 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         CpPesquisaHis = new javax.swing.JTextField();
         AtualizarHistorico = new javax.swing.JButton();
         Frente1 = new javax.swing.JButton();
+        Frente1.setText("Próxima");
         Atras1 = new javax.swing.JButton();
+        Atras1.setText("Anterior");
         CampoResultados1 = new javax.swing.JTextField();
 
         jTabbedPane1.setBackground(new java.awt.Color(219, 230, 244));
@@ -194,14 +198,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             TBVisitantes.getColumnModel().getColumn(3).setPreferredWidth(200);
         }
 
-        btnAdicionar.setBackground(new java.awt.Color(1, 1, 34));
-        btnAdicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        btnAdicionar.setForeground(new java.awt.Color(255, 255, 255));
-        btnAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         btnAdicionar.setText("Adicionar");
-        btnAdicionar.setBorder(null);
-        btnAdicionar.setBorderPainted(false);
-        btnAdicionar.setFocusPainted(false);
+
+
+
         btnAdicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAdicionarMouseEntered(evt);
@@ -216,14 +219,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        btnEditar.setBackground(new java.awt.Color(1, 1, 34));
-        btnEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        btnEditar.setForeground(new java.awt.Color(255, 255, 255));
-        btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
+
+
+
         btnEditar.setText("Editar");
-        btnEditar.setBorder(null);
-        btnEditar.setBorderPainted(false);
-        btnEditar.setFocusPainted(false);
+
+
+
         btnEditar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEditarMouseEntered(evt);
@@ -238,14 +240,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        btnExcluir.setBackground(new java.awt.Color(1, 1, 34));
-        btnExcluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        btnExcluir.setForeground(new java.awt.Color(255, 255, 255));
-        btnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
+
+
+
         btnExcluir.setText("Excluir");
-        btnExcluir.setBorder(null);
-        btnExcluir.setBorderPainted(false);
-        btnExcluir.setFocusPainted(false);
+
+
+
         btnExcluir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoexcluirMouseEntered(evt);
@@ -283,14 +284,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
         CpCodigo.setForeground(new java.awt.Color(219, 230, 244));
         CpCodigo.setBorder(null);
 
-        AtualizarCadastro.setBackground(new java.awt.Color(1, 1, 34));
-        AtualizarCadastro.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        AtualizarCadastro.setForeground(new java.awt.Color(255, 255, 255));
-        AtualizarCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         AtualizarCadastro.setText("Atualizar");
-        AtualizarCadastro.setBorder(null);
-        AtualizarCadastro.setBorderPainted(false);
-        AtualizarCadastro.setFocusPainted(false);
+
+
+
         AtualizarCadastro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarMouseEntered(evt);
@@ -305,14 +305,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        btnRegistrar.setBackground(new java.awt.Color(1, 1, 34));
-        btnRegistrar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
-        btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Math_26px.png"))); // NOI18N
+
+
+
         btnRegistrar.setText("Registrar");
-        btnRegistrar.setBorder(null);
-        btnRegistrar.setBorderPainted(false);
-        btnRegistrar.setFocusPainted(false);
+
+
+
         btnRegistrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnRegistrarBotaoAdicionarMouseEntered(evt);
@@ -327,13 +326,12 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        Frente.setBackground(new java.awt.Color(1, 1, 34));
-        Frente.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Frente.setForeground(new java.awt.Color(255, 255, 255));
-        Frente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
-        Frente.setBorder(null);
-        Frente.setBorderPainted(false);
-        Frente.setFocusPainted(false);
+
+
+
+
+
+
         Frente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 FrenteBuscarMouseEntered(evt);
@@ -348,13 +346,12 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        Atras.setBackground(new java.awt.Color(1, 1, 34));
-        Atras.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Atras.setForeground(new java.awt.Color(255, 255, 255));
-        Atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
-        Atras.setBorder(null);
-        Atras.setBorderPainted(false);
-        Atras.setFocusPainted(false);
+
+
+
+
+
+
         Atras.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AtrasBuscarMouseEntered(evt);
@@ -385,19 +382,19 @@ public class TabelaVisitantes extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(btnAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CampoResultados, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Atras, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Atras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Frente, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Frente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane5)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -408,7 +405,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoPesquisaCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AtualizarCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(AtualizarCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -482,14 +479,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             tabelaVisitantesHistorico.getColumnModel().getColumn(3).setPreferredWidth(200);
         }
 
-        btnregistrarhis.setBackground(new java.awt.Color(1, 1, 34));
-        btnregistrarhis.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        btnregistrarhis.setForeground(new java.awt.Color(255, 255, 255));
-        btnregistrarhis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         btnregistrarhis.setText("Registrar");
-        btnregistrarhis.setBorder(null);
-        btnregistrarhis.setBorderPainted(false);
-        btnregistrarhis.setFocusPainted(false);
+
+
+
         btnregistrarhis.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnregistrarhisBotaoAdicionarMouseEntered(evt);
@@ -522,14 +518,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        AtualizarHistorico.setBackground(new java.awt.Color(1, 1, 34));
-        AtualizarHistorico.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        AtualizarHistorico.setForeground(new java.awt.Color(255, 255, 255));
-        AtualizarHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         AtualizarHistorico.setText("Atualizar");
-        AtualizarHistorico.setBorder(null);
-        AtualizarHistorico.setBorderPainted(false);
-        AtualizarHistorico.setFocusPainted(false);
+
+
+
         AtualizarHistorico.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AtualizarHistoricoBuscarMouseEntered(evt);
@@ -544,13 +539,12 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        Frente1.setBackground(new java.awt.Color(1, 1, 34));
-        Frente1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Frente1.setForeground(new java.awt.Color(255, 255, 255));
-        Frente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Chevron_Right_15px.png"))); // NOI18N
-        Frente1.setBorder(null);
-        Frente1.setBorderPainted(false);
-        Frente1.setFocusPainted(false);
+
+
+
+
+
+
         Frente1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Frente1BuscarMouseEntered(evt);
@@ -565,13 +559,12 @@ public class TabelaVisitantes extends javax.swing.JPanel {
             }
         });
 
-        Atras1.setBackground(new java.awt.Color(1, 1, 34));
-        Atras1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        Atras1.setForeground(new java.awt.Color(255, 255, 255));
-        Atras1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Back_15px.png"))); // NOI18N
-        Atras1.setBorder(null);
-        Atras1.setBorderPainted(false);
-        Atras1.setFocusPainted(false);
+
+
+
+
+
+
         Atras1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Atras1BuscarMouseEntered(evt);
@@ -602,13 +595,13 @@ public class TabelaVisitantes extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(btnregistrarhis, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnregistrarhis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(CampoResultados1, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Atras1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Atras1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Frente1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Frente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane6)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -617,7 +610,7 @@ public class TabelaVisitantes extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CpPesquisaHis, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AtualizarHistorico, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(AtualizarHistorico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
@@ -679,12 +672,12 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_AtualizarHistoricoBuscarMouseExited
 
     private void AtualizarHistoricoBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtualizarHistoricoBuscarMouseEntered
-        AtualizarHistorico.setBackground(new Color(219, 230, 244));
+
 
     }//GEN-LAST:event_AtualizarHistoricoBuscarMouseEntered
 
     private void CpPesquisaHisjTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CpPesquisaHisjTextField2ActionPerformed
-        AtualizarHistorico.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_CpPesquisaHisjTextField2ActionPerformed
 
     private void btnregistrarhisBotaoAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarhisBotaoAdicionarActionPerformed
@@ -697,11 +690,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_btnregistrarhisBotaoAdicionarActionPerformed
 
     private void btnregistrarhisBotaoAdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnregistrarhisBotaoAdicionarMouseExited
-        btnregistrarhis.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_btnregistrarhisBotaoAdicionarMouseExited
 
     private void btnregistrarhisBotaoAdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnregistrarhisBotaoAdicionarMouseEntered
-        btnregistrarhis.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_btnregistrarhisBotaoAdicionarMouseEntered
 
     private void tabelaVisitantesHistoricotabelaVisitantesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelaVisitantesHistoricotabelaVisitantesMouseClicked
@@ -716,11 +709,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_BuscarActionPerformed
 
     private void BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseExited
-        AtualizarCadastro.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_BuscarMouseExited
 
     private void BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseEntered
-        AtualizarCadastro.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_BuscarMouseEntered
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -753,11 +746,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_BotaoexcluirActionPerformed
 
     private void BotaoexcluirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoexcluirMouseExited
-        btnExcluir.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_BotaoexcluirMouseExited
 
     private void BotaoexcluirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoexcluirMouseEntered
-        btnExcluir.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_BotaoexcluirMouseEntered
 
     private void BotaoEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEditarActionPerformed
@@ -776,11 +769,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_BotaoEditarActionPerformed
 
     private void BotaoEditarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseExited
-        btnEditar.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_BotaoEditarMouseExited
 
     private void BotaoEditarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseEntered
-        btnEditar.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_BotaoEditarMouseEntered
 
     private void BotaoAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoAdicionarActionPerformed
@@ -794,11 +787,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_BotaoAdicionarActionPerformed
 
     private void BotaoAdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseExited
-        btnAdicionar.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_BotaoAdicionarMouseExited
 
     private void BotaoAdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarMouseEntered
-        btnAdicionar.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_BotaoAdicionarMouseEntered
 
     private void tabelaVisitantesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelaVisitantesMouseClicked
@@ -820,12 +813,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_tabelaVisitantesMouseClicked
 
     private void btnRegistrarBotaoAdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarBotaoAdicionarMouseEntered
-        btnRegistrar.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_btnRegistrarBotaoAdicionarMouseEntered
 
     private void btnRegistrarBotaoAdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistrarBotaoAdicionarMouseExited
 
-        btnRegistrar.setBackground(new Color(1, 1, 34));
     }//GEN-LAST:event_btnRegistrarBotaoAdicionarMouseExited
 
     private void btnRegistrarBotaoAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarBotaoAdicionarActionPerformed
@@ -846,11 +838,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_CpPesquisaHisKeyTyped
 
     private void FrenteBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FrenteBuscarMouseEntered
-        Frente.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_FrenteBuscarMouseEntered
 
     private void FrenteBuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FrenteBuscarMouseExited
-        Frente.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_FrenteBuscarMouseExited
 
     private void FrenteBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrenteBuscarActionPerformed
@@ -859,11 +851,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_FrenteBuscarActionPerformed
 
     private void AtrasBuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasBuscarMouseEntered
-        Atras.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_AtrasBuscarMouseEntered
 
     private void AtrasBuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AtrasBuscarMouseExited
-        Atras.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_AtrasBuscarMouseExited
 
     private void AtrasBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtrasBuscarActionPerformed
@@ -873,11 +865,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_AtrasBuscarActionPerformed
 
     private void Frente1BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Frente1BuscarMouseEntered
-       Frente1.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_Frente1BuscarMouseEntered
 
     private void Frente1BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Frente1BuscarMouseExited
-        Frente1.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_Frente1BuscarMouseExited
 
     private void Frente1BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Frente1BuscarActionPerformed
@@ -891,11 +883,11 @@ public class TabelaVisitantes extends javax.swing.JPanel {
     }//GEN-LAST:event_Frente1BuscarActionPerformed
 
     private void Atras1BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Atras1BuscarMouseEntered
-        Atras1.setBackground(new Color(219, 230, 244));
+
     }//GEN-LAST:event_Atras1BuscarMouseEntered
 
     private void Atras1BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Atras1BuscarMouseExited
-        Atras1.setBackground(new Color(1, 1, 34));
+
     }//GEN-LAST:event_Atras1BuscarMouseExited
 
     private void Atras1BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Atras1BuscarActionPerformed

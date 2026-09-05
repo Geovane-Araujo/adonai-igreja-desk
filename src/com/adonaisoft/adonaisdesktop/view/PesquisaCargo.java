@@ -2,8 +2,6 @@
 package com.adonaisoft.adonaisdesktop.view;
 
 import com.adonaisoft.adonaisdesktop.configuration.database.ConexaoBanco;
-import com.adonaisoft.adonaisdesktop.model.Membros;
-import com.adonaisoft.adonaisdesktop.view.membros.form.CadastroMembro;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,6 +12,16 @@ import javax.swing.table.DefaultTableModel;
 
 public class PesquisaCargo extends javax.swing.JDialog {
     ConexaoBanco conectar = new ConexaoBanco();
+    private Integer idCargoSelecionado;
+    private String descricaoSelecionada;
+
+    public Integer getIdCargoSelecionado() {
+        return idCargoSelecionado;
+    }
+
+    public String getDescricaoSelecionada() {
+        return descricaoSelecionada;
+    }
 
     
     public PesquisaCargo(java.awt.Frame parent, boolean modal) {
@@ -22,36 +30,24 @@ public class PesquisaCargo extends javax.swing.JDialog {
     }
     
     
-    public void povoar(String sql){
-        
-       
+    public void povoar(String sql, String... parametros) {
         Connection con = conectar.connectDatabase();
-        PreparedStatement stmt = null;
-        ResultSet rs = null;
-        
-        try{
-            
-            stmt = con.prepareStatement(sql);
-            stmt.execute();
-            rs = stmt.executeQuery();
-            
-            DefaultTableModel Model = (DefaultTableModel) TabelaCargos.getModel();
-            Model.setNumRows(0);
-            
-            while(rs.next()){
-                Model.addRow(new Object[]{
-                    rs.getString("IdCargo"),
-                    rs.getString("Descricao"),
-                });
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
+            for (int i = 0; i < parametros.length; i++) {
+                stmt.setString(i + 1, parametros[i]);
             }
+            try (ResultSet rs = stmt.executeQuery()) {
+                DefaultTableModel model = (DefaultTableModel) TabelaCargos.getModel();
+                model.setRowCount(0);
+                while (rs.next()) {
+                    model.addRow(new Object[]{rs.getInt("IdCargo"), rs.getString("Descricao")});
+                }
+            }
+        } catch (SQLException e) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Não foi possível buscar os cargos: " + e.getMessage());
         }
-        catch(SQLException e){
-            System.out.println(e);
-        }
-        
     }
 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -165,21 +161,20 @@ public class PesquisaCargo extends javax.swing.JDialog {
     }//GEN-LAST:event_CampoNomeActionPerformed
 
     private void CampoNomeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CampoNomeKeyTyped
-        String sql = "SELECT IdCargo,Descricao FROM Cargo "
-                + "WHERE Descricao LIKE'%"+ CampoNome.getText()+"%'";
-        povoar(sql);
-        
+        javax.swing.SwingUtilities.invokeLater(() -> povoar(
+                "SELECT IdCargo, Descricao FROM Cargo WHERE Descricao LIKE ? ORDER BY Descricao",
+                "%" + CampoNome.getText() + "%"));
     }//GEN-LAST:event_CampoNomeKeyTyped
 
     private void TabelaCargosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelaCargosMouseClicked
-        int linha = TabelaCargos.getSelectedRow();
-        
-       // variável usada para  armazenar a id na hora da edição
-//        membros.setId Integer.parseInt(TabelaCargos.getValueAt(linha,0).toString());
-//        CadastroMembro.CampoCargo.setText(TabelaCargos.getValueAt(linha,1).toString());
-//        this.dispose();
-
-        
+        int linha = TabelaCargos.rowAtPoint(evt.getPoint());
+        if (linha < 0) {
+            return;
+        }
+        int modelo = TabelaCargos.convertRowIndexToModel(linha);
+        idCargoSelecionado = ((Number) TabelaCargos.getModel().getValueAt(modelo, 0)).intValue();
+        descricaoSelecionada = (String) TabelaCargos.getModel().getValueAt(modelo, 1);
+        dispose();
     }//GEN-LAST:event_TabelaCargosMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened

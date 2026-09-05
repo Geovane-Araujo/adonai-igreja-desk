@@ -36,15 +36,14 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(1, 1, 34));
         jPanel1.setPreferredSize(new java.awt.Dimension(98, 444));
 
-        botaoIgreja.setBackground(new java.awt.Color(1, 1, 34));
-        botaoIgreja.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        botaoIgreja.setForeground(new java.awt.Color(255, 255, 255));
-        botaoIgreja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Menorah_26px.png"))); // NOI18N
+
+
+
         botaoIgreja.setText(" Igreja");
-        botaoIgreja.setBorder(null);
-        botaoIgreja.setFocusPainted(false);
-        botaoIgreja.setFocusable(false);
-        botaoIgreja.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         botaoIgreja.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 botaoIgrejaMouseEntered(evt);
@@ -59,15 +58,14 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
             }
         });
 
-        botaoUsuario.setBackground(new java.awt.Color(1, 1, 34));
-        botaoUsuario.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        botaoUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        botaoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Male_User_26px_1.png"))); // NOI18N
+
+
+
         botaoUsuario.setText("Usuarios");
-        botaoUsuario.setBorder(null);
-        botaoUsuario.setFocusPainted(false);
-        botaoUsuario.setFocusable(false);
-        botaoUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         botaoUsuario.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 botaoUsuarioItemStateChanged(evt);
@@ -93,15 +91,14 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
             }
         });
 
-        botaoGlobais.setBackground(new java.awt.Color(1, 1, 34));
-        botaoGlobais.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        botaoGlobais.setForeground(new java.awt.Color(255, 255, 255));
-        botaoGlobais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Settings_30px.png"))); // NOI18N
+
+
+
         botaoGlobais.setText("Globais");
-        botaoGlobais.setBorder(null);
-        botaoGlobais.setFocusPainted(false);
-        botaoGlobais.setFocusable(false);
-        botaoGlobais.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         botaoGlobais.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 botaoGlobaisMouseEntered(evt);
@@ -148,19 +145,19 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoIgrejaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoIgrejaMouseEntered
-       botaoIgreja.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_botaoIgrejaMouseEntered
 
     private void botaoIgrejaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoIgrejaMouseExited
-        botaoIgreja.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_botaoIgrejaMouseExited
 
     private void botaoUsuarioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoUsuarioMouseEntered
-        botaoUsuario.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_botaoUsuarioMouseEntered
 
     private void botaoUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoUsuarioMouseExited
-        botaoUsuario.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_botaoUsuarioMouseExited
 
     private void botaoIgrejaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoIgrejaActionPerformed
@@ -198,11 +195,11 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
     }//GEN-LAST:event_botaoUsuarioActionPerformed
 
     private void botaoGlobaisMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGlobaisMouseEntered
-        botaoGlobais.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_botaoGlobaisMouseEntered
 
     private void botaoGlobaisMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botaoGlobaisMouseExited
-        botaoGlobais.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_botaoGlobaisMouseExited
 
     private void botaoGlobaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoGlobaisActionPerformed
@@ -219,7 +216,7 @@ public class MenuConfiguracoes extends javax.swing.JPanel {
     }//GEN-LAST:event_botaoUsuarioMousePressed
 
     private void botaoUsuarioItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_botaoUsuarioItemStateChanged
-       botaoIgreja.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_botaoUsuarioItemStateChanged
 
 

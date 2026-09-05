@@ -126,14 +126,13 @@ public class PagarDespesa extends javax.swing.JDialog {
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Data Vencimento: ");
 
-        BotaoPagar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoPagar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoPagar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoPagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
+
+
+
         BotaoPagar.setText("Pagar");
-        BotaoPagar.setBorder(null);
-        BotaoPagar.setBorderPainted(false);
-        BotaoPagar.setFocusPainted(false);
+
+
+
         BotaoPagar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoPagarMouseEntered(evt);
@@ -208,7 +207,7 @@ public class PagarDespesa extends javax.swing.JDialog {
                             .addComponent(CampoDataVencimento, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(CampoDataPagamento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotaoPagar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoPagar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
@@ -287,11 +286,11 @@ public class PagarDespesa extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoPagarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoPagarMouseEntered
-        BotaoPagar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoPagarMouseEntered
 
     private void BotaoPagarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoPagarMouseExited
-        BotaoPagar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoPagarMouseExited
 
     /**

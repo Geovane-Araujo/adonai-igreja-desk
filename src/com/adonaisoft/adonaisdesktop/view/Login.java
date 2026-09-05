@@ -107,13 +107,12 @@ public class Login extends javax.swing.JDialog {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Senha");
 
-        BotaoAcessar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAcessar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAcessar.setForeground(new java.awt.Color(255, 255, 255));
+
+
         BotaoAcessar.setText("Acessar");
-        BotaoAcessar.setBorder(null);
-        BotaoAcessar.setBorderPainted(false);
-        BotaoAcessar.setFocusPainted(false);
+
+
+
         BotaoAcessar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAcessarMouseEntered(evt);
@@ -133,12 +132,11 @@ public class Login extends javax.swing.JDialog {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("By Geovane.Araújo");
 
-        BotaoGlobais1.setBackground(new java.awt.Color(255, 255, 255));
-        BotaoGlobais1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+
         BotaoGlobais1.setText("X");
-        BotaoGlobais1.setBorder(null);
-        BotaoGlobais1.setFocusPainted(false);
-        BotaoGlobais1.setFocusable(false);
+
+
+
         BotaoGlobais1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoGlobais1MouseEntered(evt);
@@ -262,11 +260,11 @@ public class Login extends javax.swing.JDialog {
     }//GEN-LAST:event_BotaoGlobais1ActionPerformed
 
     private void BotaoAcessarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAcessarMouseEntered
-        BotaoAcessar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAcessarMouseEntered
 
     private void BotaoAcessarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAcessarMouseExited
-        BotaoAcessar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAcessarMouseExited
 
     

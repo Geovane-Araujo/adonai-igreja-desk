@@ -8,6 +8,15 @@ import com.adonaisoft.adonaisdesktop.model.VariaveisUniversais;
 import com.adonaisoft.adonaisdesktop.view.gerais.TelaRelatorio;
 import com.adonaisoft.adonaisdesktop.view.membros.list.TabelaMembros;
 
+import com.adonaisoft.adonaisdesktop.model.ClasseRotas;
+import com.adonaisoft.adonaisdesktop.view.aniversariantes.form.Aniversariantes;
+import com.adonaisoft.adonaisdesktop.view.contatoIgrejas.list.TabelaIgrejas;
+import java.awt.BorderLayout;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -16,8 +25,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
-
-
 
 public class Principal extends javax.swing.JFrame {
     ConexaoBanco conectar = new ConexaoBanco();
@@ -29,24 +36,25 @@ public class Principal extends javax.swing.JFrame {
     double saldo;
     public double total;
     String nomeIgreja;
-    
-    
+
+
    public static int w;
    public static int h;
    public static Dimension te;
-   
+
    public Principal() {
         initComponents();
+        configurarMenus();
        w = painel.getWidth();
        h = painel.getHeight();
        TabelaMembros tabMen = new TabelaMembros();
-       
+
        int tm,ta,ti;
-       
+
        ta = tabMen.ContarAtivos();
        ti = tabMen.ContarInativos();
        tm = ta+ti;
-    
+
        TotalMembros.setText(String.valueOf(tm));
        MembrosInativos.setText(String.valueOf(ti));
        MembrosAtivos.setText(String.valueOf(ta));
@@ -56,56 +64,200 @@ public class Principal extends javax.swing.JFrame {
         preencher();
         NomeUsuario.setText("Bem Vindo: "+ClasseUsuario.NomeUsuario);
         NomeIgreja.setText("Sistema Licenciado para uso da: "+nomeIgreja);
-        
-          
-    }
-    public void setIcon(){
-    
-        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("Logo.png")));
-}
-    
-    public void bloquear(){
-        if(ClasseUsuario.Caixas == false){
-            BotaoFinanceiro.setEnabled(false);
-        }
-        if(ClasseUsuario.Configuracoes == false){
-            BotaoConfiguracoess.setEnabled(false);
-        }
-        if(ClasseUsuario.Despesas == false){
-            BotaoFinanceiro.setEnabled(false);
-        }
-        if(ClasseUsuario.Entradas == false){
-            BotaoFinanceiro.setEnabled(false);
-        }
-        if(ClasseUsuario.Membros == false){
-            BotaoSecretaria.setEnabled(false);
-        }
-        if(ClasseUsuario.Relatorios == false){
-            BotaoRelatorios.setEnabled(false);
-        }
-        if(ClasseUsuario.Usuarios == false){
-            BotaoConfiguracoess.setEnabled(false);
-        }
-        
+
+
     }
 
-    
+    // Menus construidos fora do codigo gerado para preservar as acoes no editor do NetBeans.
+    private void configurarMenus() {
+        JMenuBar barra = new JMenuBar();
+        JMenu inicio = novoMenu(barra, "Início", 'I');
+        adicionarItem(inicio, "Visão geral", () -> {
+            TabelaMembros membros = new TabelaMembros();
+            int ativos = membros.ContarAtivos();
+            int inativos = membros.ContarInativos();
+            TotalMembros.setText(String.valueOf(ativos + inativos));
+            MembrosAtivos.setText(String.valueOf(ativos));
+            MembrosInativos.setText(String.valueOf(inativos));
+            mostrarTela(painelInicio);
+        });
+        menuSecretaria = novoMenu(barra, "Secretaria", 'S');
+        menuFinanceiro = novoMenu(barra, "Financeiro", 'F');
+        JMenu escola = novoMenu(barra, "Escola Bíblica", 'E');
+        menuRelatorios = novoMenu(barra, "Relatórios", 'R');
+        adicionarItem(menuRelatorios, "Abrir relatórios", () -> new TelaRelatorio(this, true).setVisible(true));
+        menuConfiguracoes = novoMenu(barra, "Configurações", 'C');
+        JMenu ajuda = novoMenu(barra, "Ajuda", 'A');
+        adicionarItem(ajuda, "Sobre", () -> new Sobre(this, true).setVisible(true));
+        adicionarItem(menuSecretaria, "Membros", this::abrirMembros);
+        adicionarItem(menuSecretaria, "Visitantes", this::abrirVisitantes);
+        adicionarItem(menuSecretaria, "Igrejas", this::abrirIgrejas);
+        adicionarItem(menuSecretaria, "Tipos de contas", this::abrirTipos);
+        adicionarItem(menuSecretaria, "Cargos", this::abrirCargo);
+        adicionarItem(menuSecretaria, "Aniversariantes", this::abrirAniversariantes);
+        adicionarItem(menuFinanceiro, "Entradas", this::abrirEntradas);
+        adicionarItem(menuFinanceiro, "Despesas", this::abrirDespesas);
+        adicionarItem(menuFinanceiro, "Caixas", this::abrirCaixas);
+        adicionarItem(escola, "Classes e chamadas", this::abrirClasses);
+        adicionarItem(menuConfiguracoes, "Igreja", this::abrirIgreja);
+        adicionarItem(menuConfiguracoes, "Usuários", this::abrirUsuario);
+        adicionarItem(menuConfiguracoes, "Globais", this::abrirGlobais);
+        setJMenuBar(barra);
+        setMinimumSize(new Dimension(800, 600));
+    }
+
+    private JMenu novoMenu(JMenuBar barra, String titulo, char atalho) {
+        JMenu menu = new JMenu(titulo);
+        menu.setMnemonic(atalho);
+        barra.add(menu);
+        return menu;
+    }
+
+    private void adicionarItem(JMenu menu, String titulo, Runnable acao) {
+        JMenuItem item = new JMenuItem(titulo);
+        item.addActionListener(event -> acao.run());
+        menu.add(item);
+    }
+
+    private void mostrarTela(JPanel tela) {
+        painel.removeAll();
+        painel.add(tela, BorderLayout.CENTER);
+        painel.revalidate();
+        painel.repaint();
+    }
+
+    private void abrirMembros() {
+       TabelaMembros chamar = new TabelaMembros();
+        mostrarTela(chamar);
+        chamar.ContarMembros();
+        chamar.ContarAtivos();
+        chamar.ContarInativos();
+        String sql = rota.getRTCadMembros();
+        chamar.preencher(sql);
+        chamar.mimx();
+        chamar.paginacao();
+    }
+
+    private void abrirVisitantes() {
+        TabelaVisitantes chamar = new TabelaVisitantes();
+        mostrarTela(chamar);
+        String sql = rota.getRTVisitantes();
+        String sq = rota.getRTHistoricoVisita();
+        chamar.Povoar(sql);
+        chamar.historico(sq);
+        chamar.Povoar();
+        chamar.paginacao();
+        chamar.Povoarhistorico();
+        chamar.paginacaoHistorico();
+    }
+
+    private void abrirIgrejas() {
+        TabelaIgrejas chamar = new TabelaIgrejas();
+        mostrarTela(chamar);
+        String sql = rota.getRTIgrejas();
+        chamar.preencher(sql);
+    }
+
+    private void abrirTipos() {
+        TabelaTipo chamar = new TabelaTipo();
+        mostrarTela(chamar);
+        String sql = rota.getRTTipo();
+        chamar.Povoar(sql);
+    }
+
+    private void abrirCargo() {
+        TabelaCadCargo chamar = new TabelaCadCargo();
+        mostrarTela(chamar);
+        String sql = rota.getRTCargo();
+        chamar.Povoar(sql);
+    }
+
+    private void abrirAniversariantes() {
+        Aniversariantes ani = new Aniversariantes(this, true);
+       ani.setVisible(true);
+    }
+
+    private void abrirEntradas() {
+
+       TabelaEntradas chamar = new TabelaEntradas();
+        mostrarTela(chamar);
+        String sql = rota.getRTTabEntradas();
+        chamar.Povoar(sql);
+        chamar.Povoar();// povoa as variaveis minimo e máximo
+        chamar.paginacao();
+    }
+
+    private void abrirDespesas() {
+        TelaDespesas chamar = new TelaDespesas();
+        mostrarTela(chamar);
+        chamar.TabelaTodas(rota.getRTDespesasTodas());
+        chamar.TabelaPendentes(rota.getRTDespesasPendentes());
+        chamar.TabelaPagas(rota.getRTDespesasPagas());
+        //Responsável pela Paginação
+        chamar.MinimoMaximoTodas();
+        chamar.paginacaoTodas();
+        chamar.MinimoMaximoPendente();
+        chamar.paginacaoPendente();
+        chamar.MinimoMaximoPagas();
+        chamar.paginacaoPagas();
+    }
+
+    private void abrirCaixas() {
+       TabelaCaixas chamar = new TabelaCaixas();
+        mostrarTela(chamar);
+        String sql = rota.getRTCaixa();
+        String sq = rota.getRTCXHistorico();
+        chamar.povoarTabela(sql);
+        chamar.povoarTabelaHistoarico(sq);
+    }
+
+    private void abrirClasses() {
+      TabelaClasse chamar = new TabelaClasse();
+        mostrarTela(chamar);
+        String sql = rota.getTabelaClasses();
+        chamar.PovoarHistorico();
+        chamar.Povoar(sql);
+    }
+
+    private void abrirIgreja() {
+       TabelaConfiguracoes chamar = new TabelaConfiguracoes();
+        mostrarTela(chamar);
+        String sql = "SELECT * FROM Configuracoes";
+        chamar.Preencher(sql);
+    }
+
+    private void abrirUsuario() {
+        TabelaUsuarios chamar = new TabelaUsuarios();
+        mostrarTela(chamar);
+        String sql = "SELECT CodigoUsuario,NomeUsuario FROM Usuario ORDER BY CodigoUsuario DESC";
+        chamar.Povoar(sql);
+    }
+
+    private void abrirGlobais() {
+        CadastroGlobais cha = new CadastroGlobais(this, true);
+        cha.setVisible(true);
+    }
+
+    public void setIcon(){
+
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("Logo.png")));
+}
+
+    public void bloquear() {
+        menuSecretaria.setEnabled(ClasseUsuario.Membros);
+        menuFinanceiro.setEnabled(ClasseUsuario.Caixas && ClasseUsuario.Despesas && ClasseUsuario.Entradas);
+        menuConfiguracoes.setEnabled(ClasseUsuario.Configuracoes && ClasseUsuario.Usuarios);
+        menuRelatorios.setEnabled(ClasseUsuario.Relatorios);
+    }
+
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        BotaoDashBoard = new javax.swing.JButton();
-        BotaoSecretaria = new javax.swing.JButton();
-        BotaoFinanceiro = new javax.swing.JButton();
-        BotaoEscola = new javax.swing.JButton();
-        BotaoRelatorios = new javax.swing.JButton();
-        BotaoConfiguracoess = new javax.swing.JButton();
-        BotaoSobre = new javax.swing.JButton();
-        PainelPrincipal = new javax.swing.JPanel();
-        PainelMenus = new javax.swing.JPanel();
+        painelInicio = new javax.swing.JPanel();
+        centroInicio = new javax.swing.JPanel();
+        rodape = new javax.swing.JPanel();
         painel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -136,7 +288,6 @@ public class Principal extends javax.swing.JFrame {
         Adicionar = new javax.swing.JButton();
         NomeUsuario = new javax.swing.JLabel();
         NomeIgreja = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle(" AdonaiSoft  - Igreja   Versão: 1.0.35");
@@ -145,218 +296,6 @@ public class Principal extends javax.swing.JFrame {
                 formWindowOpened(evt);
             }
         });
-
-        jPanel3.setBackground(new java.awt.Color(1, 1, 34));
-
-        jPanel4.setBackground(new java.awt.Color(1, 1, 34));
-        jPanel4.setEnabled(false);
-
-        BotaoDashBoard.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoDashBoard.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoDashBoard.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoDashBoard.setText("DashBoard");
-        BotaoDashBoard.setToolTipText("DashBoard");
-        BotaoDashBoard.setBorder(null);
-        BotaoDashBoard.setBorderPainted(false);
-        BotaoDashBoard.setFocusPainted(false);
-        BotaoDashBoard.setFocusable(false);
-        BotaoDashBoard.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                BotaoDashBoardMouseMoved(evt);
-            }
-        });
-        BotaoDashBoard.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoDashBoardMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoDashBoardMouseExited(evt);
-            }
-        });
-        BotaoDashBoard.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoDashBoardActionPerformed(evt);
-            }
-        });
-
-        BotaoSecretaria.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSecretaria.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoSecretaria.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSecretaria.setText("Secretaria");
-        BotaoSecretaria.setBorder(null);
-        BotaoSecretaria.setFocusPainted(false);
-        BotaoSecretaria.setFocusable(false);
-        BotaoSecretaria.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoSecretariaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoSecretariaMouseExited(evt);
-            }
-        });
-        BotaoSecretaria.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSecretariaActionPerformed(evt);
-            }
-        });
-
-        BotaoFinanceiro.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoFinanceiro.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoFinanceiro.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoFinanceiro.setText("Financeiro");
-        BotaoFinanceiro.setBorder(null);
-        BotaoFinanceiro.setFocusPainted(false);
-        BotaoFinanceiro.setFocusable(false);
-        BotaoFinanceiro.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoFinanceiroMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoFinanceiroMouseExited(evt);
-            }
-        });
-        BotaoFinanceiro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoFinanceiroActionPerformed(evt);
-            }
-        });
-
-        BotaoEscola.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEscola.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoEscola.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEscola.setText("Escola");
-        BotaoEscola.setBorder(null);
-        BotaoEscola.setFocusPainted(false);
-        BotaoEscola.setFocusable(false);
-        BotaoEscola.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoEscolaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoEscolaMouseExited(evt);
-            }
-        });
-        BotaoEscola.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoEscolaActionPerformed(evt);
-            }
-        });
-
-        BotaoRelatorios.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoRelatorios.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoRelatorios.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoRelatorios.setText("Relatórios");
-        BotaoRelatorios.setBorder(null);
-        BotaoRelatorios.setFocusPainted(false);
-        BotaoRelatorios.setFocusable(false);
-        BotaoRelatorios.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoRelatoriosMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoRelatoriosMouseExited(evt);
-            }
-        });
-        BotaoRelatorios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoRelatoriosActionPerformed(evt);
-            }
-        });
-
-        BotaoConfiguracoess.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoConfiguracoess.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoConfiguracoess.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoConfiguracoess.setText("Configurações");
-        BotaoConfiguracoess.setBorder(null);
-        BotaoConfiguracoess.setFocusPainted(false);
-        BotaoConfiguracoess.setFocusable(false);
-        BotaoConfiguracoess.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoConfiguracoessMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoConfiguracoessMouseExited(evt);
-            }
-        });
-        BotaoConfiguracoess.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoConfiguracoessActionPerformed(evt);
-            }
-        });
-
-        BotaoSobre.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSobre.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
-        BotaoSobre.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSobre.setText("Sobre");
-        BotaoSobre.setBorder(null);
-        BotaoSobre.setFocusPainted(false);
-        BotaoSobre.setFocusable(false);
-        BotaoSobre.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                BotaoSobreMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                BotaoSobreMouseExited(evt);
-            }
-        });
-        BotaoSobre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSobreActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(BotaoDashBoard, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotaoSecretaria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotaoFinanceiro, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotaoEscola, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotaoRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotaoConfiguracoess, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotaoSobre, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(BotaoConfiguracoess, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(BotaoRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(BotaoEscola, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(BotaoFinanceiro, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(BotaoSecretaria, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(BotaoDashBoard, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(BotaoSobre, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        PainelPrincipal.setBackground(new java.awt.Color(1, 1, 34));
-        PainelPrincipal.setPreferredSize(new java.awt.Dimension(992, 239));
-        PainelPrincipal.setRequestFocusEnabled(false);
-        PainelPrincipal.setVerifyInputWhenFocusTarget(false);
-
-        PainelMenus.setBackground(new java.awt.Color(1, 1, 34));
-
-        javax.swing.GroupLayout PainelMenusLayout = new javax.swing.GroupLayout(PainelMenus);
-        PainelMenus.setLayout(PainelMenusLayout);
-        PainelMenusLayout.setHorizontalGroup(
-            PainelMenusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 171, Short.MAX_VALUE)
-        );
-        PainelMenusLayout.setVerticalGroup(
-            PainelMenusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        painel.setBackground(new java.awt.Color(219, 230, 244));
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel8.setText("DashBoard");
@@ -693,14 +632,13 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(21, 21, 21))
         );
 
-        Adicionar.setBackground(new java.awt.Color(1, 1, 34));
-        Adicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Adicionar.setForeground(new java.awt.Color(255, 255, 255));
-        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Busacar.png"))); // NOI18N
+
+
+
         Adicionar.setText("Buscar Saldo");
-        Adicionar.setBorder(null);
-        Adicionar.setBorderPainted(false);
-        Adicionar.setFocusPainted(false);
+
+
+
         Adicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AdicionarMouseEntered(evt);
@@ -735,7 +673,7 @@ public class Principal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(305, 305, 305)))
                 .addContainerGap())
         );
@@ -757,259 +695,33 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(18, 18, 18))
         );
 
-        javax.swing.GroupLayout painelLayout = new javax.swing.GroupLayout(painel);
-        painel.setLayout(painelLayout);
-        painelLayout.setHorizontalGroup(
-            painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painelLayout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(153, Short.MAX_VALUE))
-            .addGroup(painelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        painelLayout.setVerticalGroup(
-            painelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(painelLayout.createSequentialGroup()
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38))
-        );
+        getContentPane().setLayout(new java.awt.BorderLayout());
+        painel.setLayout(new java.awt.BorderLayout());
+        painelInicio.setLayout(new java.awt.BorderLayout());
+        centroInicio.setLayout(new java.awt.GridBagLayout());
+        centroInicio.add(jPanel1, new java.awt.GridBagConstraints());
+        painelInicio.add(jLabel8, java.awt.BorderLayout.NORTH);
+        painelInicio.add(centroInicio, java.awt.BorderLayout.CENTER);
+        painel.add(painelInicio, java.awt.BorderLayout.CENTER);
+        getContentPane().add(painel, java.awt.BorderLayout.CENTER);
 
-        NomeUsuario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        NomeUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        NomeUsuario.setToolTipText("");
-
-        NomeIgreja.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        NomeIgreja.setForeground(new java.awt.Color(255, 255, 255));
+        rodape.setLayout(new java.awt.BorderLayout(12, 0));
+        NomeUsuario.setFont(new java.awt.Font("SansSerif", 0, 14));
+        NomeIgreja.setFont(new java.awt.Font("SansSerif", 0, 14));
         NomeIgreja.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        NomeIgreja.setToolTipText("");
-
-        javax.swing.GroupLayout PainelPrincipalLayout = new javax.swing.GroupLayout(PainelPrincipal);
-        PainelPrincipal.setLayout(PainelPrincipalLayout);
-        PainelPrincipalLayout.setHorizontalGroup(
-            PainelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PainelPrincipalLayout.createSequentialGroup()
-                .addComponent(PainelMenus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(PainelPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(NomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(NomeIgreja, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        PainelPrincipalLayout.setVerticalGroup(
-            PainelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(PainelPrincipalLayout.createSequentialGroup()
-                .addGroup(PainelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PainelMenus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(painel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PainelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NomeIgreja, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-
-        jLabel1.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/sdona.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PainelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 1290, Short.MAX_VALUE)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PainelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        rodape.add(NomeUsuario, java.awt.BorderLayout.WEST);
+        rodape.add(NomeIgreja, java.awt.BorderLayout.CENTER);
+        getContentPane().add(rodape, java.awt.BorderLayout.SOUTH);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BotaoDashBoardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoDashBoardActionPerformed
-        TabelaDashBoard ch = new TabelaDashBoard();
-        
-
-        
-        int l = painel.getWidth();
-        int a = painel.getHeight();
-        
-        
-        painel.removeAll();
-        painel.add(ch);
-        painel.revalidate();
-        painel.repaint();
-        
-       ch.setSize(l  ,a);
-    }//GEN-LAST:event_BotaoDashBoardActionPerformed
-
-    private void BotaoDashBoardMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoDashBoardMouseMoved
-        
-    }//GEN-LAST:event_BotaoDashBoardMouseMoved
-
-    private void BotaoDashBoardMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoDashBoardMouseEntered
-        BotaoDashBoard.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoDashBoardMouseEntered
-
-    private void BotaoDashBoardMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoDashBoardMouseExited
-        BotaoDashBoard.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoDashBoardMouseExited
-
-    private void BotaoSecretariaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSecretariaMouseEntered
-        BotaoSecretaria.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoSecretariaMouseEntered
-
-    private void BotaoSecretariaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSecretariaMouseExited
-        BotaoSecretaria.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoSecretariaMouseExited
-
-    private void BotaoSecretariaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSecretariaActionPerformed
-
-        MenuSecretaria chamar = new MenuSecretaria();
-        //chamar.setLocation(5, 5);
-        
-        int l = PainelMenus.getWidth();
-        int a = PainelMenus.getHeight();
-                
-        PainelMenus.removeAll();
-        PainelMenus.add(chamar);
-        PainelMenus.revalidate();
-        PainelMenus.repaint();
-        
-       chamar.setSize(171 ,445);
-    }//GEN-LAST:event_BotaoSecretariaActionPerformed
-
-    private void BotaoFinanceiroMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoFinanceiroMouseEntered
-        BotaoFinanceiro.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoFinanceiroMouseEntered
-
-    private void BotaoFinanceiroMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoFinanceiroMouseExited
-        BotaoFinanceiro.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoFinanceiroMouseExited
-
-    private void BotaoFinanceiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoFinanceiroActionPerformed
-        MenuFinanceiro chamar = new MenuFinanceiro();
-        //chamar.setLocation(5, 5);
-        
-        int l = PainelMenus.getWidth();
-        int a = PainelMenus.getHeight();
-       
-        
-        PainelMenus.removeAll();
-        PainelMenus.add(chamar);
-        PainelMenus.revalidate();
-        PainelMenus.repaint();
-        
-       chamar.setSize(171 ,445);
-    }//GEN-LAST:event_BotaoFinanceiroActionPerformed
-
-    private void BotaoEscolaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEscolaMouseEntered
-       BotaoEscola.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoEscolaMouseEntered
-
-    private void BotaoEscolaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEscolaMouseExited
-        BotaoEscola.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoEscolaMouseExited
-
-    private void BotaoEscolaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEscolaActionPerformed
-        MenuEscola chamar = new MenuEscola();
-        
-        int l = PainelMenus.getWidth();
-        int a = PainelMenus.getHeight();
-       
-        
-        PainelMenus.removeAll();
-        PainelMenus.add(chamar);
-        PainelMenus.revalidate();
-        PainelMenus.repaint();
-        
-       chamar.setSize(171 ,445);
-    }//GEN-LAST:event_BotaoEscolaActionPerformed
-
-    private void BotaoRelatoriosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoRelatoriosMouseEntered
-        BotaoRelatorios.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoRelatoriosMouseEntered
-
-    private void BotaoRelatoriosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoRelatoriosMouseExited
-        BotaoRelatorios.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoRelatoriosMouseExited
-
-    private void BotaoRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoRelatoriosActionPerformed
-
-         
-           TelaRelatorio chamar = new TelaRelatorio(null, true);
-           chamar.setVisible(true);
-
-
-    }//GEN-LAST:event_BotaoRelatoriosActionPerformed
-
-    private void BotaoConfiguracoessMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoConfiguracoessMouseEntered
-        BotaoConfiguracoess.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoConfiguracoessMouseEntered
-
-    private void BotaoConfiguracoessMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoConfiguracoessMouseExited
-        BotaoConfiguracoess.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoConfiguracoessMouseExited
-
-    private void BotaoConfiguracoessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoConfiguracoessActionPerformed
-        MenuConfiguracoes chamar = new MenuConfiguracoes();
-        //chamar.setLocation(5, 5);
-       
-        
-        PainelMenus.removeAll();
-        PainelMenus.add(chamar);
-        PainelMenus.revalidate();
-        PainelMenus.repaint();
-        
-       chamar.setSize(171 ,445);
-    }//GEN-LAST:event_BotaoConfiguracoessActionPerformed
-
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
- 
+
         preencher();
-        
+
     }//GEN-LAST:event_formWindowOpened
-
-    private void BotaoSobreMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSobreMouseEntered
-        BotaoSobre.setBackground(new Color(219,230,244));
-    }//GEN-LAST:event_BotaoSobreMouseEntered
-
-    private void BotaoSobreMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSobreMouseExited
-        BotaoSobre.setBackground(new Color(1,1,34));
-    }//GEN-LAST:event_BotaoSobreMouseExited
-
-    private void BotaoSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSobreActionPerformed
-        Sobre abrir = new Sobre(null, true);
-        abrir.setVisible(true);
-    }//GEN-LAST:event_BotaoSobreActionPerformed
 
     private void AdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdicionarActionPerformed
         VariaveisUniversais saldo = new VariaveisUniversais();
@@ -1029,11 +741,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_AdicionarActionPerformed
 
     private void AdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseExited
-        Adicionar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_AdicionarMouseExited
 
     private void AdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseEntered
-        Adicionar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_AdicionarMouseEntered
 
     private void CampoTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoTotalActionPerformed
@@ -1059,10 +771,10 @@ public class Principal extends javax.swing.JFrame {
                 stmt.execute();
                 rs = stmt.executeQuery();
                 rs.next();
-                
+
                 nomeIgreja = rs.getString("NomeIgreja");
-                
-                
+
+
                 stmt.close();
                 rs.close();
             }
@@ -1070,12 +782,12 @@ public class Principal extends javax.swing.JFrame {
                 System.out.println(e);
             }
        }
-    
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -1104,15 +816,17 @@ public class Principal extends javax.swing.JFrame {
         });
     }
 
+    private JMenu menuSecretaria;
+    private JMenu menuFinanceiro;
+    private JMenu menuConfiguracoes;
+    private JMenu menuRelatorios;
+    private final ClasseRotas rota = new ClasseRotas();
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel painelInicio;
+    private javax.swing.JPanel centroInicio;
+    private javax.swing.JPanel rodape;
     private javax.swing.JButton Adicionar;
-    private javax.swing.JButton BotaoConfiguracoess;
-    private javax.swing.JButton BotaoDashBoard;
-    private javax.swing.JButton BotaoEscola;
-    private javax.swing.JButton BotaoFinanceiro;
-    private javax.swing.JButton BotaoRelatorios;
-    private javax.swing.JButton BotaoSecretaria;
-    private javax.swing.JButton BotaoSobre;
     private javax.swing.JTextField CampoEntradas;
     private javax.swing.JTextField CampoSaídas;
     private javax.swing.JTextField CampoTotal;
@@ -1120,11 +834,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel MembrosInativos;
     private javax.swing.JLabel NomeIgreja;
     private javax.swing.JLabel NomeUsuario;
-    public static javax.swing.JPanel PainelMenus;
-    public static javax.swing.JPanel PainelPrincipal;
     private javax.swing.JLabel TotalMembros;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1140,8 +850,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;

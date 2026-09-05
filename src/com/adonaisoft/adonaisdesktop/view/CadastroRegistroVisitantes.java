@@ -45,6 +45,7 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         CampoDenominacao = new javax.swing.JTextArea();
         BuscarCaixas = new javax.swing.JButton();
+        BuscarCaixas.setText("Buscar");
         CampoData = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -78,14 +79,13 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel3.setText("Data:");
 
-        BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         BotaoSalvar.setText("Salvar");
-        BotaoSalvar.setBorder(null);
-        BotaoSalvar.setBorderPainted(false);
-        BotaoSalvar.setFocusPainted(false);
+
+
+
         BotaoSalvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoSalvarMouseEntered(evt);
@@ -109,13 +109,12 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
         CampoDenominacao.setRows(5);
         jScrollPane1.setViewportView(CampoDenominacao);
 
-        BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BuscarCaixas.setBorder(null);
-        BuscarCaixas.setBorderPainted(false);
-        BuscarCaixas.setFocusPainted(false);
+
+
+
+
+
+
         BuscarCaixas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarCaixasMouseEntered(evt);
@@ -150,7 +149,7 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
                                     .addGroup(jPanel5Layout.createSequentialGroup()
                                         .addComponent(CampoNomeVisita, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
@@ -166,7 +165,7 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
                                 .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(BotaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel5Layout.setVerticalGroup(
@@ -227,11 +226,11 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
     }//GEN-LAST:event_BotaoSalvarActionPerformed
 
     private void BuscarCaixasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseEntered
-        BuscarCaixas.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BuscarCaixasMouseEntered
 
     private void BuscarCaixasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseExited
-        BuscarCaixas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarCaixasMouseExited
 
     private void BuscarCaixasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarCaixasActionPerformed
@@ -246,11 +245,11 @@ public class CadastroRegistroVisitantes extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoSalvarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvarMouseEntered
-        BotaoSalvar.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoSalvarMouseEntered
 
     private void BotaoSalvarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvarMouseExited
-        BotaoSalvar.setBackground(new Color (1,1,34));
+
     }//GEN-LAST:event_BotaoSalvarMouseExited
 
     private void CampoNomeVisitaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CampoNomeVisitaKeyPressed

@@ -163,6 +163,7 @@ public class CadastroTurma extends javax.swing.JDialog {
         TabelaTurma = new javax.swing.JTable();
         CampoNomeAluno = new javax.swing.JTextField();
         PesquisarAluno = new javax.swing.JButton();
+        PesquisarAluno.setText("Buscar");
         jLabel6 = new javax.swing.JLabel();
         BotaoSalvar1 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
@@ -174,7 +175,9 @@ public class CadastroTurma extends javax.swing.JDialog {
         jLabel20 = new javax.swing.JLabel();
         Professores = new javax.swing.JTextField();
         AdicionarAluno = new javax.swing.JButton();
+        AdicionarAluno.setText("Adicionar");
         ExcluirAluno = new javax.swing.JButton();
+        ExcluirAluno.setText("Remover");
         Aluno = new javax.swing.JRadioButton();
         Professor = new javax.swing.JRadioButton();
         CampoCodigoAluno = new javax.swing.JTextField();
@@ -254,12 +257,11 @@ public class CadastroTurma extends javax.swing.JDialog {
             }
         });
 
-        PesquisarAluno.setBackground(new java.awt.Color(1, 1, 34));
-        PesquisarAluno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        PesquisarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        PesquisarAluno.setBorder(null);
-        PesquisarAluno.setBorderPainted(false);
-        PesquisarAluno.setFocusPainted(false);
+
+
+
+
+
         PesquisarAluno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 PesquisarAlunoMouseEntered(evt);
@@ -278,15 +280,14 @@ public class CadastroTurma extends javax.swing.JDialog {
         jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel6.setText("Nome do Aluno ou Professor:");
 
-        BotaoSalvar1.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSalvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoSalvar1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         BotaoSalvar1.setText("Salvar");
-        BotaoSalvar1.setBorder(null);
-        BotaoSalvar1.setBorderPainted(false);
-        BotaoSalvar1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
-        BotaoSalvar1.setFocusPainted(false);
+
+
+
+
         BotaoSalvar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoSalvar1MouseEntered(evt);
@@ -419,12 +420,11 @@ public class CadastroTurma extends javax.swing.JDialog {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        AdicionarAluno.setBackground(new java.awt.Color(1, 1, 34));
-        AdicionarAluno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        AdicionarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
-        AdicionarAluno.setBorder(null);
-        AdicionarAluno.setBorderPainted(false);
-        AdicionarAluno.setFocusPainted(false);
+
+
+
+
+
         AdicionarAluno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AdicionarAlunoMouseEntered(evt);
@@ -439,12 +439,11 @@ public class CadastroTurma extends javax.swing.JDialog {
             }
         });
 
-        ExcluirAluno.setBackground(new java.awt.Color(1, 1, 34));
-        ExcluirAluno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        ExcluirAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Delete_15px.png"))); // NOI18N
-        ExcluirAluno.setBorder(null);
-        ExcluirAluno.setBorderPainted(false);
-        ExcluirAluno.setFocusPainted(false);
+
+
+
+
+
         ExcluirAluno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 ExcluirAlunoMouseEntered(evt);
@@ -503,20 +502,20 @@ public class CadastroTurma extends javax.swing.JDialog {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                                         .addComponent(CampoNomeAluno)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(PesquisarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(PesquisarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(CampoClasse))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(AdicionarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(AdicionarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(ExcluirAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ExcluirAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(Aluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGap(6, 6, 6))
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(BotaoSalvar1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(BotaoSalvar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(CampoCodigoClasse, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -598,11 +597,11 @@ public class CadastroTurma extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void PesquisarAlunoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PesquisarAlunoMouseEntered
-        PesquisarAluno.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_PesquisarAlunoMouseEntered
 
     private void PesquisarAlunoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PesquisarAlunoMouseExited
-        PesquisarAluno.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_PesquisarAlunoMouseExited
 
     private void PesquisarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PesquisarAlunoActionPerformed
@@ -614,11 +613,11 @@ public class CadastroTurma extends javax.swing.JDialog {
     }//GEN-LAST:event_PesquisarAlunoActionPerformed
 
     private void BotaoSalvar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvar1MouseEntered
-        BotaoSalvar1.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoSalvar1MouseEntered
 
     private void BotaoSalvar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvar1MouseExited
-        BotaoSalvar1.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoSalvar1MouseExited
 
     private void BotaoSalvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvar1ActionPerformed
@@ -636,11 +635,11 @@ public class CadastroTurma extends javax.swing.JDialog {
     }//GEN-LAST:event_ProfessoresActionPerformed
 
     private void AdicionarAlunoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarAlunoMouseEntered
-        AdicionarAluno.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_AdicionarAlunoMouseEntered
 
     private void AdicionarAlunoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarAlunoMouseExited
-        AdicionarAluno.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_AdicionarAlunoMouseExited
 
     private void AdicionarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdicionarAlunoActionPerformed
@@ -701,11 +700,11 @@ public class CadastroTurma extends javax.swing.JDialog {
     }//GEN-LAST:event_AdicionarAlunoActionPerformed
 
     private void ExcluirAlunoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExcluirAlunoMouseEntered
-       ExcluirAluno.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_ExcluirAlunoMouseEntered
 
     private void ExcluirAlunoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExcluirAlunoMouseExited
-        ExcluirAluno.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_ExcluirAlunoMouseExited
 
     private void ExcluirAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcluirAlunoActionPerformed

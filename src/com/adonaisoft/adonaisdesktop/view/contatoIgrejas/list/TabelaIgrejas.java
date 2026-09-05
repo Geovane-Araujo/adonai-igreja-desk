@@ -100,14 +100,13 @@ public class TabelaIgrejas extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
 
-        BotaoImprimir.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoImprimir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoImprimir.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoImprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Envelope_26px.png"))); // NOI18N
+
+
+
         BotaoImprimir.setText("E-mail");
-        BotaoImprimir.setBorder(null);
-        BotaoImprimir.setBorderPainted(false);
-        BotaoImprimir.setFocusPainted(false);
+
+
+
         BotaoImprimir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoImprimirMouseEntered(evt);
@@ -165,14 +164,13 @@ public class TabelaIgrejas extends javax.swing.JPanel {
             TabelaIgreja.getColumnModel().getColumn(5).setPreferredWidth(200);
         }
 
-        Adicionar.setBackground(new java.awt.Color(1, 1, 34));
-        Adicionar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Adicionar.setForeground(new java.awt.Color(255, 255, 255));
-        Adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_26px.png"))); // NOI18N
+
+
+
         Adicionar.setText("Adicionar");
-        Adicionar.setBorder(null);
-        Adicionar.setBorderPainted(false);
-        Adicionar.setFocusPainted(false);
+
+
+
         Adicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AdicionarMouseEntered(evt);
@@ -187,14 +185,13 @@ public class TabelaIgrejas extends javax.swing.JPanel {
             }
         });
 
-        BotaoEditar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEditar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoEditar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Editar.png"))); // NOI18N
+
+
+
         BotaoEditar.setText("Editar");
-        BotaoEditar.setBorder(null);
-        BotaoEditar.setBorderPainted(false);
-        BotaoEditar.setFocusPainted(false);
+
+
+
         BotaoEditar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoEditarMouseEntered(evt);
@@ -209,14 +206,13 @@ public class TabelaIgrejas extends javax.swing.JPanel {
             }
         });
 
-        Excluir.setBackground(new java.awt.Color(1, 1, 34));
-        Excluir.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Excluir.setForeground(new java.awt.Color(255, 255, 255));
-        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Excluir.png"))); // NOI18N
+
+
+
         Excluir.setText("Excluir");
-        Excluir.setBorder(null);
-        Excluir.setBorderPainted(false);
-        Excluir.setFocusPainted(false);
+
+
+
         Excluir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 ExcluirMouseEntered(evt);
@@ -250,14 +246,13 @@ public class TabelaIgrejas extends javax.swing.JPanel {
             }
         });
 
-        Buscar.setBackground(new java.awt.Color(1, 1, 34));
-        Buscar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        Buscar.setForeground(new java.awt.Color(255, 255, 255));
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         Buscar.setText("Atualizar");
-        Buscar.setBorder(null);
-        Buscar.setBorderPainted(false);
-        Buscar.setFocusPainted(false);
+
+
+
         Buscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarMouseEntered(evt);
@@ -294,13 +289,13 @@ public class TabelaIgrejas extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Adicionar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoEditar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Excluir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1)
@@ -311,7 +306,7 @@ public class TabelaIgrejas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -375,19 +370,19 @@ public class TabelaIgrejas extends javax.swing.JPanel {
     }//GEN-LAST:event_AdicionarActionPerformed
 
     private void AdicionarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseEntered
-        Adicionar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_AdicionarMouseEntered
 
     private void AdicionarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdicionarMouseExited
-       Adicionar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_AdicionarMouseExited
 
     private void BuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseEntered
-        Buscar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BuscarMouseEntered
 
     private void BuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarMouseExited
-        Buscar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarMouseExited
 
     private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
@@ -452,27 +447,27 @@ public class TabelaIgrejas extends javax.swing.JPanel {
     }//GEN-LAST:event_ExcluirActionPerformed
 
     private void ExcluirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExcluirMouseEntered
-        Excluir.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_ExcluirMouseEntered
 
     private void ExcluirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExcluirMouseExited
-        Excluir.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_ExcluirMouseExited
 
     private void BotaoEditarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseEntered
-        BotaoEditar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEditarMouseEntered
 
     private void BotaoEditarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEditarMouseExited
-        BotaoEditar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEditarMouseExited
 
     private void BotaoImprimirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoImprimirMouseEntered
-        BotaoImprimir.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoImprimirMouseEntered
 
     private void BotaoImprimirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoImprimirMouseExited
-        BotaoImprimir.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoImprimirMouseExited
 
     private void BotaoImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoImprimirActionPerformed

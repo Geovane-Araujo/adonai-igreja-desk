@@ -187,14 +187,13 @@ public class TabelaCaixas extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(219, 230, 244));
 
-        BotaoAtualizar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAtualizar.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        BotaoAtualizar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         BotaoAtualizar.setText("Atualizar");
-        BotaoAtualizar.setBorder(null);
-        BotaoAtualizar.setBorderPainted(false);
-        BotaoAtualizar.setFocusPainted(false);
+
+
+
         BotaoAtualizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAtualizarMouseEntered(evt);
@@ -252,14 +251,13 @@ public class TabelaCaixas extends javax.swing.JPanel {
             TabelaCaixa.getColumnModel().getColumn(5).setPreferredWidth(50);
         }
 
-        BotaoAbrirCaixa.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAbrirCaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAbrirCaixa.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAbrirCaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Padlock_26px.png"))); // NOI18N
+
+
+
         BotaoAbrirCaixa.setText("Abrir Caixa");
-        BotaoAbrirCaixa.setBorder(null);
-        BotaoAbrirCaixa.setBorderPainted(false);
-        BotaoAbrirCaixa.setFocusPainted(false);
+
+
+
         BotaoAbrirCaixa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAbrirCaixaMouseEntered(evt);
@@ -274,14 +272,13 @@ public class TabelaCaixas extends javax.swing.JPanel {
             }
         });
 
-        BotaoFecharcaixa.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoFecharcaixa.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoFecharcaixa.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoFecharcaixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Password_26px.png"))); // NOI18N
+
+
+
         BotaoFecharcaixa.setText("Fechar Caixa");
-        BotaoFecharcaixa.setBorder(null);
-        BotaoFecharcaixa.setBorderPainted(false);
-        BotaoFecharcaixa.setFocusPainted(false);
+
+
+
         BotaoFecharcaixa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoFecharcaixaMouseEntered(evt);
@@ -534,9 +531,9 @@ public class TabelaCaixas extends javax.swing.JPanel {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(BotaoAbrirCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(BotaoAbrirCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotaoFecharcaixa, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(BotaoFecharcaixa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(CampoSelecionadoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(33, 33, 33)
@@ -554,7 +551,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(BotaoAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -629,14 +626,13 @@ public class TabelaCaixas extends javax.swing.JPanel {
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Localizar:");
 
-        BotaoAtualizar1.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAtualizar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoAtualizar1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAtualizar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Atualizar.png"))); // NOI18N
+
+
+
         BotaoAtualizar1.setText("Atualizar");
-        BotaoAtualizar1.setBorder(null);
-        BotaoAtualizar1.setBorderPainted(false);
-        BotaoAtualizar1.setFocusPainted(false);
+
+
+
         BotaoAtualizar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAtualizar1MouseEntered(evt);
@@ -677,7 +673,7 @@ public class TabelaCaixas extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CampoPesquisa2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotaoAtualizar1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BotaoAtualizar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -738,19 +734,19 @@ public class TabelaCaixas extends javax.swing.JPanel {
     }//GEN-LAST:event_CampoPesquisaKeyTyped
 
     private void BotaoAtualizarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAtualizarMouseEntered
-        BotaoAtualizar.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAtualizarMouseEntered
 
     private void BotaoAtualizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAtualizarMouseExited
-       BotaoAtualizar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAtualizarMouseExited
 
     private void BotaoAbrirCaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAbrirCaixaMouseEntered
-        BotaoAbrirCaixa.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoAbrirCaixaMouseEntered
 
     private void BotaoAbrirCaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAbrirCaixaMouseExited
-        BotaoAbrirCaixa.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAbrirCaixaMouseExited
 
     private void TabelaCaixaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelaCaixaMouseClicked
@@ -776,11 +772,11 @@ public class TabelaCaixas extends javax.swing.JPanel {
     }//GEN-LAST:event_CampoSelecionadoCodigoActionPerformed
 
     private void BotaoFecharcaixaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoFecharcaixaMouseEntered
-        BotaoFecharcaixa.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoFecharcaixaMouseEntered
 
     private void BotaoFecharcaixaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoFecharcaixaMouseExited
-        BotaoFecharcaixa.setBackground(new Color(1,1,34));
+
                 
     }//GEN-LAST:event_BotaoFecharcaixaMouseExited
 

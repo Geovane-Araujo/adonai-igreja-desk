@@ -141,14 +141,13 @@ public class Aniversariantes extends javax.swing.JDialog {
             TabelaTurma.getColumnModel().getColumn(2).setPreferredWidth(50);
         }
 
-        BotaoSalvar1.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSalvar1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoSalvar1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Busacar.png"))); // NOI18N
+
+
+
         BotaoSalvar1.setText("Buscar");
-        BotaoSalvar1.setBorder(null);
-        BotaoSalvar1.setBorderPainted(false);
-        BotaoSalvar1.setFocusPainted(false);
+
+
+
         BotaoSalvar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoSalvar1MouseEntered(evt);
@@ -179,7 +178,7 @@ public class Aniversariantes extends javax.swing.JDialog {
                             .addComponent(jLabel2)
                             .addComponent(CampoMes, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotaoSalvar1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(BotaoSalvar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -221,11 +220,11 @@ public class Aniversariantes extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoSalvar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvar1MouseEntered
-        BotaoSalvar1.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoSalvar1MouseEntered
 
     private void BotaoSalvar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvar1MouseExited
-        BotaoSalvar1.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoSalvar1MouseExited
 
     private void BotaoSalvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvar1ActionPerformed

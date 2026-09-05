@@ -34,15 +34,14 @@ public class MenuFinanceiro extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(1, 1, 34));
 
-        BotaoEntradas.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoEntradas.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        BotaoEntradas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoEntradas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Request_Money_23px_1.png"))); // NOI18N
+
+
+
         BotaoEntradas.setText("Entradas");
-        BotaoEntradas.setBorder(null);
-        BotaoEntradas.setFocusPainted(false);
-        BotaoEntradas.setFocusable(false);
-        BotaoEntradas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         BotaoEntradas.setMaximumSize(new java.awt.Dimension(86, 26));
         BotaoEntradas.setPreferredSize(new java.awt.Dimension(86, 26));
         BotaoEntradas.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -59,15 +58,14 @@ public class MenuFinanceiro extends javax.swing.JPanel {
             }
         });
 
-        BotaoCaixas1.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoCaixas1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        BotaoCaixas1.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCaixas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Initiate_Money_Transfer_23px_1.png"))); // NOI18N
+
+
+
         BotaoCaixas1.setText("Despesas");
-        BotaoCaixas1.setBorder(null);
-        BotaoCaixas1.setFocusPainted(false);
-        BotaoCaixas1.setFocusable(false);
-        BotaoCaixas1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         BotaoCaixas1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoCaixas1MouseEntered(evt);
@@ -82,15 +80,14 @@ public class MenuFinanceiro extends javax.swing.JPanel {
             }
         });
 
-        BotaoCaixas.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoCaixas.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        BotaoCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Cash_Register_20px.png"))); // NOI18N
+
+
+
         BotaoCaixas.setText("Caixas");
-        BotaoCaixas.setBorder(null);
-        BotaoCaixas.setFocusPainted(false);
-        BotaoCaixas.setFocusable(false);
-        BotaoCaixas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+
+
+
         BotaoCaixas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoCaixasMouseEntered(evt);
@@ -137,19 +134,19 @@ public class MenuFinanceiro extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotaoEntradasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEntradasMouseEntered
-        BotaoEntradas.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoEntradasMouseEntered
 
     private void BotaoEntradasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoEntradasMouseExited
-        BotaoEntradas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoEntradasMouseExited
 
     private void BotaoCaixasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoCaixasMouseEntered
-       BotaoCaixas.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoCaixasMouseEntered
 
     private void BotaoCaixasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoCaixasMouseExited
-        BotaoCaixas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoCaixasMouseExited
 
     private void BotaoEntradasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEntradasActionPerformed
@@ -191,11 +188,11 @@ public class MenuFinanceiro extends javax.swing.JPanel {
     }//GEN-LAST:event_BotaoCaixasActionPerformed
 
     private void BotaoCaixas1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoCaixas1MouseEntered
-        BotaoCaixas1.setBackground(new Color(219,230,244));
+
     }//GEN-LAST:event_BotaoCaixas1MouseEntered
 
     private void BotaoCaixas1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoCaixas1MouseExited
-        BotaoCaixas1.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoCaixas1MouseExited
 
     private void BotaoCaixas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCaixas1ActionPerformed

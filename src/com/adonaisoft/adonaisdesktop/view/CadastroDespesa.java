@@ -110,11 +110,14 @@ public class CadastroDespesa extends javax.swing.JDialog {
         CampoStatus = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         BuscarCaixas = new javax.swing.JButton();
+        BuscarCaixas.setText("Buscar");
         CampoCaixaDespesa = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         CampoDataVencimento = new com.toedter.calendar.JDateChooser();
         BotaoAdicionarCargo = new javax.swing.JButton();
+        BotaoAdicionarCargo.setText("Adicionar");
         BotaoBuscarCargo = new javax.swing.JButton();
+        BotaoBuscarCargo.setText("Buscar");
         CampoTipo = new javax.swing.JTextField();
         CampoDataVencimento1 = new com.toedter.calendar.JDateChooser();
 
@@ -162,14 +165,13 @@ public class CadastroDespesa extends javax.swing.JDialog {
         jLabel11.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel11.setText("Observações:");
 
-        BotaoSalvar.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoSalvar.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        BotaoSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/Salvar.png"))); // NOI18N
+
+
+
         BotaoSalvar.setText("Salvar");
-        BotaoSalvar.setBorder(null);
-        BotaoSalvar.setBorderPainted(false);
-        BotaoSalvar.setFocusPainted(false);
+
+
+
         BotaoSalvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoSalvarMouseEntered(evt);
@@ -199,13 +201,12 @@ public class CadastroDespesa extends javax.swing.JDialog {
         jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel7.setText("Caixa:");
 
-        BuscarCaixas.setBackground(new java.awt.Color(1, 1, 34));
-        BuscarCaixas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BuscarCaixas.setForeground(new java.awt.Color(255, 255, 255));
-        BuscarCaixas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BuscarCaixas.setBorder(null);
-        BuscarCaixas.setBorderPainted(false);
-        BuscarCaixas.setFocusPainted(false);
+
+
+
+
+
+
         BuscarCaixas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BuscarCaixasMouseEntered(evt);
@@ -235,13 +236,12 @@ public class CadastroDespesa extends javax.swing.JDialog {
         CampoDataVencimento.setDateFormatString("dd/MM/yyyy");
         CampoDataVencimento.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
 
-        BotaoAdicionarCargo.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoAdicionarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BotaoAdicionarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoAdicionarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Plus_Math_15px.png"))); // NOI18N
-        BotaoAdicionarCargo.setBorder(null);
-        BotaoAdicionarCargo.setBorderPainted(false);
-        BotaoAdicionarCargo.setFocusPainted(false);
+
+
+
+
+
+
         BotaoAdicionarCargo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoAdicionarCargoMouseEntered(evt);
@@ -256,13 +256,12 @@ public class CadastroDespesa extends javax.swing.JDialog {
             }
         });
 
-        BotaoBuscarCargo.setBackground(new java.awt.Color(1, 1, 34));
-        BotaoBuscarCargo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        BotaoBuscarCargo.setForeground(new java.awt.Color(255, 255, 255));
-        BotaoBuscarCargo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/adonaisoft/adonaisdesktop/Imagens/icons8_Search_15px.png"))); // NOI18N
-        BotaoBuscarCargo.setBorder(null);
-        BotaoBuscarCargo.setBorderPainted(false);
-        BotaoBuscarCargo.setFocusPainted(false);
+
+
+
+
+
+
         BotaoBuscarCargo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BotaoBuscarCargoMouseEntered(evt);
@@ -308,7 +307,7 @@ public class CadastroDespesa extends javax.swing.JDialog {
                                     .addComponent(jLabel7)
                                     .addComponent(CampoCaixaDespesa, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(BuscarCaixas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
@@ -326,9 +325,9 @@ public class CadastroDespesa extends javax.swing.JDialog {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(CampoTipo, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(BotaoBuscarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(BotaoBuscarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(BotaoAdicionarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(BotaoAdicionarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(15, 15, 15)
                                         .addComponent(CampoStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -337,7 +336,7 @@ public class CadastroDespesa extends javax.swing.JDialog {
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(BotaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotaoSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(50, 50, 50)
                         .addComponent(campoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -411,11 +410,11 @@ public class CadastroDespesa extends javax.swing.JDialog {
     }//GEN-LAST:event_BuscarCaixasActionPerformed
 
     private void BuscarCaixasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseExited
-        BuscarCaixas.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BuscarCaixasMouseExited
 
     private void BuscarCaixasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuscarCaixasMouseEntered
-        BuscarCaixas.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BuscarCaixasMouseEntered
 
     private void BotaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarActionPerformed
@@ -440,19 +439,19 @@ public class CadastroDespesa extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void BotaoSalvarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvarMouseEntered
-       BotaoSalvar.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoSalvarMouseEntered
 
     private void BotaoSalvarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoSalvarMouseExited
-        BotaoSalvar.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoSalvarMouseExited
 
     private void BotaoAdicionarCargoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarCargoMouseEntered
-        BotaoAdicionarCargo.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoAdicionarCargoMouseEntered
 
     private void BotaoAdicionarCargoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoAdicionarCargoMouseExited
-        BotaoAdicionarCargo.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoAdicionarCargoMouseExited
 
     private void BotaoAdicionarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoAdicionarCargoActionPerformed
@@ -461,11 +460,11 @@ public class CadastroDespesa extends javax.swing.JDialog {
     }//GEN-LAST:event_BotaoAdicionarCargoActionPerformed
 
     private void BotaoBuscarCargoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoBuscarCargoMouseEntered
-        BotaoBuscarCargo.setBackground(new Color (219,230,244));
+
     }//GEN-LAST:event_BotaoBuscarCargoMouseEntered
 
     private void BotaoBuscarCargoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotaoBuscarCargoMouseExited
-        BotaoBuscarCargo.setBackground(new Color(1,1,34));
+
     }//GEN-LAST:event_BotaoBuscarCargoMouseExited
 
     private void BotaoBuscarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoBuscarCargoActionPerformed
