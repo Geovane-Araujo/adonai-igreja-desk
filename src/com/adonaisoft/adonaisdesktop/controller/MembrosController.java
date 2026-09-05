@@ -26,10 +26,8 @@ public class MembrosController {
                 "IDCargo,\n" +
                 "Observacoes,DataBatismo,imagem, EstadoCivil,Cep,Batizado,EMail)VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
-        try{
-
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
 
             stmt.setString(1, membro.getNome());
@@ -62,12 +60,6 @@ public class MembrosController {
             System.out.println("Problema aqui  " + e);
             JOptionPane.showMessageDialog(null,"O Membro que está tentando cadastrar já contém na base de dados");
 
-        } finally{
-            try {
-                con.close();
-            } catch (SQLException ex) {
-                Logger.getLogger(Membros.class.getName()).log(Level.SEVERE, null, ex);
-            }
         }
 
     }
@@ -82,10 +74,8 @@ public class MembrosController {
                 "IDCargo =?,\n" +
                 "Observacoes =?,DataBatismo = ?,imagem = ?,EstadoCivil = ?,Cep = ?,Batizado = ?,EMail =? WHERE CodigoMembro = ?";
 
-        try{
-
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
 
             stmt.setString(1, membro.getNome());
@@ -116,12 +106,6 @@ public class MembrosController {
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,e);
 
-        }finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 
@@ -129,10 +113,8 @@ public class MembrosController {
 
         String sql = "DELETE FROM Membros WHERE CodigoMembro = ?";
 
-        try{
-
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
 
@@ -143,12 +125,6 @@ public class MembrosController {
         catch(SQLException e){
             JOptionPane.showMessageDialog(null, e);
 
-        }finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
 
     }

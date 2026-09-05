@@ -7,8 +7,6 @@ package com.adonaisoft.adonaisdesktop.configuration.database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -19,7 +17,6 @@ public class DatabaseConnection {
     private static DatabaseConnection instance;
     private Connection connection;
 
-    private final String ur  = "jdbc:sqlite:" + System.getProperty("user.dir") + "/data/conexaobase.db";
     private final String url = "jdbc:sqlite:" + System.getProperty("user.dir") + "/data/base.db";
 
     private DatabaseConnection() {
@@ -39,7 +36,15 @@ public class DatabaseConnection {
         return instance;
     }
 
-    public Connection getConnection() {
-        return connection;
+    /** A conexao pertence a aplicacao; os chamadores fecham apenas statements e resultados. */
+    public synchronized Connection getConnection() {
+        try {
+            if (connection == null || connection.isClosed()) {
+                connection = DriverManager.getConnection(url);
+            }
+            return connection;
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao reconectar ao banco SQLite", e);
+        }
     }
 }

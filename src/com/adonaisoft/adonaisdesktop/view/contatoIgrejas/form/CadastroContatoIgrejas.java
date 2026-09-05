@@ -369,14 +369,8 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
         
         String sql = "SELECT * FROM Igrejas WHERE ID_Igreja = '"+ id +"'";
         Connection con = conectar.connectDatabase();
-        ResultSet rs= null;
-        PreparedStatement stmt = null;
-        
-        
-        try{
-            stmt = con.prepareStatement(sql);
-            stmt.execute();
-            rs = stmt.executeQuery();
+        try (PreparedStatement stmt = con.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 CampoCodigo.setText(rs.getString("ID_Igreja"));
                 CamoNomeIgreja.setText(rs.getString("NomeIgreja"));
@@ -390,18 +384,11 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
                 CampoEmail.setText(rs.getString("Email"));
                 CampoCep.setText(rs.getString("CEP"));
             }
-            rs.close();
-            stmt.close();
+
     
         }
         catch(SQLException e){
             System.out.println(e);
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
        
     }

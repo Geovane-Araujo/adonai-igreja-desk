@@ -24,7 +24,7 @@ public class ClasseTipo {
     
     public void Add(){
         
-        String sql = "INSERT INTO public.tipo(descricao, pconta) VALUES (?, ?)";
+        String sql = "INSERT INTO tipo(descricao, pconta) VALUES (?, ?)";
         
         try{
             
@@ -49,7 +49,7 @@ public class ClasseTipo {
     
     public void Edit(){
         
-        String sql = "UPDATE public.tipo SET  descricao=?, pconta=?	WHERE idtipo=?";
+        String sql = "UPDATE tipo SET  descricao=?, pconta=?	WHERE idtipo=?";
         
         try{
             Connection con = conectar.connectDatabase();

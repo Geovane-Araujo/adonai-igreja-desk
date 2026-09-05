@@ -16,6 +16,12 @@ public class Aniversariantes extends javax.swing.JDialog {
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     public boolean check = false;
     int mes;
+
+    // setDate do driver SQLite grava milissegundos; aceita tambem datas ISO em texto.
+    private static final String MES_NASCIMENTO = "CAST(CASE "
+            + "WHEN typeof(datanascimento) IN ('integer', 'real') "
+            + "THEN strftime('%m', datanascimento / 1000.0, 'unixepoch', 'localtime') "
+            + "ELSE strftime('%m', datanascimento) END AS INTEGER)";
     
     
 
@@ -209,7 +215,7 @@ public class Aniversariantes extends javax.swing.JDialog {
   
         String sql = "SELECT nomecompleto,datanascimento   \n" +
                         " From membros \n" +
-                        " WHERE EXTRACT(MONTH FROM datanascimento) = Extract(Month From Now()) ";
+                        " WHERE " + MES_NASCIMENTO + " = CAST(strftime('%m', 'now', 'localtime') AS INTEGER)";
         
         Povoar(sql);
     }//GEN-LAST:event_formWindowOpened
@@ -231,7 +237,7 @@ public class Aniversariantes extends javax.swing.JDialog {
         
         String sql = "SELECT nomecompleto,datanascimento   \n" +
                         " From membros \n" +
-                        " WHERE EXTRACT(MONTH FROM datanascimento) =" +mes;
+                        " WHERE " + MES_NASCIMENTO + " = " + mes;
         Povoar(sql);
 
     }//GEN-LAST:event_BotaoSalvar1ActionPerformed

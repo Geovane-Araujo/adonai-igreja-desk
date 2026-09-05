@@ -20,9 +20,8 @@ public class IgrejaController {
         String sql = "INSERT INTO igrejas(nomeigreja, telefone, email, pastorresponsavel, endereco, numero, bairro, cidade, uf, cep)\n" +
                 "	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-        try{
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
 
             stmt.setString(1, igreja.getNomeIgreja());
@@ -44,12 +43,6 @@ public class IgrejaController {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null, e);
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 
@@ -58,9 +51,8 @@ public class IgrejaController {
         String sql = "UPDATE igrejas SET  nomeigreja=?, telefone=?, email=?, pastorresponsavel=?, endereco=?, numero=?, bairro=?, cidade=?, uf=?, cep=?\n" +
                 "	WHERE id_igreja=?";
 
-        try{
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
             stmt.setString(1, igreja.getNomeIgreja());
             stmt.setString(2, igreja.getTelefone());
@@ -80,12 +72,6 @@ public class IgrejaController {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null, e);
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 
@@ -93,9 +79,8 @@ public class IgrejaController {
 
         String sql = "DELETE FROM Igrejas WHERE id_igreja=?";
 
-        try{
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
             stmt.setInt(1, id);
 
@@ -105,12 +90,6 @@ public class IgrejaController {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null, e);
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 }

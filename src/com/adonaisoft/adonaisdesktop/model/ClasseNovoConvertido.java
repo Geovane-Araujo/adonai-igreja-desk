@@ -40,7 +40,7 @@ public class ClasseNovoConvertido {
     
     public void Add(){
         
-        String sql = "INSERT INTO public.novoconvertido(\n" +
+        String sql = "INSERT INTO novoconvertido(\n" +
                     "	nomeconvertido, endereco, bairro, numero, cidade, uf, dataconversao, obs, telefone, cep)\n" +
                     "	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
@@ -73,7 +73,7 @@ public class ClasseNovoConvertido {
     
     public void Edit(){// alterar aqui depois
         
-        String sql = "UPDATE public.novoconvertido\n" +
+        String sql = "UPDATE novoconvertido\n" +
                     "	SET nomeconvertido=?, endereco=?, bairro=?, numero=?, cidade=?, uf=?, dataconversao=?, obs=?, telefone=?, cep=?\n" +
                     "	WHERE id_novoconverido=?";
         
@@ -107,7 +107,7 @@ public class ClasseNovoConvertido {
     
     public void Delete(){// alterar aqui depois
         
-        String sql = "DELETE FROM public.novoconvertido\n" +
+        String sql = "DELETE FROM novoconvertido\n" +
 "	WHERE id_novoconverido=? ";
         
         try{

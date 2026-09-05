@@ -22,7 +22,7 @@ public class ClasseTipoEntrada {
     
     public void Add(){
         
-        String sql = "INSERT INTO public.TipoEntrada(descricao) VALUES (?)";
+        String sql = "INSERT INTO TipoEntrada(descricao) VALUES (?)";
         
         try{
             
@@ -46,7 +46,7 @@ public class ClasseTipoEntrada {
     
     public void Edit(){
         
-        String sql = "UPDATE public.TipoEntrada\n" +
+        String sql = "UPDATE TipoEntrada\n" +
                     "	SET descricao=?\n" +
                     "	WHERE IDTipo=? ";
         

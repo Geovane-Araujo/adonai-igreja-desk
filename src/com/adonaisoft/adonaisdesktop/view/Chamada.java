@@ -156,7 +156,7 @@ public class Chamada extends javax.swing.JDialog {
     public void VerChamadaalunos(){
 
         String sql = "SELECT id, idchamada, idmatriculado, presente, Membros.nomecompleto\n" +
-                    "FROM public.registrochamada\n" +
+                    "FROM registrochamada\n" +
                     "INNER JOIN Membros ON Membros.CodigoMembro = IdMatriculado\n" +
                     "WHERE IDChamada ="+ClasseChamada.ID;
         Connection con = conectar.connectDatabase();
@@ -195,7 +195,7 @@ public class Chamada extends javax.swing.JDialog {
     
     public void verchamadaclasse(){
         String sql = "SELECT id,Classe.descricao,ausentes,presentes,datachamada,visitas,total,ofertas,chamada.idclasse    \n" +
-                    "FROM public.chamada\n" +
+                    "FROM chamada\n" +
                     "INNER JOIN Classe ON Classe.IDClasse = Chamada.IDClasse\n" +
                     "WHERE Chamada.ID ="+ClasseChamada.ID;
         

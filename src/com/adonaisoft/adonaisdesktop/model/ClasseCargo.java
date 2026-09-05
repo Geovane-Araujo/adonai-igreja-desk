@@ -24,10 +24,8 @@ public class ClasseCargo {
         
         String sql = "INSERT INTO cargo(descricao) VALUES (?)";
         
-        try{
-            
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
             
             stmt.setString(1, Descricao);
             stmt.execute();
@@ -36,12 +34,6 @@ public class ClasseCargo {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null, e);
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
         
         
@@ -49,13 +41,12 @@ public class ClasseCargo {
     
     public void Edit(){
         
-        String sql = "UPDATE public.cargo\n" +
+        String sql = "UPDATE cargo\n" +
                     "	SET descricao=?\n" +
                     "	WHERE idcargo=? ";
         
-        try{
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
             
             stmt.setString(1, Descricao);
             stmt.setInt(2, IDCargo);
@@ -69,12 +60,6 @@ public class ClasseCargo {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,"falha ao alterar verifique -> " +e );
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
         
     }
@@ -83,9 +68,8 @@ public class ClasseCargo {
         
         String sql = "DELETE FROM Cargo WHERE IDCargo = ?";
         
-        try{
-            con = conectar.connectDatabase();
-            PreparedStatement stmt = con.prepareStatement(sql);
+        con = conectar.connectDatabase();
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
             
             stmt.setInt(1, IDCargo);
             
@@ -98,12 +82,6 @@ public class ClasseCargo {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,"Não é possível excluir pois já há registros vinculados com este Cargo");
-        } finally {
-            try {
-                con.close();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
         
     }
